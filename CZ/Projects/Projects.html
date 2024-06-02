@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Projects</title>
+    <link rel="stylesheet" href="../Misc.css">
+    <link rel="stylesheet" href="Projects.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<header>
+    <logo></logo>
+    <headerButtons>
+        <a class="vcenter selectPage " href="../Home/Home.html">O Mě</a>
+        <a class="vcenter selectPage" href="../Projects/Projects.html">Projekty</a>
+        <a class="vcenter selectPage" href="../Jobs/Jobs.html">Pracovní Zkušenosti</a>
+        <a class="vcenter selectPage" href="../Contact/Contact.html">Kontakty</a>
+    </headerButtons>
+
+</header>
+<main>
+    <slides>
+        <div class="projectTitles">
+            <div class="vcenter">
+                Midnight Commander
+            </div>
+            <div class="vcenter">
+                Zálohovač
+            </div>
+            <div class="vcenter">
+                Realitní Server
+            </div>
+            <div class="vcenter">
+                Forms Správce Úkolů
+            </div>
+            <div class="vcenter">
+                Pizza Web
+            </div>
+            <div class="vcenter">
+                HTML Správce Úkolů
+            </div>
+            <div class="vcenter">
+                Explore City
+            </div>
+        </div>
+        <buttons>
+            <button id="btnPrev">Previous</button>
+            <button id="btnNext">Next</button>
+        </buttons>
+    </slides>
+
+    <content>
+        <div class="description">
+            <div class="vcenter" style="opacity: 1">
+                <p>
+                    Toto byl náš první velký projekt. Jeho účelem bylo naučit se OOP. Za úkol jsme měli vytvořit známý
+                    souborový prohlížeč Midnight commander. Jeho interface vykresloval do příkazové řádky. Každá součást
+                    byla reprezentována znakem. <br> <br>
+                    Logika programu byla taková: byl objekt Application, který v sobě
+                    uchovával objekt dědící ze třídy Window, což reprezentovalo GUI. Objekt Window měl vlastní metody
+                    pro vykreslení a zaregistrování zmáčknutých kláves. Dále každý Windows mělo vlastní list tlačítek
+                    (neboli Hotkeys), pro manipulaci se soubory/daty. Na každém tlačítku byl event, který v závislosti
+                    na jeho funkci prováděl vlastní metodu. Všechny tlačítka dědily z interface společnou metodu, kterou
+                    následně přepisovaly. Ne všechny tlačítka byly funkční ale jenom ty nejdůležitější. Například
+                    fungovaly tlačítka pro přesun, kopírování, mazání a vytvoření souboru. <br> <br>
+                    Nejtěžší částí celého projektu bylo implementovat prostředí pro práci s textovými soubory. To také
+                    dědilo ze třídy Window
+                    a mělo vlastní metody pro práci v něm. Měly v něm být zahrnuty takové metody jako přesunutí textu,
+                    zkopírování textu, označení textu, uložení souboru a zavření souboru. Všechny funkce se mi
+                    implementovat nepodařilo a v programu vznikaly chyby, při nesprávném ovládání (např. Když kurzor
+                    vyjede mimo text – IndexOutOfRangeException). Myslím si, že dnes bych tyto chyby dokázal opravit,
+                    ale nevidím to jako potřebné, jelikož OOP jsem se do určité míry dost dobře naučil. <br> <br>
+                    Na celý projekt jsme měli měsíc a půl. Každý týden jsme měli checkpointy (deadliny), kde nám pan
+                    profesor řekl, co
+                    po nás bude chtít implementovat na příští týden a dal nám známku za práci během uplynulého týdne. Na
+                    tomto projektu jsem strávil kolem 150 hodin a spolupracoval jsem společně se spolužáky (např. Eventy
+                    jsme nikdy neviděli a museli jsme se radit s pár lidmi, kteří to pochopili z hodiny). Tento projekt
+                    nám ale dal dobré zázemí pro pochopení, jak by měla správně vypadat struktura v programu a jak
+                    naplno využít OOP.
+                </p>
+            </div>
+            <div class="vcenter noDisplay">
+                <p>
+                    V tomto projektu jsme pracovali ve tříčlenných skupinách. Smyslem projektu bylo vytvořit program pro
+                    zálohu dat dle určitého rozvrhu a nastavení. Každý člověk z týmu měl na starosti určitou část
+                    aplikace a zároveň trochu pomáhal zbytku týmu s jejich prací. Já jsem se podílel na všech 3 částech
+                    projektu nejvíce. <br> <br>
+                    Tato aplikace se skládala z API, Daemona a administrátorského rozhraní. Nejprve
+                    jsme ale museli navrhnout vzhled stránky přes firmu a databázi přes dbDiagram.io. API fungoval jako
+                    prostředník pro komunikaci mezi Daemonem, administrátorem a databází. <br> <br>
+                    Samotný Daemon běžel na počítačích a kontroloval, zda má zálohovat data. Jeho struktura vypadala
+                    takto: obsahoval třídu
+                    Core, která kontrolovala, zda je počítač evidován, zda musí probíhat záloha a pokud ano tak kdy musí
+                    proběhnout. Navíc obsahoval třídu Backuper, který se staral o samotnou zálohu. Ten na základě předem
+                    daného nastavení vybíral vhodnou zálohu. <br> <br>
+                    Administrátor bylo webové prostředí pro správu záloh, které bylo napsáno v Angularu. Administrátor
+                    obsahoval přehled všech počítačů, které měly provádět zálohu.
+                    Také se mohli vytvářet skupiny počítačů a administrátorské účty. Kromě toho se mohli vytvářet
+                    configy, ve kterých byl určen čas zálohy, typ zálohy, místo zálohy, zda se soubory mají komprimovat
+                    a také pro jaké počítače tento config platí. <br> <br> Na tvorbě webového prostředí jsem se podílel
+                    nejméně z
+                    týmu (i přes to vypadá tragicky), jelikož nás už tlačil čas a můj tým to nestíhal, tak jsem se tento
+                    jazyk musel naučit během
+                    týdne. Můžu ale říct, že Typescript doposud ne moc neumím. <br> <br>
+                    Všechny tyto části programu museli být pro běh aplikace spuštěny (vše běželo na localhostu – nebyl k
+                    tomu přístup z vně a nebylo to
+                    dostupné 24/7). Účelem tohoto projektu bylo naučit se, jak mezi sebou doopravdy komunikují
+                    jednotlivé aplikace a naučit se používat např. CronTab, JSON, Enkrypci… celkem jsme na této práci
+                    strávili kolem dvou a půl měsíců.
+                </p>
+
+            </div>
+            <div class="vcenter noDisplay" style="flex-direction: column">
+                <p>
+                    Toto byl náš poslední školní projekt programování a zabral nám kolem dvou měsíců. Nyní se na této
+                    práci podílel opět každý sám. Za úkol jsme měli vytvořit realitní server. Smyslem bylo vytvořit co
+                    nejvíce realistickou napodobeninu skutečné realitní stránky a naučit se s technologií ASP.NET.
+                    Stránka obsahovala přehled nabídek, administrátorské prostředí, makléřské prostředí a prostředí pro
+                    přihlášené uživatele. Přesnější rozbor stránky:
+                </p>
+                <ol id="pul">
+                    <li> Hlavní stránka, na které byl přehled nejnovějších nabídek a filtrace dle kategorií.</li>
+                    <li>Stránka s nabídkami: zde jsme mohli prohlížet všechny nabídky a filtrovat je.</li>
+                    <li>Makléřské rozhraní: Stránka na kterou se makléř musel přihlásit aby mohl upravovat své nabídky a
+                        také svůj účet. Kromě toho mohl prohlížet poptávky a zprávy od uživatelů.
+                    </li>
+                    <li>Administrátorské rozhraní:
+                        V podstatě bylo stejné jako makléřské až na to, že administrátor mohl spravovat ostatní
+                        administrátory a makléře.
+                    </li>
+                    <li>Stránka pro uživatele: na této stránce si uživatelé mohli prohlížet své oblíbené nemovitosti a
+                        psát
+                        si s makléři/administrátory.
+                    </li>
+                </ol>
+                <p>
+                    Při tvorbě této aplikace jsem využíval různé nástroje jako například komponenty, vlastní atributy
+                    pro ověření správnosti dat a vlastní layout…
+                </p>
+
+            </div>
+            <div class="vcenter noDisplay">
+                <p>
+                    Tento projekt nám nezadávali ve škole, ale napadl mě samotného. Je to obyčejný úkolníček do kterého
+                    si můžeme vytvářet úkoly na další dny. Naprogramoval jsem to přes Windows Forms. <br> <br>
+                    Na levé části hlavního okna se nachází dny od roku 2004 do 2104 a v pravé části se zobrazují úkoly
+                    pro vybraný den. Také se nad výběrem datumu nachází streak counter, který počítá, kolik dní v kuse
+                    jsme plnily
+                    všechny úkoly na den. <br> <br>
+                    Při výběru dne ho můžeme také editovat. Zobrazí se nám nové okno, ve kterém je
+                    vidět přehled všech úkolů na daný den. Pokud je den z minulosti nebo ze dneška, tak můžeme pouze
+                    prohlížet úkoly a měnit na kolik procent jsou splněny. Pokud je den z budoucna, můžeme přidávat
+                    mazat i editovat nové úkoly. <br> <br>
+                    Při tvorbě/editaci úkolu zadáváme jeho název, popisek, vyhrazený čas, zda je důležitý nebo volitelný
+                    a také na kolik čtvrtin je splněn. Poté při vytvoření úkolu se v pravém krajním sloupečku vytvoří
+                    tlačítko start. Po stisknutí tohoto tlačítka se nám spustí časovač,
+                    abychom věděli, kolik času dané úloze ještě musíme věnovat. V uplynulých dnech toto tlačítko není,
+                    pouze se nám ukazuje, kolik minut jsme nad touto úlohou strávili.<br> <br>
+                    Všechny data a změny se ukládají do dvou souborů v AppData ve formátu JSON. Touto úlohou jsem si
+                    chtěl procvičit práci ve Windows Forms a naučit se nové funkce DataGridView.
+                </p>
+
+            </div>
+            <div class="vcenter noDisplay">
+                <p>
+                    Tento projekt jsme tvořili v rámci předmětu programového vybavení (weby). Byl to náš mini projekt na
+                    procvičení formulářů a také stylování stránky. Data se z formuláře nikam neposílají, slouží to pouze
+                    pro vizualizaci (tehdy jsme neuměli s JavaScriptem).
+                </p>
+
+            </div>
+            <div class="vcenter noDisplay">
+                <p>
+                    Toto byl náš první velký projekt v rámci webů. V něm jsme museli vytvořit webový úkolníček. <br>
+                    <br>
+                    Byla zde stránka s projekty a také s přehledem jednotlivých úkolů. Každý úkol se vždy vztahoval k
+                    určitému projektu. Po odpracování nějaké doby na úkolu se tento čas přičítal k celkovému času celého
+                    projektu
+                    – při smazání/úpravě úkolu se čas odečítal/měnil. <br> <br>
+                    Evidovat odpracovaný čas na jednotlivém úkolu jde buďto spuštěním stopek v pravém horním rohu
+                    programu, nebo manuálním vytvořením úkolu. Tento projekt
+                    sloužil k procvičení Java Scriptu a abychom se naučili pracovat s časem.
+                </p>
+            </div>
+            <div class="vcenter noDisplay">
+                <p>
+                    Tento projekt byl velkým shrnutím celého roku tvorby webů. Používali jsme v něm všechny naše
+                    dovednosti jak v HTML a CSS tak i v JS. Kromě toho nás profesor naučil používat NestJS. <br> <br>
+                    Tato webová aplikace měla fungovat jako prohlížeč populárních míst v českých městech. Měli jsme databázi, která
+                    obsahovala města a každé město mělo zajímavá místa, restaurace či památky. <br> <br>
+                    Tyto místa se mohly přidávat kýmkoli přes prostředí webu. Každé město i místo mělo svoji fotku a místa měli navíc
+                    popisek, hodnocení a komentáře. Hodnocení bylo nezávislé na komentářích a nedalo se nijak mazat.
+                    Komentáře mohl také zanechávat kdokoliv – při publikaci komentáře se uložil čas, jméno a obsah
+                    komentáře. <br> <br>
+                    Všechny záznamy a informace o městech i místech se ukládaly do databáze prostřednictvím
+                    repozitáře v NestJS. Úprava jednotlivých míst probíhala přes je novou stránku kde se vyplnil
+                    formulář s klíčovými informacemi. Pokud město jíž existovalo, tak v se poslal PUT požadavek, pokud
+                    neexistovalo tak POST. <br> <br>
+                    Z Podobné práce jsem dokonce maturoval (bylo to v rámci praktické maturitní
+                    zkoušky, která se skládala ze dvou částí – první den jsem si vylosoval NestJS, druhý den SQL –
+                    Mirroring a zálohování)
+                </p>
+            </div>
+        </div>
+
+        <div class="description phoneOnly" style="margin-top: 5px;">
+            <p style="text-align: center">
+                Pro zborazení fotek se prosím přesuňte na počítač.
+            </p>
+        </div>
+        <div class="photos pcOnly">
+            <div class="slide">
+                <div class="mainPhoto">
+                    <img src="../../Images/MyProjectsPhotos/MC_Logic.png">
+                </div>
+
+                <div>
+                    <img src="../../Images/MyProjectsPhotos/MC_Logic.png" title="Midnight Commander Logic Snippet">
+                </div>
+
+                <div>
+                    <img src="../../Images/MyProjectsPhotos/MC_Main.png" title="Midnight Commander Main Window">
+                </div>
+
+                <div>
+                    <img src="../../Images/MyProjectsPhotos/MC_PopUp.png" title="Midnight Commander Pop Up Window">
+                </div>
+
+                <div>
+                    <img src="../../Images/MyProjectsPhotos/MC_File.png" title="Midnight Commander File Window">
+                </div>
+            </div>
+
+            <div class="slide noDisplay">
+                <div class="mainPhoto">
+                    <img src="../../Images/MyProjectsPhotos/Backuper_API.png">
+                </div>
+
+                <div>
+                    <img src="../../Images/MyProjectsPhotos/Backuper_API.png" title="Backuper End Points">
+                </div>
+
+                <div>
+                    <img src="../../Images/MyProjectsPhotos/Backuper_DaemonCore.png" title="Backuper Daemon Core Logic">
+                </div>
+                <div>
+                    <img src="../../Images/MyProjectsPhotos/Backuper_DaemonBackuper.png"
+                         title="Backuper Daemon Backup Logic">
+                </div>
+
+                <div>
+                    <img src="../../Images/MyProjectsPhotos/Backuper_Computers.png" title="Backuper Computers List">
+                </div>
+
+                <div>
+                    <img src="../../Images/MyProjectsPhotos/Backuper_Configs.png" title="Backuper Configs List">
+                </div>
+
+                <div>
+                    <img src="../../Images/MyProjectsPhotos/Backuper_ConfigSetup.png" title="Backuper Configs Setup">
+                </div>
+            </div>
+
+            <div class="slide noDisplay">
+                <div class="mainPhoto">
+                    <img src="../../Images/MyProjectsPhotos/RealEstate_Home.png">
+                </div>
+
+                <div>
+                    <img src="../../Images/MyProjectsPhotos/RealEstate_Home.png" title="Real Estate Home Page">
+                </div>
+
+                <div>
+                    <img src="../../Images/MyProjectsPhotos/RealEstate_Offer.png" title="Real Estate Offers Page">
+                </div>
+
+                <div>
+                    <img src="../../Images/MyProjectsPhotos/RealEstate_OfferInfo.png"
+                         title="Real Estate Specific Offer Page">
+                </div>
+
+                <div>
+                    <img src="../../Images/MyProjectsPhotos/RealEstate_Login.png" title="Real Estate Login Page">
+                </div>
+
+                <div>
+                    <img src="../../Images/MyProjectsPhotos/RealEstate_AccountEdit.png"
+                         title="Real Estate Account Edit ">
+                </div>
+
+                <div>
+                    <img src="../../Images/MyProjectsPhotos/RealEstate_OfferEdit.png" title="Real Estate Offer Edit">
+                </div>
+
+                <div>
+                    <img src="../../Images/MyProjectsPhotos/RealEstate_Chat.png"
+                         title="Real Estate Chat With Customers">
+                </div>
+            </div>
+
+            <div class="slide noDisplay">
+                <div class="mainPhoto">
+                    <img src="../../Images/MyProjectsPhotos/FormsTaskManager_Main.png">
+                </div>
+
+                <div>
+                    <img src="../../Images/MyProjectsPhotos/FormsTaskManager_Main.png"
+                         title="Forms Time Manager Main Window">
+                </div>
+
+                <div>
+                    <img src="../../Images/MyProjectsPhotos/FormsTaskManager_DayOverview.png"
+                         title="Forms Time Manager Day Overview Window">
+                </div>
+
+                <div>
+                    <img src="../../Images/MyProjectsPhotos/FormsTaskManager_TaskEdit.png"
+                         title="Forms Time Manager Task Edit Window">
+                </div>
+
+                <div>
+                    <img src="../../Images/MyProjectsPhotos/FormsTaskManager_Timer.png"
+                         title="Forms Time Manager Timer">
+                </div>
+            </div>
+            <div class="slide noDisplay">
+                <div class="mainPhoto">
+                    <img src="../../Images/MyProjectsPhotos/PizzaWeb.png" title="Pizza Web">
+                </div>
+            </div>
+            <div class="slide noDisplay">
+                <div class="mainPhoto">
+                    <img src="../../Images/MyProjectsPhotos/JSTaskManager_Overview.png">
+                </div>
+
+                <div>
+                    <img src="../../Images/MyProjectsPhotos/JSTaskManager_Overview.png"
+                         title="JS Task Manager Overview">
+                </div>
+
+                <div>
+                    <img src="../../Images/MyProjectsPhotos/JSTaskManager_NewTask.png" title="JS Task Manager New Task">
+                </div>
+
+                <div>
+                    <img src="../../Images/MyProjectsPhotos/JSTaskManager_Projects.png"
+                         title="JS Task Manager Projects">
+                </div>
+
+                <div>
+                    <img src="../../Images/MyProjectsPhotos/JSTaskManager_NewProject.png"
+                         title="JS Task Manager New/Edit Project">
+                </div>
+            </div>
+
+            <div class="slide noDisplay">
+                <div class="mainPhoto">
+                    <img src="../../Images/MyProjectsPhotos/ExploreCity_Cities.png">
+                </div>
+
+                <div>
+                    <img src="../../Images/MyProjectsPhotos/ExploreCity_Cities.png"
+                         title="Explore City Cities Overview">
+                </div>
+
+                <div>
+                    <img src="../../Images/MyProjectsPhotos/ExploreCity_Places.png"
+                         title="Explore City Places in The City">
+                </div>
+
+                <div>
+                    <img src="../../Images/MyProjectsPhotos/ExploreCity_PlaceDetail.png"
+                         title="Explore City Place Detail">
+                </div>
+
+                <div>
+                    <img src="../../Images/MyProjectsPhotos/ExploreCity_PlaceEdit.png"
+                         title="Explore City Place Edit/Create">
+                </div>
+            </div>
+        </div>
+    </content>
+</main>
+
+<dialog style="width: 100vw; height: 100vh">
+    <div style="width: 90%; height: 100%">
+        <img src="">
+    </div>
+    <span class="close">X</span>
+</dialog>
+
+<script src="Projects.js"></script>
+
+</body>
+</html>

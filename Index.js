@@ -1,0 +1,1 @@
+window.location.href = 'CZ/Home/Home.html';
