@@ -1,0 +1,169 @@
+body{
+    font-family: Arial, SansSerif, serif;
+    font-size: 16px;
+    color: #3D52A0;
+    margin-top: 0;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}
+
+header{
+    height: 14vh;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+logo{
+    background-image: url("Images/LogoPlaceholder.jpg");
+    background-size: contain;
+    height: 100%;
+    min-height: 2vh;
+    margin-inline: 25vw
+}
+
+headerButtons{
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+a.selectPage{
+    text-decoration: none;
+    color: white;
+    background-color: #ADBBDA;
+    flex:1;
+    border: .2px solid black;
+    border-radius: 2px;
+    /*transition: padding 0.1s;*/
+}
+
+a.selectPage:hover{
+    background-color: #a3b1d1;
+    /*padding: 2px;*/
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.infoTags{
+    font-size: xx-small;
+    color: lightgray;
+}
+
+.currentPage{
+    background-color: #93a1c2;
+}
+
+.explanationTag{
+    display: inline-block;
+    color: white;
+    background-color: rgb(128, 128, 128);
+    width: 10px;
+    height: 10px;
+    text-align: center;
+    font-size: x-small;
+    border-radius: 5px;
+    padding: 0;
+}
+
+.tooltip{
+    display: inline-block;
+    position: absolute;
+}
+
+.tooltip .tooltipText{
+    visibility: hidden;
+    background-color: rgba(128, 128, 128,0.7);
+    color: rgba(255,255,255, 0.7);
+    /*position: relative;*/
+    /*margin-left: -50%;*/
+    /*top: -20px;*/
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+}
+
+.tooltip:hover{
+    cursor: pointer;
+}
+
+.tooltip:hover .tooltipText{
+    visibility: visible;
+    font-size: small;
+}
+
+.noDisplay{
+    display: none!important;
+}
+
+.pcOnly{
+   display: none;
+}
+
+.phoneOnly{
+    display: block;
+}
+
+.vcenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.close {
+    cursor: pointer;
+    position: fixed;
+    top: 5vh;
+    left: 95.5vw;
+    padding: 12px 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 50px;
+    transform: translate(0%, -50%);
+}
+
+.close:hover {background: #bbb;}
+
+@media screen and (min-width: 768px){
+
+    header{
+        height: 8vh;
+        position: sticky;
+        top: 0;
+        background-color: #7091E6;
+        padding-block: 15px;
+    }
+
+    headerButtons{
+        flex-direction: row;
+        margin-inline: 10vw;
+        height: 4vh;
+    }
+
+
+    main {
+        margin-inline: 8.5vw;
+    }
+    /*body{*/
+    /*    padding-inline: 8.5vw;*/
+    /*}*/
+
+    .pcOnly{
+        display: block;
+    }
+
+    .phoneOnly{
+        display: none!important;
+    }
+}
+
+@media screen and (min-width: 1920px){
+    body{
+        font-size: large;
+    }
+}

@@ -3,12 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="Misc.css">
+    <link rel="stylesheet" href="index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 
-<button>Click me</button>
+<main>
+    <form>
+
+        <h2 class="vcenter" >Login</h2>
+
+        <div>
+            <input type="text" placeholder="Username" id="username" required>
+            <box-icon name='user'></box-icon>
+        </div>
+        <div>
+            <input type="password" placeholder="Password" id="password" required>
+            <box-icon name='lock-alt'></box-icon>
+        </div>
+        <button>Login</button>
+    </form>
+</main>
 
 <script src="index.js"></script>
-
+<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </body>
 </html>

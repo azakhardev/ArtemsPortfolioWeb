@@ -1,0 +1,79 @@
+body{
+    background-image: url("Images/Background.jpg");
+}
+
+h2{
+    margin-top: 10%;
+    text-align: center;
+    font-size: 35px;
+}
+
+main{
+    margin-top: 15vh;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    border: 2px solid white;
+    height: 40vh;
+    min-height: 450px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-inline: 3%;
+}
+
+input {
+    border: none;
+    background: transparent;
+    flex: 1;
+    outline: none;
+}
+
+form div {
+    margin-top: 15%;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    padding: 8px;
+    border-radius: 16px;
+}
+
+form div:nth-child(2){
+    margin-top: 0!important;
+}
+
+button {
+    margin-inline: 30%;
+    margin-top: 5%;
+    border-radius: 5px;
+    padding-inline: 7px;
+    padding-block: 4px;
+}
+
+
+@media screen and (min-width: 768px) {
+    h2{
+        font-size: 38px;
+    }
+    main{
+        margin-inline: 20%;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    h2{
+        font-size: 42px;
+    }
+    main{
+        margin-inline: 40%;
+    }
+    form{
+        margin-inline: 10%;
+    }
+
+    button {
+     margin-top: 10%;
+    }
+}
