@@ -1,2 +1,2 @@
 if(!sessionStorage.getItem('logged'))
-    window.location.href = 'index.html';
+    window.location.href = '../../index.html';
