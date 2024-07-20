@@ -61,17 +61,19 @@
                     uchovával objekt dědící ze třídy Window, což reprezentovalo GUI. Objekt Window měl vlastní metody
                     pro vykreslení a zaregistrování zmáčknutých kláves. Dále každý Windows mělo vlastní list tlačítek
                     (neboli Hotkeys), pro manipulaci se soubory/daty. Na každém tlačítku byl event, který v závislosti
-                    na jeho funkci prováděl vlastní metodu. Všechna tlačítka dědila z interface společnou metodu, kterou
-                    následně přepisovaly. Ne všechna tlačítka byla funkční, ale jenom ty nejdůležitější. Například
+                    na jeho funkci prováděl vlastní metodu. Všechny tlačítka dědily z interface společnou metodu, kterou
+                    následně přepisovaly. Ne všechny tlačítka byly funkční ale jenom ty nejdůležitější. Například
                     fungovaly tlačítka pro přesun, kopírování, mazání a vytvoření souboru. <br> <br>
                     Nejtěžší částí celého projektu bylo implementovat prostředí pro práci s textovými soubory. To také
-                    dědilo ze třídy Window a mělo vlastní metody pro práci v něm. Měly v něm být zahrnuty takové metody jako přesunutí textu,
+                    dědilo ze třídy Window
+                    a mělo vlastní metody pro práci v něm. Měly v něm být zahrnuty takové metody jako přesunutí textu,
                     zkopírování textu, označení textu, uložení souboru a zavření souboru. Všechny funkce se mi
                     implementovat nepodařilo a v programu vznikaly chyby, při nesprávném ovládání (např. Když kurzor
                     vyjede mimo text – IndexOutOfRangeException). Myslím si, že dnes bych tyto chyby dokázal opravit,
                     ale nevidím to jako potřebné, jelikož OOP jsem se do určité míry dost dobře naučil. <br> <br>
                     Na celý projekt jsme měli měsíc a půl. Každý týden jsme měli checkpointy (deadliny), kde nám pan
-                    profesor řekl, co po nás bude chtít implementovat na příští týden, a dal nám známku za práci během uplynulého týdne. Na
+                    profesor řekl, co
+                    po nás bude chtít implementovat na příští týden a dal nám známku za práci během uplynulého týdne. Na
                     tomto projektu jsem strávil kolem 150 hodin a spolupracoval jsem společně se spolužáky (např. Eventy
                     jsme nikdy neviděli a museli jsme se radit s pár lidmi, kteří to pochopili z hodiny). Tento projekt
                     nám ale dal dobré zázemí pro pochopení, jak by měla správně vypadat struktura v programu a jak
@@ -82,10 +84,10 @@
                 <p>
                     V tomto projektu jsme pracovali ve tříčlenných skupinách. Smyslem projektu bylo vytvořit program pro
                     zálohu dat dle určitého rozvrhu a nastavení. Každý člověk z týmu měl na starosti určitou část
-                    aplikace a zároveň trochu pomáhal zbytku týmu s jejich prací. Já jsem se podílel na všech třech částech
+                    aplikace a zároveň trochu pomáhal zbytku týmu s jejich prací. Já jsem se podílel na všech 3 částech
                     projektu nejvíce. <br> <br>
                     Tato aplikace se skládala z API, Daemona a administrátorského rozhraní. Nejprve
-                    jsme ale museli navrhnout vzhled stránky přes Figmu a databázi přes dbDiagram.io. API fungoval jako
+                    jsme ale museli navrhnout vzhled stránky přes firmu a databázi přes dbDiagram.io. API fungoval jako
                     prostředník pro komunikaci mezi Daemonem, administrátorem a databází. <br> <br>
                     Samotný Daemon běžel na počítačích a kontroloval, zda má zálohovat data. Jeho struktura vypadala
                     takto: obsahoval třídu
@@ -94,14 +96,14 @@
                     daného nastavení vybíral vhodnou zálohu. <br> <br>
                     Administrátor bylo webové prostředí pro správu záloh, které bylo napsáno v Angularu. Administrátor
                     obsahoval přehled všech počítačů, které měly provádět zálohu.
-                    Také se mohly vytvářet skupiny počítačů a administrátorské účty. Kromě toho se mohly vytvářet
+                    Také se mohli vytvářet skupiny počítačů a administrátorské účty. Kromě toho se mohli vytvářet
                     configy, ve kterých byl určen čas zálohy, typ zálohy, místo zálohy, zda se soubory mají komprimovat
                     a také pro jaké počítače tento config platí. <br> <br> Na tvorbě webového prostředí jsem se podílel
                     nejméně z
                     týmu (i přes to vypadá tragicky), jelikož nás už tlačil čas a můj tým to nestíhal, tak jsem se tento
                     jazyk musel naučit během
-                    týdne. Můžu ale říct, že Typescript doposud moc neumím. <br> <br>
-                    Všechny tyto části programu musely být pro běh aplikace spuštěny (vše běželo na localhostu – nebyl k
+                    týdne. Můžu ale říct, že Typescript doposud ne moc neumím. <br> <br>
+                    Všechny tyto části programu museli být pro běh aplikace spuštěny (vše běželo na localhostu – nebyl k
                     tomu přístup z vně a nebylo to
                     dostupné 24/7). Účelem tohoto projektu bylo naučit se, jak mezi sebou doopravdy komunikují
                     jednotlivé aplikace a naučit se používat např. CronTab, JSON, Enkrypci… celkem jsme na této práci
@@ -111,14 +113,14 @@
             </div>
             <div class="vcenter noDisplay" style="flex-direction: column">
                 <p>
-                    Toto byl náš poslední školní projekt z programování a zabral nám kolem dvou měsíců. Nyní se na této
+                    Toto byl náš poslední školní projekt programování a zabral nám kolem dvou měsíců. Nyní se na této
                     práci podílel opět každý sám. Za úkol jsme měli vytvořit realitní server. Smyslem bylo vytvořit co
                     nejvíce realistickou napodobeninu skutečné realitní stránky a naučit se s technologií ASP.NET.
                     Stránka obsahovala přehled nabídek, administrátorské prostředí, makléřské prostředí a prostředí pro
                     přihlášené uživatele. Přesnější rozbor stránky:
                 </p>
                 <ol id="pul">
-                    <li>Hlavní stránka, na které byl přehled nejnovějších nabídek a filtrace dle kategorií.</li>
+                    <li> Hlavní stránka, na které byl přehled nejnovějších nabídek a filtrace dle kategorií.</li>
                     <li>Stránka s nabídkami: zde jsme mohli prohlížet všechny nabídky a filtrovat je.</li>
                     <li>Makléřské rozhraní: Stránka na kterou se makléř musel přihlásit aby mohl upravovat své nabídky a
                         také svůj účet. Kromě toho mohl prohlížet poptávky a zprávy od uživatelů.
@@ -128,12 +130,13 @@
                         administrátory a makléře.
                     </li>
                     <li>Stránka pro uživatele: na této stránce si uživatelé mohli prohlížet své oblíbené nemovitosti a
-                        psát si s makléři/administrátory.
+                        psát
+                        si s makléři/administrátory.
                     </li>
                 </ol>
                 <p>
-                    Při tvorbě této aplikace jsem využíval různé nástroje, jako například komponenty, vlastní atributy
-                    pro ověření správnosti dat, vlastní layout atd…
+                    Při tvorbě této aplikace jsem využíval různé nástroje jako například komponenty, vlastní atributy
+                    pro ověření správnosti dat a vlastní layout…
                 </p>
 
             </div>
@@ -155,7 +158,7 @@
                     abychom věděli, kolik času dané úloze ještě musíme věnovat. V uplynulých dnech toto tlačítko není,
                     pouze se nám ukazuje, kolik minut jsme nad touto úlohou strávili.<br> <br>
                     Všechny data a změny se ukládají do dvou souborů v AppData ve formátu JSON. Touto úlohou jsem si
-                    chtěl procvičit práci ve Windows Forms a naučit se nové funkce s DataGridView.
+                    chtěl procvičit práci ve Windows Forms a naučit se nové funkce DataGridView.
                 </p>
 
             </div>
@@ -185,13 +188,13 @@
                     Tento projekt byl velkým shrnutím celého roku tvorby webů. Používali jsme v něm všechny naše
                     dovednosti jak v HTML a CSS tak i v JS. Kromě toho nás profesor naučil používat NestJS. <br> <br>
                     Tato webová aplikace měla fungovat jako prohlížeč populárních míst v českých městech. Měli jsme databázi, která
-                    obsahovala města, a každé město mělo zajímavá místa, restaurace či památky. <br> <br>
-                    Tato místa se mohla přidávat kýmkoli přes prostředí webu. Každé město i místo mělo svojí fotku a místa měla navíc
+                    obsahovala města a každé město mělo zajímavá místa, restaurace či památky. <br> <br>
+                    Tyto místa se mohly přidávat kýmkoli přes prostředí webu. Každé město i místo mělo svoji fotku a místa měli navíc
                     popisek, hodnocení a komentáře. Hodnocení bylo nezávislé na komentářích a nedalo se nijak mazat.
-                    Komentáře mohl také zanechávat kdokoli – při publikaci komentáře se uložil čas, jméno a obsah
+                    Komentáře mohl také zanechávat kdokoliv – při publikaci komentáře se uložil čas, jméno a obsah
                     komentáře. <br> <br>
                     Všechny záznamy a informace o městech i místech se ukládaly do databáze prostřednictvím
-                    repozitáře v NestJS. Úprava jednotlivých míst probíhala přes je novou stránku, kde se vyplnil
+                    repozitáře v NestJS. Úprava jednotlivých míst probíhala přes je novou stránku kde se vyplnil
                     formulář s klíčovými informacemi. Pokud město jíž existovalo, tak v se poslal PUT požadavek, pokud
                     neexistovalo tak POST. <br> <br>
                     Z Podobné práce jsem dokonce maturoval (bylo to v rámci praktické maturitní
