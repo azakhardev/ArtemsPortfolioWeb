@@ -1,4 +1,4 @@
-body {
+body{
     font-family: Arial, SansSerif, serif;
     font-size: 16px;
     color: #3D52A0;
@@ -10,14 +10,14 @@ body {
     background: transparent;
 }
 
-header {
+header{
     height: 14vh;
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
 
-logo {
+logo{
     background-image: url("Images/LogoPlaceholder.jpg");
     background-size: contain;
     height: 100%;
@@ -25,82 +25,41 @@ logo {
     margin-inline: 25vw
 }
 
-headerButtons {
+headerButtons{
     display: flex;
     flex-direction: column;
     gap: 1px;
 }
 
-a.selectPage {
+a.selectPage{
     text-decoration: none;
     color: white;
     background-color: #ADBBDA;
-    flex: 1;
+    flex:1;
     border: .2px solid black;
     border-radius: 2px;
     /*transition: padding 0.1s;*/
 }
 
-a.selectPage:hover {
+a.selectPage:hover{
     background-color: #a3b1d1;
     /*padding: 2px;*/
 }
 
-button:hover {
+button:hover{
     cursor: pointer;
 }
 
-lang {
-    position: absolute;
-    left: 85%;
-    top: 20px;
-    display: flex;
-    flex-direction: row;
-}
-
-lang div {
-    flex: 1;
-    font-weight: bold;
-    display: flex;
-    flex-direction: row;
-}
-
-lang a {
-    display: inline-block;
-    text-decoration: none;
-    color: inherit;
-}
-
-lang a:hover {
-    cursor: pointer;
-}
-
-lang a::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    transition: ease 0.5s;
-    background: black;
-    height: 3px;
-    bottom: 0;
-    left: 0;
-    z-index: 3;
-}
-
-lang a:hover::after {
-    width: 100%;
-}
-
-.infoTags {
+.infoTags{
     font-size: xx-small;
     color: lightgray;
 }
 
-.currentPage {
+.currentPage{
     background-color: #93a1c2;
 }
 
-.explanationTag {
+.explanationTag{
     display: inline-block;
     color: white;
     background-color: rgb(128, 128, 128);
@@ -112,15 +71,15 @@ lang a:hover::after {
     padding: 0;
 }
 
-.tooltip {
+.tooltip{
     display: inline-block;
     position: absolute;
 }
 
-.tooltip .tooltipText {
+.tooltip .tooltipText{
     visibility: hidden;
-    background-color: rgba(128, 128, 128, 0.7);
-    color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(128, 128, 128,0.7);
+    color: rgba(255,255,255, 0.7);
     /*position: relative;*/
     /*margin-left: -50%;*/
     /*top: -20px;*/
@@ -129,24 +88,24 @@ lang a:hover::after {
     padding: 5px;
 }
 
-.tooltip:hover {
+.tooltip:hover{
     cursor: pointer;
 }
 
-.tooltip:hover .tooltipText {
+.tooltip:hover .tooltipText{
     visibility: visible;
     font-size: small;
 }
 
-.noDisplay {
-    display: none !important;
+.noDisplay{
+    display: none!important;
 }
 
-.pcOnly {
-    display: none;
+.pcOnly{
+   display: none;
 }
 
-.phoneOnly {
+.phoneOnly{
     display: block;
 }
 
@@ -168,13 +127,11 @@ lang a:hover::after {
     transform: translate(0%, -50%);
 }
 
-.close:hover {
-    background: #bbb;
-}
+.close:hover {background: #bbb;}
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px){
 
-    header {
+    header{
         height: 8vh;
         position: sticky;
         top: 0;
@@ -182,7 +139,7 @@ lang a:hover::after {
         padding-block: 15px;
     }
 
-    headerButtons {
+    headerButtons{
         flex-direction: row;
         margin-inline: 10vw;
         height: 4vh;
@@ -192,21 +149,21 @@ lang a:hover::after {
     main {
         margin-inline: 8.5vw;
     }
-
     /*body{*/
     /*    padding-inline: 8.5vw;*/
     /*}*/
-    .pcOnly {
+
+    .pcOnly{
         display: block;
     }
 
-    .phoneOnly {
-        display: none !important;
+    .phoneOnly{
+        display: none!important;
     }
 }
 
-@media screen and (min-width: 1920px) {
-    body {
+@media screen and (min-width: 1920px){
+    body{
         font-size: large;
     }
 }
