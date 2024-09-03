@@ -1,0 +1,12 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Launch Chrome on localhost",
+        "type": "chrome",
+        "request": "launch",
+        "url": "http://localhost:5500/index.html",  // Replace 8080 with your chosen port
+        "webRoot": "${workspaceFolder}"
+      }
+    ]
+  }
