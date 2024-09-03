@@ -4,26 +4,43 @@ const projectTitles = document.querySelector('.projectTitles');
 const projectDescriptions = document.querySelector('.description');
 const projectPhotos = document.querySelector('.photos');
 const dialogEl = document.querySelector('dialog');
-const cloaseDialog = document.querySelector('.close');
+const closeDialogBtn = document.querySelector('.close');
 
 let projectsCount = 0;
 let currentProject = 1;
 let timeoutActive = false;
 
-projectPhotos.querySelectorAll('.slide').forEach(slide=>{
+dialogEl.querySelector('img').style.display = "none";
+dialogEl.querySelector('video').style.display = "none";
+
+
+projectPhotos.querySelectorAll('.slide').forEach(slide => {
     const mainPhoto = slide.querySelector('.mainPhoto');
+    const video = slide.querySelector('.video');
 
-    slide.querySelectorAll('div:not(.mainPhoto)').forEach(d =>{
-        d.addEventListener('click', c=>{
-            mainPhoto.querySelector('img').src = d.querySelector('img').src;
-            mainPhoto.querySelector('img').title = d.querySelector('img').title;
+
+    if (mainPhoto != null) {
+        slide.querySelectorAll('div:not(.mainPhoto)').forEach(d => {
+            d.addEventListener('click', c => {
+                mainPhoto.querySelector('img').src = d.querySelector('img').src;
+                mainPhoto.querySelector('img').title = d.querySelector('img').title;
+            });
         });
-    });
 
-    mainPhoto.addEventListener('click', c=>{
-        dialogEl.querySelector('div img').src = mainPhoto.querySelector('img').src;
-        dialogEl.showModal();
-    });
+        mainPhoto.addEventListener('click', c => {
+            dialogEl.querySelector('img').style.display = "inline";
+            dialogEl.querySelector('div img').src = mainPhoto.querySelector('img').src;
+
+            dialogEl.showModal();
+        });
+    } else {
+        video.querySelector('video').addEventListener('click', c => {
+            dialogEl.querySelector('video').style.display = "inline";
+            dialogEl.querySelector('video').load();
+            dialogEl.querySelector('div video source').src = video.querySelector('source').getAttribute('src');
+            dialogEl.showModal();
+        });
+    }
 })
 
 projectTitles.querySelectorAll('div').forEach(d => {
@@ -59,9 +76,24 @@ arrowNext.addEventListener('click', c => {
     }
 })
 
-cloaseDialog.addEventListener('click', c =>{
-    dialogEl.close();
+closeDialogBtn.addEventListener('click', c => {
+    closeDialog();
 })
+
+dialogEl.addEventListener('close', c=>{
+    closeDialog();
+})
+
+function closeDialog(){
+    dialogEl.querySelector('img').style.display = "none";
+    dialogEl.querySelector('video').style.display = "none";
+
+    if(dialogEl.querySelector('source').src !== ""){
+        dialogEl.querySelector('video').pause();
+    }
+
+    dialogEl.close();
+}
 
 function showCurrentInfo() {
     let counter = 1;
@@ -86,9 +118,9 @@ function showCurrentInfo() {
     })
 }
 
-function showCurrentPhotos(){
+function showCurrentPhotos() {
     let counter = 1;
-    projectPhotos.querySelectorAll('.slide').forEach(slide =>{
+    projectPhotos.querySelectorAll('.slide').forEach(slide => {
 
         if (counter === currentProject) {
             slide.style.opacity = "0";
