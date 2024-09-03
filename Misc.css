@@ -1,4 +1,4 @@
-body{
+body {
     font-family: Arial, SansSerif, serif;
     font-size: 16px;
     color: #3D52A0;
@@ -10,14 +10,14 @@ body{
     background: transparent;
 }
 
-header{
+header {
     height: 14vh;
     display: flex;
     flex-direction: column;
     gap: 5px;
 }
 
-logo{
+logo {
     background-image: url("Images/LogoPlaceholder.jpg");
     background-size: contain;
     height: 100%;
@@ -25,41 +25,41 @@ logo{
     margin-inline: 25vw
 }
 
-headerButtons{
+headerButtons {
     display: flex;
     flex-direction: column;
     gap: 1px;
 }
 
-a.selectPage{
+a.selectPage {
     text-decoration: none;
     color: white;
     background-color: #ADBBDA;
-    flex:1;
+    flex: 1;
     border: .2px solid black;
     border-radius: 2px;
     /*transition: padding 0.1s;*/
 }
 
-a.selectPage:hover{
+a.selectPage:hover {
     background-color: #a3b1d1;
     /*padding: 2px;*/
 }
 
-button:hover{
+button:hover {
     cursor: pointer;
 }
 
-.infoTags{
+.infoTags {
     font-size: xx-small;
     color: lightgray;
 }
 
-.currentPage{
+.currentPage {
     background-color: #93a1c2;
 }
 
-.explanationTag{
+.explanationTag {
     display: inline-block;
     color: white;
     background-color: rgb(128, 128, 128);
@@ -71,15 +71,15 @@ button:hover{
     padding: 0;
 }
 
-.tooltip{
+.tooltip {
     display: inline-block;
     position: absolute;
 }
 
-.tooltip .tooltipText{
+.tooltip .tooltipText {
     visibility: hidden;
-    background-color: rgba(128, 128, 128,0.7);
-    color: rgba(255,255,255, 0.7);
+    background-color: rgba(128, 128, 128, 0.7);
+    color: rgba(255, 255, 255, 0.7);
     /*position: relative;*/
     /*margin-left: -50%;*/
     /*top: -20px;*/
@@ -88,24 +88,24 @@ button:hover{
     padding: 5px;
 }
 
-.tooltip:hover{
+.tooltip:hover {
     cursor: pointer;
 }
 
-.tooltip:hover .tooltipText{
+.tooltip:hover .tooltipText {
     visibility: visible;
     font-size: small;
 }
 
-.noDisplay{
-    display: none!important;
+.noDisplay {
+    display: none !important;
 }
 
-.pcOnly{
-   display: none;
+.pcOnly {
+    display: none;
 }
 
-.phoneOnly{
+.phoneOnly {
     display: block;
 }
 
@@ -117,21 +117,28 @@ button:hover{
 
 .close {
     cursor: pointer;
-    position: fixed;
-    top: 5vh;
-    left: 95.5vw;
-    padding: 12px 16px;
+    position: absolute;
+    top: 75px;
+    left: 90vw;
+    padding: 8px 12px;
     color: white;
     font-weight: bold;
-    font-size: 50px;
-    transform: translate(0%, -50%);
+    font-size: 32px;
 }
 
-.close:hover {background: #bbb;}
+.close:hover {
+    background: #bbb;
+}
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
 
-    header{
+    .close {
+        top: 120px;
+        left: 95vw;
+        padding: 12px 16px;
+    }
+
+    header {
         height: 8vh;
         position: sticky;
         top: 0;
@@ -139,7 +146,7 @@ button:hover{
         padding-block: 15px;
     }
 
-    headerButtons{
+    headerButtons {
         flex-direction: row;
         margin-inline: 10vw;
         height: 4vh;
@@ -149,21 +156,21 @@ button:hover{
     main {
         margin-inline: 8.5vw;
     }
+
     /*body{*/
     /*    padding-inline: 8.5vw;*/
     /*}*/
-
-    .pcOnly{
+    .pcOnly {
         display: block;
     }
 
-    .phoneOnly{
-        display: none!important;
+    .phoneOnly {
+        display: none !important;
     }
 }
 
-@media screen and (min-width: 1920px){
-    body{
+@media screen and (min-width: 1920px) {
+    body {
         font-size: large;
     }
 }

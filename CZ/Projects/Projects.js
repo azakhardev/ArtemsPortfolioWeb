@@ -24,20 +24,28 @@ projectPhotos.querySelectorAll('.slide').forEach(slide => {
             d.addEventListener('click', c => {
                 mainPhoto.querySelector('img').src = d.querySelector('img').src;
                 mainPhoto.querySelector('img').title = d.querySelector('img').title;
+
+                if(window.innerWidth <= 1285){
+                    dialogEl.querySelector('img').style.display = "inline";
+                    dialogEl.querySelector('div img').src = d.querySelector('img').src;
+                    dialogEl.style.height = "100vh";
+                    dialogEl.showModal();
+                }
             });
         });
 
         mainPhoto.addEventListener('click', c => {
             dialogEl.querySelector('img').style.display = "inline";
             dialogEl.querySelector('div img').src = mainPhoto.querySelector('img').src;
-
+            dialogEl.style.height = "100vh";
             dialogEl.showModal();
         });
     } else {
         video.querySelector('video').addEventListener('click', c => {
             dialogEl.querySelector('video').style.display = "inline";
-            dialogEl.querySelector('video').load();
             dialogEl.querySelector('div video source').src = video.querySelector('source').getAttribute('src');
+            dialogEl.querySelector('video').load();
+            dialogEl.style.height = "100vh";
             dialogEl.showModal();
         });
     }
@@ -87,6 +95,7 @@ dialogEl.addEventListener('close', c=>{
 function closeDialog(){
     dialogEl.querySelector('img').style.display = "none";
     dialogEl.querySelector('video').style.display = "none";
+    dialogEl.style.height = "0";
 
     if(dialogEl.querySelector('source').src !== ""){
         dialogEl.querySelector('video').pause();
