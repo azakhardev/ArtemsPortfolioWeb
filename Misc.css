@@ -130,7 +130,28 @@ button:hover {
     background: #bbb;
 }
 
+dialog {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    visibility: hidden;
+    background: rgba(0, 0, 0, 0.5);;
+    border: none;
+}
+
+dialog[open] {
+    visibility: visible;
+    opacity: 1;
+}
+
 @media screen and (min-width: 768px) {
+
+    a.selectPage{
+        padding-block: 5px;
+    }
 
     header {
         height: 8vh;

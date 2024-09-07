@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pracovní zkušenosti - Fibretel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../Misc.css">
+    <link rel="stylesheet" href="Fibretel.css">
+</head>
+<body>
+
+<main>
+
+    <div class="video">
+        <video controls loop poster="../../../Images/MyJobsPhotos/Fibretel_HomePage.png">
+            <source src="../../../Videos/Fibretel.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="descriptionPart">
+        <p class="mainDescription">Toto byl můj první web, který jsem dělal pro nějakou organizaci/Fyzickou osobu. Musel
+            jsem vytvořit web, na
+            kterém by byl vidět přehled všech služeb dané firmy a také obecnosti, jako domovská stránka, kontakt atd...
+            ke všemu jsem to musel nějak hezky nadesignovat a dbát obzvlášť pozor na responsivitu. Stránky Hlavní, O Nás
+            a Kontakt jsou pouze šablony - mají placeholdery pro fotky a text, který by mi firma poslala. Tyto elementy
+            se nemohou upravovat uživatelsky. Dále web také obsahoval administrátorské rozhraní - pro správu poptávek a
+            přidávání nových služeb. Administrátoři se dělili na dvě úřovně: nadřízení a podřízení. Nadřízený
+            administrátor může spravovat jiné účty administrátorů a také logy - v těch může najít záznamy o úkonech
+            administrátorů. Do administrátorského rozhraní se uživatel mohl dostat přes odkaz v patičce (Ta je
+            také prázdná, jelikož je to pouze šablona).Tvorba celého webu mi zabrala 50-70 hodin.</p>
+    </div>
+    <div class="descriptionPart">
+        <h3>Využité Technologie:</h3>
+        <div class="card">
+            <div style="width: 100%">
+                <h4>Databáze: </h4>
+            </div>
+            <p>
+                Pro uložení dat jsem využil lokální MySQL server, který se spouštěl přes XAMPP. Struktura a relace
+                vypadaly takto:
+            </p>
+            <div style="width: 80%; margin-inline: 10%  ">
+                <img src="../../../Images/MyJobsPhotos/Fibretel_db_Structure.png">
+            </div>
+            <p>Vím, že bych mohl v tabulce Requests mít Service jako cizí klíč, který by odkazoval na Id v tabulce
+                Service.
+                Došlo mi to ale pozdě, takže jsem nechal datový typ jako obyčejný string.</p>
+        </div>
+        <div class="card">
+            <div style="width: 100%">
+                <h4>Mail server: </h4>
+            </div>
+            <p>
+                Abych otestoval mail service, který jsem impementoval do tohoto programu, jsem využil Papercut SMTP,
+                který běžel na localhostu na portu 25. Jelikož na Papercut serveru nelze vytvořit uživatelský účet
+                (aspoň o tom nevím),
+                tak jsem v kódu, který měl na starosti odesílání emailu, využil vymyšlenou adresu uživatele bez hesla:
+            </p>
+            <div style="width: 80%; margin-inline: 10%  ">
+                <img src="../../../Images/MyJobsPhotos/Fibretel_Email.png">
+            </div>
+            <p>Pro odesílání emailů jsem využil knihovnu System.Net.Mail, která už byla rovnou nainstalovaná v mém
+                ASP.NET projektu od Microsoftu. SSL bylo vypnuté, jelikož nemám žádný ověřovací certifikát od CA.</p>
+        </div>
+        <div class="card">
+            <div style="width: 100%">
+                <h4>Autentizace: </h4>
+            </div>
+            <p>
+                Pro autentizaci jsem využil atributy, které "chránily" přístup do administrátorského prostředí. První
+                atribut zjišťoval zda je člověk přihlášen, pokud ne, tak byl přesměrován na přihlašovací stránku. Druhý
+                atribut zjišťoval, zda je uživatel nadřízený administrátor, pokud ne, odhlašoval ho a vracel na
+                přihlašovací stránku.
+            </p>
+            <div style="width: 80%; margin-inline: 10%  ">
+                <img src="../../../Images/MyJobsPhotos/Fibretel_Authorization_Attribute.png">
+            </div>
+        </div>
+        <div class="card">
+            <div style="width: 100%">
+                <h4>GitHub: </h4>
+            </div>
+            <p>
+                Tento projekt jsem měl uložen jako repozitář na GitHub. Manipuloval jsem s nim přes GitHub Desktop.
+                Tudíž mám zkušenosti s Push, Pull a Fetch (toto
+                jsme dělali i ve školních projektech)... Nové Branche jsem dělat nezkoušel, takže s tím zkušenosti
+                nemám (rozumím ale tomu, jak to funguje). Namísto toho jsem ale pracoval i s Resetem a Revertem, takže o
+                těchto dvou funkcíh mám i praktický přehled.
+            </p>
+            <div style="width: 80%; max-height: 60vh; overflow-y: scroll; margin-inline: 10%  ">
+                <img src="../../../Images/MyJobsPhotos/Fibretel_GitHub_History.png">
+            </div>
+        </div>
+    </div>
+
+    <dialog>
+        <div style="width: 90vw; overflow-y: scroll;height: 90vh; color: rgba(1,1,1,1);">
+            <img src="">
+        </div>
+    </dialog>
+
+</main>
+
+<script src="Fibretel.js"></script>
+<!--<script src="../../../Authenticator.js"></script>-->
+</body>
+</html>
