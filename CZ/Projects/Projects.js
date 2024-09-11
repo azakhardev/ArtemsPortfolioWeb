@@ -10,6 +10,8 @@ let projectsCount = 0;
 let currentProject = 1;
 let timeoutActive = false;
 
+dialogEl.style.height = "0px";
+
 dialogEl.querySelector('img').style.display = "none";
 dialogEl.querySelector('video').style.display = "none";
 
@@ -95,7 +97,7 @@ dialogEl.addEventListener('close', c=>{
 function closeDialog(){
     dialogEl.querySelector('img').style.display = "none";
     dialogEl.querySelector('video').style.display = "none";
-    dialogEl.style.height = "0";
+    dialogEl.style.height = "0px";
 
     if(dialogEl.querySelector('source').src !== ""){
         dialogEl.querySelector('video').pause();
