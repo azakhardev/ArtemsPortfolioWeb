@@ -1,4 +1,3 @@
-// const formEl = document.querySelector('form');
 const nameInput = document.querySelector('#username');
 const passwordInput = document.querySelector('#password');
 const button = document.querySelector('button');
@@ -6,6 +5,7 @@ const button = document.querySelector('button');
 button.addEventListener('click', async c => {
     c.preventDefault();
 
+    //Přišel jsi na moje loginování, dobře ty (nefunguje API :( )
     if(nameInput.value === "guest" && passwordInput.value === "0000"){
         sessionStorage.setItem("logged", "true");
         window.location.href = 'CZ/Home/Home.html';

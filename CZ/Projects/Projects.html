@@ -46,6 +46,9 @@
             <div class="vcenter">
                 Explore City
             </div>
+            <div class="vcenter">
+                Mobilní Quiz Hra
+            </div>
         </div>
         <buttons>
             <button id="btnPrev">Předchozí</button>
@@ -228,6 +231,25 @@
                     Podrobnější funkcionalitu můžete shlédnout ve videoukázce:
                 </p>
             </div>
+            <div class="vcenter noDisplay">
+                <p>
+                    Toto je můj první větší projekt ve frameworku Flutter, který využívá programovací jazyk
+                    Dart.<br><br>
+                    Pro generaci otázek a odpovědí na ně, jsem využil externí API, které je určeno pro vzdělávací účely.
+                    Můžete ho najít na tomto odkazu: <a href="https://opentdb.com/api_config.php">Trivia API</a>.
+                    Databáze otázek je veřejně dostupná a kdokoli tam může přidat své otázky (nutna registrace).<br><br>
+                    Na hlavní stránce aplikace je formulář, kterým nastavujeme otázky, které dostaneme. Jak to funguje?
+                    Dle výběru uživatele se nastaví parametry, které se předají k URL cestě a následně se zavolá GET na
+                    API. <br> <br>
+                    Po spuštění hry, se uživateli budou postupně zobrazovat otázky a odpovědi na ně (buďto Ano/Ne, nebo
+                    výběr z více možností v závislosti na tom, jak nastavil hru). Na každou odpověď má hráč 20 vteřin -
+                    čas se zobrauje v horní části pod AppBarem jako modrý ProgressBar. Pokud do té doby nestihne
+                    odpovědět, tak se zobrazí další otázka a odečte se 5 bodů. Při výběru špatné odopvědi se vybarví
+                    červeně a odečte se 5 bodů. Při správné odpovědi se vybarví zeleně a přičte se 10 bodů.<br><br>
+                    Po zodpovězení na všechny otázky se zobrazí obrazovka s výsledky. Z této obrazokvy se hráč může
+                    pouze vrátit domů a začít novou hru.
+                </p>
+            </div>
         </div>
         <div class="photos">
             <div class="slide">
@@ -325,6 +347,38 @@
                     <video poster="../../Images/MyProjectsPhotos/ExploreCity_Cities.png">
                         <source src="../../Videos/ExploreCity.mp4" type="video/mp4">
                     </video>
+                </div>
+            </div>
+
+            <div class="slide">
+                <div class="mainPhoto">
+                    <img src="../../Images/MyProjectsPhotos/FlutterGame_Main.png">
+                </div>
+
+                <div>
+                    <img src="../../Images/MyProjectsPhotos/FlutterGame_Main.png" title="Quiz Hlavní Stránka">
+                </div>
+
+                <div>
+                    <img src="../../Images/MyProjectsPhotos/FlutterGame_Main_Setup.png" title="Quiz Nastavení Hry">
+                </div>
+
+                <div>
+                    <img src="../../Images/MyProjectsPhotos/FlutterGame_Gameplay.png" title="Quiz Otázky">
+                </div>
+
+                <div>
+                    <img src="../../Images/MyProjectsPhotos/FlutterGame_Gameplay_Correct.png"
+                         title="Quiz Správná Odpověď">
+                </div>
+
+                <div>
+                    <img src="../../Images/MyProjectsPhotos/FlutterGame_Gameplay_Incorrect.png"
+                         title="Quiz Špatná Odpověď">
+                </div>
+
+                <div>
+                    <img src="../../Images/MyProjectsPhotos/FlutterGame_Results.png" title="Quiz Výsledky">
                 </div>
             </div>
         </div>
