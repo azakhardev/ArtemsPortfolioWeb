@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 form {
     margin-top: 25px;
     display: grid;
@@ -27,6 +29,14 @@ button{
     grid-column: 2/3;
 }
 
+ol li{
+    margin-block: 15px;
+    color: #7091E6;
+    font-size: 26px;
+    font-weight: bold;
+    font-family: "Monsterrat", "SansSerif", serif;
+}
+
 textarea {
     resize: none;
     padding: 5px;
@@ -45,6 +55,36 @@ textarea {
 
 @media screen and (min-width: 768px) {
     main {
+        margin-inline: 15%;
+    }
+
+    form {
+        margin-inline: 10%;
+    }
+
+    ol{
+        list-style: none;
+    }
+
+    ol li{
+        margin-block: 20px;
+        text-align: center;
+        font-size: 30px;
+    }
+}
+
+
+@media screen and (min-width: 1920px) {
+    main {
         margin-inline: 30%;
+    }
+
+    form {
+        margin-inline: 0;
+    }
+
+    ol li{
+        margin-block: 25px;
+        font-size: 40px;
     }
 }

@@ -15,14 +15,7 @@ header {
     display: flex;
     flex-direction: column;
     gap: 5px;
-}
-
-logo {
-    background-image: url("Images/LogoPlaceholder.jpg");
-    background-size: contain;
-    height: 100%;
-    min-height: 2vh;
-    margin-inline: 25vw
+    z-index: 1  ;
 }
 
 headerButtons {
@@ -38,12 +31,10 @@ a.selectPage {
     flex: 1;
     border: .2px solid black;
     border-radius: 2px;
-    /*transition: padding 0.1s;*/
 }
 
 a.selectPage:hover {
     background-color: #a3b1d1;
-    /*padding: 2px;*/
 }
 
 button:hover {
@@ -80,9 +71,6 @@ button:hover {
     visibility: hidden;
     background-color: rgba(128, 128, 128, 0.7);
     color: rgba(255, 255, 255, 0.7);
-    /*position: relative;*/
-    /*margin-left: -50%;*/
-    /*top: -20px;*/
     text-align: center;
     border-radius: 6px;
     padding: 5px;
@@ -148,6 +136,16 @@ dialog[open] {
 }
 
 @media screen and (min-width: 768px) {
+
+    logo {
+        background-image: url("Images/PortfolioLogo.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 100%;
+        min-height: 2vh;
+        margin-inline: 25vw;
+        background-position: center;
+    }
 
     a.selectPage{
         padding-block: 5px;
