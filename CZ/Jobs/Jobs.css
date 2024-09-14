@@ -35,6 +35,11 @@ a{
     padding: 10px;
 }
 
+.job:hover{
+    background-color: #c4c4c4;
+    border: 0.1px solid gray;
+}
+
 .icon{
     flex:1;
     max-width: 100px;
