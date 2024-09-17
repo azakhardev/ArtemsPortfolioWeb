@@ -23,6 +23,7 @@ form{
     flex-direction: column;
     gap: 5px;
     margin-inline: 3%;
+    padding-block: 10%;
 }
 
 input {
@@ -63,12 +64,21 @@ button {
     }
 }
 
-@media screen and (min-width: 1910px) {
-    h2{
-        font-size: 42px;
+@media screen and (min-width: 1024px) {
+    main{
+        margin-inline: 30%;
     }
+}
+
+@media screen and (min-width: 1440px) {
     main{
         margin-inline: 40%;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    h2{
+        font-size: 42px;
     }
     form{
         margin-inline: 10%;

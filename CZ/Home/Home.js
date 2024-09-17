@@ -1,11 +1,14 @@
 const download = document.querySelector('.downloadButton');
 
+
+console.log(window.innerWidth)
 loadHtml2PdfLibrary();
 
 download.addEventListener('click', c => {
-    if (window.innerWidth < 1920) {
+    if (window.innerWidth < 1440) {
         alert('Stahování je povoleno pouze z počítače nebo laptopu');
     } else {
+        window.scrollTo({top: 0,});
         downloadPDF();
     }
 })
