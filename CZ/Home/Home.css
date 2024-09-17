@@ -43,6 +43,19 @@ progress {
     display: none;
 }
 
+.downloadButton{
+    background-color: #7091E6;
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 50%;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+    visibility: hidden;
+}
+
 @media screen and (min-width: 768px) {
 
     main {
@@ -68,4 +81,10 @@ progress {
     .pcOnly{
         display: block;
     }
+}
+
+@media screen and (min-width: 1920px) {
+ .downloadButton{
+     visibility: visible;
+ }
 }

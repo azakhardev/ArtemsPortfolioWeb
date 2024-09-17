@@ -63,7 +63,7 @@ button {
     }
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1910px) {
     h2{
         font-size: 42px;
     }
