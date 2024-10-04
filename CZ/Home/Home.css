@@ -39,24 +39,28 @@ progress {
     height: 20px;
 }
 
-.pcOnly{
+.pcOnly {
     display: none;
 }
 
-.downloadButton{
+.downloadButton {
     background-color: #7091E6;
     width: 40px;
     height: 40px;
     padding: 10px;
     border-radius: 50%;
     position: fixed;
-    right: 20px;
-    bottom: 20px;
     cursor: pointer;
-    visibility: hidden;
+    right: 40px;
+    bottom: 20px;
+    /*visibility: hidden;*/
 }
 
 @media screen and (min-width: 768px) {
+
+    .downloadButton {
+        right: 20px;
+    }
 
     main {
         margin: 2vh 0 1vh;
@@ -73,18 +77,19 @@ progress {
         display: flex;
         flex-direction: row;
     }
+
     #bio {
         grid-row: 1/3;
         grid-column: 2/3;
     }
 
-    .pcOnly{
+    .pcOnly {
         display: block;
     }
 }
 
 @media screen and (min-width: 1440px) {
- .downloadButton{
-     visibility: visible;
- }
+    /*.downloadButton{*/
+    /*    visibility: visible;*/
+    /*}*/
 }
