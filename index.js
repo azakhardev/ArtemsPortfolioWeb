@@ -2,6 +2,7 @@ const nameInput = document.querySelector('#username');
 const passwordInput = document.querySelector('#password');
 const button = document.querySelector('button');
 
+
 button.addEventListener('click', async c => {
     c.preventDefault();
 
