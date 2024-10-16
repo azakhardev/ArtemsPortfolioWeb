@@ -1,6 +1,6 @@
 main {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     margin: 3vh 0 1vh;
     gap: 5px;
 }
@@ -54,6 +54,10 @@ progress {
     right: 40px;
     bottom: 20px;
     /*visibility: hidden;*/
+}
+.downloadButton:hover {
+    background-color: #6286E3;
+
 }
 
 @media screen and (min-width: 768px) {
