@@ -14,16 +14,13 @@ const tooltipInterval = setInterval(() => {
 }, 1500)
 
 button.addEventListener('mouseover', (e) => {
-    if (!buttonShakeSet) {
-        tooltip.style.visibility = 'hidden';
-        clearInterval(tooltipInterval);
-        buttonInterval = setInterval(() => {
-            button.classList.toggle('buttonShake');
-        }, 7500)
-        buttonShakeSet = true;
-    }
+    if (!buttonShakeSet)
+        setShake();
 })
-
+tooltip.addEventListener('mouseover', (e) => {
+    if (!buttonShakeSet)
+        setShake();
+})
 button.addEventListener('click', (e) => {
     if (buttonInterval) {
         clearInterval(buttonInterval);
@@ -31,6 +28,16 @@ button.addEventListener('click', (e) => {
             button.style.visibility = 'hidden';
             clearTimeout(invisibleTimeout);
         }, 1500)
-
     }
 })
+
+function setShake() {
+
+    tooltip.style.visibility = 'hidden';
+    clearInterval(tooltipInterval);
+    buttonInterval = setInterval(() => {
+        button.classList.toggle('buttonShake');
+    }, 7500)
+    buttonShakeSet = true;
+
+}
