@@ -1,7 +1,8 @@
 main {
     display: flex;
     flex-direction: column-reverse;
-    margin: 3vh 0 1vh;
+    margin-top: 3vh;
+    margin-bottom: 1vh;
     gap: 5px;
 }
 
@@ -43,24 +44,25 @@ progress {
     display: none;
 }
 
-#download{
+#download {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: fixed;
-    right: 40px;
+    right: 20px;
     bottom: 20px;
 }
 
-#downloadButtonTooltip{
+#downloadButtonTooltip {
     width: 100px;
     position: relative;
     top: -10px;
     transition: 1.5s;
     opacity: 0;
 }
-#downloadButtonTooltip img{
+
+#downloadButtonTooltip img {
     object-fit: contain;
     max-width: 100%;
     opacity: 0.8;
@@ -80,16 +82,59 @@ progress {
     background-color: #6286E3;
 }
 
-.buttonShake{
+.buttonShake {
     animation: buttonShake 2s;
 }
 
-@keyframes buttonShake{
+dialog {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: -170%;
+    height: 40%;
+    width: 90vw;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: #7091E6;
+    transition: ease-in-out, 1s;
+}
+
+dialog h2{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#dialogWrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.icon {
+    border: 1px solid black;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: #EDE8F5;
+    width: 120px;
+    height: 120px;
+}
+
+.icon:hover{
+    background-color: #dbd5e3;
+}
+
+@keyframes buttonShake {
     0%, 100% {
         transform: rotate(0deg) translateY(0px); /* Start and end at original position */
     }
     5%, 15%, 25%, 35%, 45%, 55%, 65%, 75%, 85%, 95% {
-        transform: rotate(10deg)  translateY(-20px); /* Slight shake with 10px up */
+        transform: rotate(10deg) translateY(-20px); /* Slight shake with 10px up */
     }
     10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90% {
         transform: rotate(-10deg) translateY(-20px); /* Shake down slightly at intervals */
@@ -98,12 +143,29 @@ progress {
 
 @media screen and (min-width: 768px) {
 
+    dialog {
+        width: 50%;
+    }
+
+    dialog h2{
+        margin-bottom: 80px;
+    }
+
+    .icon {
+        width: 150px;
+        height: 150px;
+    }
+
+    #dialogWrapper {
+        gap: 70px;
+    }
+
     .downloadButton {
         right: 20px;
     }
 
     main {
-        margin: 2vh 0 1vh;
+        margin-top: 2vh !important;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 2fr;
@@ -127,13 +189,20 @@ progress {
         display: block;
     }
 
-    #downloadButtonTooltip{
+    #downloadButtonTooltip {
         width: 150px;
     }
 }
 
 @media screen and (min-width: 1440px) {
-    /*.downloadButton{*/
-    /*    visibility: visible;*/
-    /*}*/
+    dialog {
+        width: 35%;
+    }
+    dialog h2{
+        margin-bottom: 110px;
+    }
+
+    #dialogWrapper {
+        gap: 80px;
+    }
 }

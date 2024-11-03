@@ -1,5 +1,8 @@
 const button = document.querySelector('#downloadButton');
 const tooltip = document.querySelector('#downloadButtonTooltip');
+const dialog = document.querySelector('dialog');
+const icons = document.querySelectorAll('.icon');
+
 let tooltipOpacityMax = false;
 let buttonShakeSet = false;
 let buttonInterval = null;
@@ -24,20 +27,39 @@ tooltip.addEventListener('mouseover', (e) => {
 button.addEventListener('click', (e) => {
     if (buttonInterval) {
         clearInterval(buttonInterval);
-        const invisibleTimeout = setTimeout(() => {
-            button.style.visibility = 'hidden';
-            clearTimeout(invisibleTimeout);
-        }, 1500)
+    }
+    dialog.showModal();
+    dialog.style.top = "0%";
+})
+
+document.addEventListener('keydown', (e) => {
+    if (e.key === "Escape" && dialog.open) {
+        e.preventDefault();
+
+        closeDialog();
     }
 })
 
-function setShake() {
+icons.forEach((i) => {
+    i.addEventListener('click', () => {
+        closeDialog();
+    })
+})
 
+function setShake() {
     tooltip.style.visibility = 'hidden';
     clearInterval(tooltipInterval);
     buttonInterval = setInterval(() => {
         button.classList.toggle('buttonShake');
     }, 7500)
     buttonShakeSet = true;
+}
 
+function closeDialog() {
+    dialog.style.top = "-170%";
+
+    const dialogTimeout = setTimeout(() => {
+        dialog.close();
+        clearTimeout(dialogTimeout);
+    }, 1000)
 }

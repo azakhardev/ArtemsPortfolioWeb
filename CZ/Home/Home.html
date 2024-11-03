@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Ar. Z.</title>
-    <link rel="stylesheet" href="Home.css">
     <link rel="stylesheet" href="../../Misc.css">
+    <link rel="stylesheet" href="Home.css">
     <link rel="icon" type="image/x-icon" href="../../Images/Favicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>-->
@@ -79,7 +79,7 @@
             <li class="MainLi">
                 React
                 <ul>
-                    <li>Function & Class Components, Props, Context</li>
+                    <li>Function & Class Components, Props, Context, Redux</li>
                     <li>Conditional Rendering, Dynamic Elements, State Deriving</li>
                     <li>Hooks - State, Ref, Effect, Callback, Custom</li>
                     <li>Styling - Inline, Module, Styled Components, Tailwind</li>
@@ -114,7 +114,7 @@
                 Ostatní
                 <ul>
                     <li>Word, Excel, (Access)</li>
-                    <li>Photoshop, Figma, Canva, UML</li>
+                    <li>Photoshop, Figma, Canva, UML, GitHub</li>
                     <li>Hardware počítače</li>
                 </ul>
             </li>
@@ -232,11 +232,24 @@
         <img src="../../Images/DownloadCV.png">
     </div>
     <div id="downloadButton" class="vcenter" title="Stáhnout CV ve formátu .docx">
-        <a href="../../Public/CV.docx" download>
-            <box-icon type='solid' name='download'></box-icon>
-        </a>
+        <box-icon type='solid' name='download'></box-icon>
     </div>
 </div>
+
+<dialog>
+    <h2>V jakém formátu chcete CV stáhnout?</h2>
+    <div id="dialogWrapper" class="vcenter">
+        <a class="icon vcenter" href="../../Public/CV.docx" download>
+            <box-icon size="60px" name='file-doc' type='solid'></box-icon>
+            <p>Word</p>
+        </a>
+
+        <a class="icon vcenter" href="../../Public/CV.pdf" download>
+            <box-icon size="60px" name='file-pdf' type='solid'></box-icon>
+            <p>PDF</p>
+        </a>
+    </div>
+</dialog>
 
 <script src="Home.js"></script>
 <script src="../../Authenticator.js"></script>
