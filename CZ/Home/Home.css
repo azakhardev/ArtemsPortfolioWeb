@@ -166,6 +166,7 @@ dialog h2{
 
     main {
         margin-top: 2vh !important;
+        margin-inline: 0;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 2fr;
@@ -195,9 +196,14 @@ dialog h2{
 }
 
 @media screen and (min-width: 1440px) {
+    main{
+        margin-inline: 8.5vw;
+    }
+
     dialog {
         width: 35%;
     }
+
     dialog h2{
         margin-bottom: 110px;
     }
