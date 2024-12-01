@@ -2,6 +2,8 @@ const button = document.querySelector('#downloadButton');
 const tooltip = document.querySelector('#downloadButtonTooltip');
 const dialog = document.querySelector('dialog');
 const icons = document.querySelectorAll('.icon');
+const news = document.querySelector('#news');
+const closeNews = document.querySelector('#newsClose');
 
 let tooltipOpacityMax = false;
 let buttonShakeSet = false;
@@ -30,6 +32,10 @@ button.addEventListener('click', (e) => {
     }
     dialog.showModal();
     dialog.style.top = "0%";
+})
+
+closeNews.addEventListener('click', c => {
+    news.style.top = "-200px";
 })
 
 document.addEventListener('keydown', (e) => {
@@ -63,3 +69,7 @@ function closeDialog() {
         clearTimeout(dialogTimeout);
     }, 1000)
 }
+
+setTimeout(() => {
+    news.style.top = "25px";
+}, 1000)
