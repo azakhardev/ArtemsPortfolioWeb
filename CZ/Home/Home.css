@@ -17,6 +17,39 @@ main div {
     padding: 15px;
 }
 
+#news {
+    position: fixed;
+    width: 91%;
+    left: 2.5%;
+    top: -200px;
+    border: 1px solid black;
+    border-radius: 15px;
+    background-color: #EDE8F5;
+    padding: 2%;
+    z-index: 3;
+    transition: all ease-in-out 1.5s, opacity linear 0.5s;
+    opacity: 0.5;
+}
+
+#news:hover{
+    opacity: 1;
+}
+
+#newsClose{
+    position: absolute;
+    top: 15%;
+    right: 2%;
+    cursor: pointer;
+}
+
+#news h3{
+    margin: 0;
+}
+
+#news p{
+    margin-block: 5px;
+}
+
 ul {
     padding-left: 15px;
     margin-top: 5px;
@@ -99,7 +132,7 @@ dialog {
     transition: ease-in-out, 1s;
 }
 
-dialog h2{
+dialog h2 {
     text-align: center;
     margin-bottom: 50px;
 }
@@ -125,7 +158,7 @@ dialog h2{
     height: 120px;
 }
 
-.icon:hover{
+.icon:hover {
     background-color: #dbd5e3;
 }
 
@@ -143,11 +176,17 @@ dialog h2{
 
 @media screen and (min-width: 768px) {
 
+    #news{
+        width: 71%;
+        left: 12.5%;
+        padding: 2%;
+    }
+
     dialog {
         width: 50%;
     }
 
-    dialog h2{
+    dialog h2 {
         margin-bottom: 80px;
     }
 
@@ -196,15 +235,21 @@ dialog h2{
 }
 
 @media screen and (min-width: 1440px) {
-    main{
+    main {
         margin-inline: 8.5vw;
+    }
+
+    #news{
+        width: 48%;
+        left: 25%;
+        padding: 1%;
     }
 
     dialog {
         width: 35%;
     }
 
-    dialog h2{
+    dialog h2 {
         margin-bottom: 110px;
     }
 
