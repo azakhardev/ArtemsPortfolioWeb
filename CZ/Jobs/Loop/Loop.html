@@ -25,8 +25,8 @@
 
     <div style="margin-top: 5px;">
         Kontakty na členy týmu: Adam Dolanský - <a href="https://edems.dev/#contact" target="_blank">Web</a>,
-        Michael Stránský - <a href="https://github.com/stranmi20">GitHub</a>,
-        Dominik Techl - <a href="https://github.com/techldo20">GitHub</a>
+        Michael Stránský - <a href="https://github.com/stranmi20" target="_blank">GitHub</a>,
+        Dominik Techl - <a href="https://github.com/techldo20" target="_blank">GitHub</a>
     </div>
 
     <div class="descriptionPart">
@@ -121,6 +121,68 @@
                 pomocí json souboru, kde každé vlastnosti přiřazujete český a
                 angilcký překlad. Poté se volá hook, který zjistí, jaký jazyk se
                 momentálně používá a podle toho zobrazí příslušný text.
+            </p>
+        </div>
+    </div>
+
+    <div class="descriptionPart">
+        <h3>Proces tvorby:</h3>
+        <div class="card">
+            <div style="width: 100%">
+                <h4>Poskytuntá data:</h4>
+            </div>
+            <p>
+                Níže uvidíte strukturu dat, který nám byl poskytnut k vytvoření této apliace a také samotné zadání ke
+                stažení.
+            </p>
+            <p style="text-align: center; font-weight: bold">
+                Struktura dat:
+            </p>
+            <div style="width: 80%; margin-inline: 10%;">
+                <img src="../../../Images/MyJobsPhotos/Loop_DataStructure.png"/>
+            </div>
+            <p style="text-align: center; font-weight: bold">Endpointy API:</p>
+            <div style="width: 80%; margin-inline: 10%">
+                <img src="../../../Images/MyJobsPhotos/Loop_Endpoints.png"/>
+            </div>
+            <p>Zadání: <a href="../../../Public/DevOps%20Hackathon%202024%20Intro.pdf" target="_blank">Náhled</a></p>
+        </div>
+        <div class="card">
+            <div style="width: 100%">
+                <h4>Fetch dat:</h4>
+            </div>
+            <p>
+                API bylo asi nejtěžší součástí celého projektu. Museli jsme pochopit, jak s sebou jednotlivá data
+                souvisí, a jaké přehledy z nich pak můžeme vytvořit. Také problematickou věcí byly filtry - nevěděli
+                jsme co všechno umí + k tomu někdy vracelo špatná data a měly špatné výchozí nastacení... Z toho důvodu
+                jsme asi 3 krát předělávali naše Modely pro fetch dat, aby to s API komunikovalo tak, jak má. Jediné
+                místo, kde se filtrují data přes clienta je Projects Page - za a) protože se filtruje jejich pořadí dle
+                oblíbenosti a za b) jelikož není jinak možno získat poslední Job pro každý Projekt.
+            </p>
+        </div>
+        <div class="card">
+            <div style="width: 100%">
+                <h4>Filtry:</h4>
+            </div>
+            <p>
+                Poté, co jsme vyřešili, jak na backendu funguje filtrace, tak jsme se pustili do její implementace. Ta
+                nebyla moc náročná a díky knihovně ShadCn jsme dokázali inputy pro filtraci i hezky zobrazit. Adam
+                později dostal dobrý nápad, že by se filtry mohly ukládat do URL, aby se mohly sdílet mezi kolegy -
+                proto po přechodu na stránku pomocí přes odkaz, se nejprve zkontrolují parametry v URL cestě a případně
+                se podle ní nastaví filtry.
+            </p>
+        </div>
+        <div class="card">
+            <div style="width: 100%">
+                <h4>Grafy:</h4>
+            </div>
+            <p>
+                Grafy jsem tvořil především já. Využil jsem k tomu opět knihovu ShadCn. Z každé Komponenty (z kinhovny)
+                pro jednotlivý graf jsem vytvořil vlastní, která byla vysoce upravitelná pomocí props. Tím jsme dosáhli
+                toho, že v případě potřebných změn stačilo přpast jedno slovo a vznikl z toho jiný graf (stejného typu).
+                Také i interface pro předání dat a configů grafům byl navrhnut genericky - proto se mohou předat jaké
+                koliv typy dat a vždy se graf vykreslí správně - data ale musí být ve správném formátu.
+                Vykreslování grafů doprovází i pěkné animace (ty jsou defaultní), což zpříjemňuje práci s nimi.
             </p>
         </div>
     </div>

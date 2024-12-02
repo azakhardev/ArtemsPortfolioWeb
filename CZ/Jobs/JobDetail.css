@@ -78,11 +78,11 @@ dialog img{
 
 @media screen and (min-width: 768px) {
 
-  dialog img{
-    width: auto;
-    object-fit: initial;
-    height: auto;
-  }
+  /*dialog img{*/
+  /*  width: auto;*/
+  /*  object-fit: initial;*/
+  /*  height: auto;*/
+  /*}*/
   .mainDescription {
     margin-top: 40px;
     font-size: 1.3rem;
