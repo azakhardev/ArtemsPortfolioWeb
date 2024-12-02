@@ -1,38 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
+    <meta charset="UTF-8" />
     <title>Pracovní zkušenosti - Loop</title>
-    <link rel="icon" type="image/x-icon" href="../../../Images/Favicon.png">
-    <link rel="stylesheet" href="../../../Misc.css">
-    <link rel="stylesheet" href="../JobDetail.css">
-    <link rel="stylesheet" href="Loop.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
-<main>
-    <div class="video">
-        <video controls loop poster="../../../Images/MyJobsPhotos/Loop_HomePage.png">
-            <source src="../../../Videos/Loop.mp4" type="video/mp4">
+    <link rel="icon" type="image/x-icon" href="../../../Images/Favicon.png" />
+    <link rel="stylesheet" href="../../../Misc.css" />
+    <link rel="stylesheet" href="../JobDetail.css" />
+    <link rel="stylesheet" href="Loop.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <main>
+      <div class="video">
+        <video
+          controls
+          loop
+          poster="../../../Images/MyJobsPhotos/Loop_HomePage.png"
+        >
+          <source src="../../../Videos/Loop.mp4" type="video/mp4" />
         </video>
-    </div>
-    <div class="descriptionPart">
+      </div>
+      <div class="descriptionPart">
         <p class="mainDescription">
-            Loop je aplikace, kterou jsme vyvíjeli v rámci hackathonu české spořitelny 2024 v týmu ze 4 lidí. Já jsem
-            byl vedoucí týmu a podílel jsem se na celkové organizaci práce ale především na tvorbě grafů, tabulek a
-            endpointů. Dále se mnou v týmu byl Adam, Dominik a Michael. Adam byl náš designer – za celkový vzhled
-            aplikace vděčíme právě jemu. Dominik s Michaelem pracovali na endpointech, filtrech, překladu a také trochu
-            na UI. Pro mě, jako i pro Adama, byla tato aplikace první velkou zkušeností s knihovnou React. Dominik s
-            Michaelem tou dobou už 2 měsíce pracovali s Nextem, takže to pro ně bylo o něco jednodušší. Na vývoj této
-            aplikace jsme měli 2 týdny – zadání naleznete níže na stránce. Stručně řečeno, úkolem bylo vytvořit frontend
-            aplikaci pro DevOps České Spořitelny. Využili jsme zde takové technologie jako TypeScript, Vite,
-            TanstackQuery a ShadCn. Snažili jsme vytvořit co nejvíce intuitivní aplikaci s jednoduchým UI a při tom
-            logicky zobrazit poskytnutá data. Přičemž kladli jsme důraz in na CleanCode, aby se aplikace jednodušeji
-            debutovala v budoucnu. Na stránce níže také naleznete rozbor všech klíčových technologií, zajímavých
-            statistik a řešení, které jsme v aplikaci použili.
+          Loop je aplikace, kterou jsme vyvíjeli v rámci hackathonu české
+          spořitelny 2024 v týmu ze 4 lidí. Já jsem byl vedoucí týmu a podílel
+          jsem se na celkové organizaci práce ale především na tvorbě grafů,
+          tabulek a endpointů. Dále se mnou v týmu byl Adam, Dominik a Michael.
+          Adam byl náš designer – za celkový vzhled aplikace vděčíme právě jemu.
+          Dominik s Michaelem pracovali na endpointech, filtrech, překladu a
+          také trochu na UI. Pro mě, jako i pro Adama, byla tato aplikace první
+          velkou zkušeností s knihovnou React. Dominik s Michaelem tou dobou už
+          2 měsíce pracovali s Nextem, takže to pro ně bylo o něco jednodušší.
+          Na vývoj této aplikace jsme měli 2 týdny – zadání naleznete níže na
+          stránce. Stručně řečeno, úkolem bylo vytvořit frontend aplikaci pro
+          DevOps České Spořitelny. Využili jsme zde takové technologie jako
+          TypeScript, Vite, TanstackQuery a ShadCn. Snažili jsme vytvořit co
+          nejvíce intuitivní aplikaci s jednoduchým UI a při tom logicky
+          zobrazit poskytnutá data. Přičemž kladli jsme důraz in na CleanCode,
+          aby se aplikace jednodušeji debutovala v budoucnu. Na stránce níže
+          také naleznete rozbor všech klíčových technologií, zajímavých
+          statistik a řešení, které jsme v aplikaci použili.
         </p>
-    </div>
-</main>
-</body>
+      </div>
+      <div class="descriptionPart">
+        <h3>Využité Technologie:</h3>
+        <div class="card">
+          <div style="width: 100%">
+            <h4>Design:</h4>
+          </div>
+
+          <p>
+            Pro navržení designu aplikace jsme použili knihovnu ShadCn. To nám
+            umožnilu udělat jednoduché inputy, přehledné grafy a také přepínání
+            mezi světlým a tmavým režimem. Přičemž všechny Komponenty z ShadCn
+            byly upraveny dle naších potřeb tak, aby byly jednoduše
+            přepoužitelné - proto se ve většině případů používají naše Custom
+            Komponenty z knihovny ShadCn.
+          </p>
+          <div style="width: 80%; margin-inline: 10%">
+            <img src="../../../Images/MyJobsPhotos/Loop_ShadCN.png" />
+          </div>
+        </div>
+        <div class="card">
+          <div style="width: 100%">
+            <h4>Tanstack Query:</h4>
+          </div>
+          <p>
+            Pro posílání dotazů na endpointy jsme využili knihovnu Tanstack
+            Query. To nám umožnilo caechovat data, čímž jsme docílili vyššího
+            výkonu aplikace. Také nám to pomohlo s dynamickým načítáním - k tomu
+            jsme použili useInfiniteQuery hook. Přičemž každý dotaz se posílá na
+            API splečně s filtry, díky tomu zatěžujeme Frontendovou aplikaci
+            méně, jelikož nemusíme filtrovat všechny data na straně clienta.
+          </p>
+          <div style="width: 80%; margin-inline: 10%">
+            <img src="../../../Images/MyJobsPhotos/Loop_UseInfiniteQuery.png" />
+          </div>
+          <p>
+            "Magie" TanstackQuery nám také umožnila dynamicky zobrazovat data -
+            to je dobře vidět na grafech, že se data automatizují samy.
+          </p>
+        </div>
+        <div class="card">
+          <div style="width: 100%">
+            <h4>Další:</h4>
+          </div>
+          <h5>TypeScript:</h5>
+          <p>
+            TypeScript jsme použili protože byl doporučen a zároveň nám to
+            pomohlo předejí zbytečným chybám z nepozornosti. Sice to bylo více
+            práce vše správně nadefinovat ale myslíme si, že nám to později dost
+            pomohlo.
+          </p>
+          <h5>Autentizace:</h5>
+          <p>
+            Pro autentizaci jsme použili Basic Auth, jelikož to bylo jediná
+            možnost, jak se autorizovat, kterou API poskytovalo. Přihlášení je
+            nutné po každém otevření webu, jelikož je heslo enkryptováno a
+            ukládáno do SessionStorage. Víme, že tato varianta je nebezpečná,
+            jelikož vše probíhá na clientu, ale pro DEMO je toto přihlášní
+            postačující.
+          </p>
+          <h5>Překlad:</h5>
+          <p>
+            Pro překlad jsme použili knihovnu react-i18next. To se provádí
+            pomocí json souboru, kde každé vlastnosti přiřazujete český a
+            angilcký překlad. Poté se volá hook, který zjistí, jaký jazyk se
+            momentálně používá a podle toho zobrazí příslušný text.
+          </p>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>

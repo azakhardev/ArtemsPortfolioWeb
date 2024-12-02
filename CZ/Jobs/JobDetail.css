@@ -1,93 +1,97 @@
-main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: black;
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black;
 }
 
-.mainDescription{
-    margin-top: 10px;
-    text-align: justify;
-    font-size: 1.1rem;
-    font-weight: bold;
-    font-family: "Arial Rounded MT Bold", serif;
+.mainDescription {
+  margin-top: 10px;
+  text-align: justify;
+  font-size: 1.1rem;
+  font-weight: bold;
+  font-family: "Arial Rounded MT Bold", serif;
 }
 
-.descriptionPart{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
+.descriptionPart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }
 
-h3{
-    margin-bottom: 0;
+h3 {
+  margin-bottom: 0;
 }
 
-h4{
-    margin-top: 0;
+h4 {
+  margin-top: 0;
 }
 
-.card{
-    border: 1px solid #3D52A0;
-    background-color: #EDE8F5;
-    border-radius: 15px;
-    padding: 10px;
+.card {
+  border: 1px solid #3d52a0;
+  background-color: #ede8f5;
+  border-radius: 15px;
+  padding: 5%;
+  width: 90%;
+}
+.card h5 {
+  margin-block: 2px;
 }
 
-.video{
-    width: 100%;
+.video {
+  width: 100%;
 }
 
-video{
-    width: 100%;
-    height: auto;
+video {
+  width: 100%;
+  height: auto;
 }
 
 img {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-    cursor: pointer;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  cursor: pointer;
 }
 
 dialog div {
-    width: 90%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  width: 90%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 @media screen and (min-width: 768px) {
+  .mainDescription {
+    margin-top: 40px;
+    font-size: 1.3rem;
+  }
 
-    .mainDescription{
-        margin-top: 40px;
-        font-size: 1.3rem;
-    }
-
-    .descriptionPart{
-        gap: 30px;
-    }
-    .card{
-        padding: 25px;
-    }
-
+  .descriptionPart {
+    gap: 30px;
+  }
+  .card {
+    width: 96%;
+    padding: 2%;
+  }
 }
 
 @media screen and (min-width: 1920px) {
-    .mainDescription{
-        margin-top: 60px;
-        font-size: 1.5rem;
-    }
-    .descriptionPart{
-        gap: 40px;
-    }
-    main{
-        padding-inline: 10%;
-    }
-    .card{
-        padding: 40px;
-    }
+  .mainDescription {
+    margin-top: 60px;
+    font-size: 1.5rem;
+  }
+  .descriptionPart {
+    gap: 40px;
+  }
+  main {
+    padding-inline: 10%;
+  }
+  .card {
+    width: 92%;
+    padding: 4%;
+  }
 }
