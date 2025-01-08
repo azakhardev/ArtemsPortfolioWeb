@@ -4,6 +4,7 @@ const dialog = document.querySelector('dialog');
 const icons = document.querySelectorAll('.icon');
 const news = document.querySelector('#news');
 const closeNews = document.querySelector('#newsClose');
+const skillsHeadings = document.querySelectorAll('.listHeader');
 
 let tooltipOpacityMax = false;
 let buttonShakeSet = false;
@@ -41,7 +42,6 @@ closeNews.addEventListener('click', c => {
 document.addEventListener('keydown', (e) => {
     if (e.key === "Escape" && dialog.open) {
         e.preventDefault();
-
         closeDialog();
     }
 })
@@ -51,6 +51,17 @@ icons.forEach((i) => {
         closeDialog();
     })
 })
+
+skillsHeadings.forEach(h => h.addEventListener('click', ()=>{
+    const wasActive = h.classList.contains('active');
+    skillsHeadings.forEach(heading => heading.classList.remove('active'));
+    if(wasActive){
+        h.classList.remove('active');
+    }else{
+        h.classList.add('active');
+    }
+
+}))
 
 function setShake() {
     tooltip.style.visibility = 'hidden';

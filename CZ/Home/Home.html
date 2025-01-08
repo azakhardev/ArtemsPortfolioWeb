@@ -23,7 +23,9 @@
 </header>
 
 <div id="news">
-    <div id="newsClose"><box-icon color="red" name='x-circle' ></box-icon></div>
+    <div id="newsClose">
+        <box-icon color="red" name='x-circle'></box-icon>
+    </div>
     <h3>Novinka - Loop</h3>
     <p>Koukněte se na můj poslední velký projekt - Hackathon ČS 2024
         <a href="../Jobs/Jobs.html">v sekci Pracovní Zkušenosti</a>
@@ -56,77 +58,92 @@
     </div>
     <div id="skills">
         <h3>IT Dovednosti</h3>
-        <ul>
-            <li class="MainLi">
-                C#
-                <ul>
-                    <li>OOP - Polymorphism, Generics, Inheritance, GoF</li>
-                    <li>Algorithms, API, Delegates & Events, Regex, File System</li>
-                    <li>Console Apps, Unit Tests, Forms, ASP.NET</li>
-                    <li>Database Requests, Reflection, GDI+ Graphics</li>
-                </ul>
-            </li>
+        <div>
+            <div class="listHeader">
+                <span>C#</span> <span class="triangleButton"><box-icon name='up-arrow'></box-icon></span>
+            </div>
+            <ul>
+                <li>OOP - Polymorphism, Generics, Inheritance, GoF</li>
+                <li>Algorithms, API, Delegates & Events, Regex, File System</li>
+                <li>Console Apps, Unit Tests, Forms, ASP.NET</li>
+                <li>Database Requests, Reflection, GDI+ Graphics</li>
+            </ul>
+        </div>
+        <div>
+            <div class="listHeader">
+                <span>SQL (MSSMS)</span> <span class="triangleButton"><box-icon name='up-arrow'></box-icon></span>
+            </div>
 
-            <li class="MainLi">
-                SQL (MSSMS)
-                <ul>
-                    <li>DML, DDL, DRL</li>
-                    <li>Selects, Triggers, Functions/Procedures, Cursors...</li>
-                    <li>Logins, Audits, Backup&Restore, Log Shipping, Mirroring</li>
-                </ul>
-            </li>
+            <ul>
+                <li>DML, DDL, DRL</li>
+                <li>Selects, Triggers, Functions/Procedures, Cursors...</li>
+                <li>Logins, Audits, Backup&Restore, Log Shipping, Mirroring</li>
+            </ul>
+        </div>
+        <div>
+            <div class="listHeader">
+                <span>Weby</span> <span class="triangleButton"><box-icon name='up-arrow'></box-icon></span>
+            </div>
+            <ul>
+                <li>HTML - Forms, Tables, Lists, Images, Dialogs...</li>
+                <li>CSS - Responsive Design, Pseudo-elements, Translations</li>
+                <li>JS - Dialogs, Events, Fetch, Storages, Timers, DOM</li>
+            </ul>
+        </div>
+        <div>
+            <div class="listHeader">
+                <span>React</span> <span class="triangleButton"><box-icon name='up-arrow'></box-icon></span>
+            </div>
+            <ul>
+                <li>Function & Class Components, Props, Context, Redux</li>
+                <li>Hooks - State, Ref, Effect, Callback, </li>
+                <li>Conditional Rendering, Dynamic Elements, State Deriving</li>
+                <li>Tanstack Query, Routing, Forms, Testing</li>
+                <li>Styling, Animating, Deployment </li>
+            </ul>
+        </div>
+        <div>
+            <div class="listHeader">
+                <span>Flutter</span> <span class="triangleButton"><box-icon name='up-arrow'></box-icon></span>
+            </div>
+            <ul>
+                <li>Stateful & Stateless Widgets - Layout Widgets, Themes</li>
+                <li>Dependencies & Libraries (pubspec.yaml), Dio Library</li>
+                <li>Callbacks, Asynchronous Communication</li>
+                <li>JSON Serialization/Deserialization</li>
+            </ul>
+        </div>
+        <div>
+            <div class="listHeader">
+                <span>Sítě (W. Server, Linux)</span> <span class="triangleButton"><box-icon name='up-arrow'></box-icon></span>
+            </div>
+            <ul>
+                <li>DHCP, DNS</li>
+                <li>Raids, Routing, IIS</li>
+                <li>Active Directory, Users - Správa</li>
+            </ul>
+        </div>
+        <div>
+            <div class="listHeader">
+                <span>Autodesk Programy</span> <span class="triangleButton"><box-icon name='up-arrow'></box-icon></span>
+            </div>
+            <ul>
+                <li>AutoCAD 2D/3D</li>
+                <li>Inventor</li>
+            </ul>
+        </div>
 
-            <li class="MainLi">
-                Weby
-                <ul>
-                    <li>HTML - Forms, Tables, Lists, Images, Dialogs...</li>
-                    <li>CSS - Responsive Design, Pseudo-elements, Translations</li>
-                    <li>JS - Dialogs, Events, Fetch, Storages, Timers, DOM</li>
-                </ul>
-            </li>
-            <li class="MainLi">
-                React
-                <ul>
-                    <li>Function & Class Components, Props, Context, Redux</li>
-                    <li>Conditional Rendering, Dynamic Elements, State Deriving</li>
-                    <li>Hooks - State, Ref, Effect, Callback, Custom</li>
-                    <li>Styling - Inline, Module, Styled Components, Tailwind</li>
-                </ul>
-            </li>
-            <li class="MainLi">
-                Flutter
-                <ul>
-                    <li>Stateful & Stateless Widgets - Layout Widgets, Themes</li>
-                    <li>Dependencies & Libraries (pubspec.yaml), Dio Library</li>
-                    <li>Callbacks, Asynchronous Communication</li>
-                    <li>JSON Serialization/Deserialization</li>
-                </ul>
-            </li>
-            <li class="MainLi">
-                Sítě (W. Server, Linux)
-                <ul>
-                    <li>DHCP, DNS</li>
-                    <li>Raids, Routing, IIS</li>
-                    <li>Active Directory, Users - Správa</li>
-                </ul>
-            </li>
-            <li class="MainLi">
-                Autodesk Programy
-                <ul>
-                    <li>AutoCAD 2D/3D</li>
-                    <li>Inventor</li>
-                </ul>
-            </li>
+        <div>
+            <div class="listHeader">
+                <span>Ostatní</span> <span class="triangleButton"><box-icon name='up-arrow'></box-icon></span>
+            </div>
+            <ul>
+                <li>Word, Excel, (Access)</li>
+                <li>Photoshop, Figma, Canva, UML, GitHub</li>
+                <li>Hardware počítače</li>
+            </ul>
+        </div>
 
-            <li class="MainLi">
-                Ostatní
-                <ul>
-                    <li>Word, Excel, (Access)</li>
-                    <li>Photoshop, Figma, Canva, UML, GitHub</li>
-                    <li>Hardware počítače</li>
-                </ul>
-            </li>
-        </ul>
     </div>
     <div id="bio">
         <h3>Bio</h3>
