@@ -96,7 +96,7 @@ li {
     padding-block: 8px;
     border-bottom: 1px dashed gray;
     margin-bottom: 10px;
-    max-height: 150px;
+    max-height: 180px;
 }
 
 .active .triangleButton {
