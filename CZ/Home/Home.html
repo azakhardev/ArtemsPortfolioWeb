@@ -23,7 +23,9 @@
 </header>
 
 <div id="news">
-    <div id="newsClose"><box-icon color="red" name='x-circle' ></box-icon></div>
+    <div id="newsClose">
+        <box-icon color="red" name='x-circle'></box-icon>
+    </div>
     <h3>Novinka - Loop</h3>
     <p>Koukněte se na můj poslední velký projekt - Hackathon ČS 2024
         <a href="../Jobs/Jobs.html">v sekci Pracovní Zkušenosti</a>
@@ -46,8 +48,8 @@
             &emsp; Mým dlouhodobým cílem je vybudovat vlastní podnikání nebo se stát partnerem v zajímavých IT
             projektech. Pokud jste začínající podnikatel a hledáte někoho na dlouhodobou spolupráci, neváhejte mě
             kontaktovat – rád propojím své dovednosti s Vašimi nápady.<br>
-            &emsp;Momentálně se zaměřuji na studium Reactu <a
-                href="https://www.udemy.com/course/react-the-complete-guide-incl-redux">skrze kurz na Udemy</a>.
+            &emsp;Nedávno jsem dokončil kurz Reactu (až na Next.js) <a
+                href="https://www.udemy.com/course/react-the-complete-guide-incl-redux">skrze platformu Udemy</a>.
             Předtím jsem se také zabýval vývojem mobilních aplikací s využitím frameworku Flutter, což je vidět i na
             mém prvním větším projektu v sekci <a href="../Projects/Projects.html">Projekty</a>. <br>
             Na tétostránce najdete více informací o mně a také ukázky mých dosavadních projektů.
@@ -56,77 +58,92 @@
     </div>
     <div id="skills">
         <h3>IT Dovednosti</h3>
-        <ul>
-            <li class="MainLi">
-                C#
-                <ul>
-                    <li>OOP - Polymorphism, Generics, Inheritance, GoF</li>
-                    <li>Algorithms, API, Delegates & Events, Regex, File System</li>
-                    <li>Console Apps, Unit Tests, Forms, ASP.NET</li>
-                    <li>Database Requests, Reflection, GDI+ Graphics</li>
-                </ul>
-            </li>
+        <div>
+            <div class="listHeader">
+                <span>C#</span> <span class="triangleButton"><box-icon name='up-arrow'></box-icon></span>
+            </div>
+            <ul>
+                <li>OOP - Polymorphism, Generics, Inheritance, GoF</li>
+                <li>Algorithms, API, Delegates & Events, Regex, File System</li>
+                <li>Console Apps, Unit Tests, Forms, ASP.NET</li>
+                <li>Database Requests, Reflection, GDI+ Graphics</li>
+            </ul>
+        </div>
+        <div>
+            <div class="listHeader">
+                <span>SQL (MSSMS)</span> <span class="triangleButton"><box-icon name='up-arrow'></box-icon></span>
+            </div>
 
-            <li class="MainLi">
-                SQL (MSSMS)
-                <ul>
-                    <li>DML, DDL, DRL</li>
-                    <li>Selects, Triggers, Functions/Procedures, Cursors...</li>
-                    <li>Logins, Audits, Backup&Restore, Log Shipping, Mirroring</li>
-                </ul>
-            </li>
+            <ul>
+                <li>DML, DDL, DRL</li>
+                <li>Selects, Triggers, Functions/Procedures, Cursors...</li>
+                <li>Logins, Audits, Backup&Restore, Log Shipping, Mirroring</li>
+            </ul>
+        </div>
+        <div>
+            <div class="listHeader">
+                <span>Weby</span> <span class="triangleButton"><box-icon name='up-arrow'></box-icon></span>
+            </div>
+            <ul>
+                <li>HTML - Forms, Tables, Lists, Images, Dialogs...</li>
+                <li>CSS - Responsive Design, Pseudo-elements, Translations</li>
+                <li>JS - Dialogs, Events, Fetch, Storages, Timers, DOM</li>
+            </ul>
+        </div>
+        <div>
+            <div class="listHeader">
+                <span>React</span> <span class="triangleButton"><box-icon name='up-arrow'></box-icon></span>
+            </div>
+            <ul>
+                <li>Function & Class Components, Props, Context</li>
+                <li>Hooks - State, Ref, Effect, Callback...</li>
+                <li>Conditional Rendering, Dynamic Elements, State Deriving</li>
+                <li>Routing, Forms, Testing, Deployment</li>
+                <li>Tanstack Query,  Redux, TypeScript, Tailwind, Framer Motion</li>
+            </ul>
+        </div>
+        <div>
+            <div class="listHeader">
+                <span>Flutter</span> <span class="triangleButton"><box-icon name='up-arrow'></box-icon></span>
+            </div>
+            <ul>
+                <li>Stateful & Stateless Widgets - Layout Widgets, Themes</li>
+                <li>Dependencies & Libraries (pubspec.yaml), Dio Library</li>
+                <li>Callbacks, Asynchronous Communication</li>
+                <li>JSON Serialization/Deserialization</li>
+            </ul>
+        </div>
+        <div>
+            <div class="listHeader">
+                <span>Sítě (W. Server, Linux)</span> <span class="triangleButton"><box-icon name='up-arrow'></box-icon></span>
+            </div>
+            <ul>
+                <li>DHCP, DNS</li>
+                <li>Raids, Routing, IIS</li>
+                <li>Active Directory, Users - Správa</li>
+            </ul>
+        </div>
+        <div>
+            <div class="listHeader">
+                <span>Autodesk Programy</span> <span class="triangleButton"><box-icon name='up-arrow'></box-icon></span>
+            </div>
+            <ul>
+                <li>AutoCAD 2D/3D</li>
+                <li>Inventor</li>
+            </ul>
+        </div>
 
-            <li class="MainLi">
-                Weby
-                <ul>
-                    <li>HTML - Forms, Tables, Lists, Images, Dialogs...</li>
-                    <li>CSS - Responsive Design, Pseudo-elements, Translations</li>
-                    <li>JS - Dialogs, Events, Fetch, Storages, Timers, DOM</li>
-                </ul>
-            </li>
-            <li class="MainLi">
-                React
-                <ul>
-                    <li>Function & Class Components, Props, Context, Redux</li>
-                    <li>Conditional Rendering, Dynamic Elements, State Deriving</li>
-                    <li>Hooks - State, Ref, Effect, Callback, Custom</li>
-                    <li>Styling - Inline, Module, Styled Components, Tailwind</li>
-                </ul>
-            </li>
-            <li class="MainLi">
-                Flutter
-                <ul>
-                    <li>Stateful & Stateless Widgets - Layout Widgets, Themes</li>
-                    <li>Dependencies & Libraries (pubspec.yaml), Dio Library</li>
-                    <li>Callbacks, Asynchronous Communication</li>
-                    <li>JSON Serialization/Deserialization</li>
-                </ul>
-            </li>
-            <li class="MainLi">
-                Sítě (W. Server, Linux)
-                <ul>
-                    <li>DHCP, DNS</li>
-                    <li>Raids, Routing, IIS</li>
-                    <li>Active Directory, Users - Správa</li>
-                </ul>
-            </li>
-            <li class="MainLi">
-                Autodesk Programy
-                <ul>
-                    <li>AutoCAD 2D/3D</li>
-                    <li>Inventor</li>
-                </ul>
-            </li>
+        <div>
+            <div class="listHeader">
+                <span>Ostatní</span> <span class="triangleButton"><box-icon name='up-arrow'></box-icon></span>
+            </div>
+            <ul>
+                <li>Word, Excel, (Access)</li>
+                <li>Photoshop, Figma, Canva, UML, GitHub</li>
+                <li>Hardware počítače</li>
+            </ul>
+        </div>
 
-            <li class="MainLi">
-                Ostatní
-                <ul>
-                    <li>Word, Excel, (Access)</li>
-                    <li>Photoshop, Figma, Canva, UML, GitHub</li>
-                    <li>Hardware počítače</li>
-                </ul>
-            </li>
-        </ul>
     </div>
     <div id="bio">
         <h3>Bio</h3>
@@ -166,18 +183,16 @@
             webu prohlédnout v sekci <a href="../Jobs/Jobs.html">Pracovní zkušenosti</a> <br>
             <span class="pcOnly">
             &emsp;Projekt bohužel nebyl dokončen do ostrého provozu, protože firma web nakonec nevyužila. Vývoj probíhal
-            volně, bez stanovení pevné ceny, termínu odevzdání a smluvního základu. Z tohoto důvodu dosud nemám
-            zkušenosti s hostingem webových stránek a dlouhodobou správou. <br>
-                &emsp;Mým cílem je nyní najít příležitost, kde bych si tyto dovednosti mohl doplnit a získat tak
-            komplexnější
-            zkušenosti. Věřím, že právě Vy mi tuto příležitost nabídnete. Výměnou Vám poskytuji přístup založený na
-            příjemné a flexibilní spolupráci – dokud nebudete s výsledkem spokojeni, nemusíte riskovat žádné
-            závazky.<br>
+            volně, bez stanovení pevné ceny, termínu odevzdání a smluvního základu. <br>
             </span>
-            <strong>&emsp;Kromě IT zkušeností mám také praxi z různých brigád – pracoval jsem v gastronomii, rozvozu, na
-                pokladně a
+            <strong>
+                &emsp;Nyní pracuji v České Spořitelně jako vývojář a tester frontendové aplikace s využitím knihovny React.
+                Rád bych se však posunul dál, a proto bych se v blízké budoucnosti chtěl věnovat backendovému nebo
+                fullstackovému vývoji.
+            </strong><br>
+            <span class="pcOnly">&emsp;Kromě IT zkušeností mám také praxi z různých brigád – pracoval jsem v gastronomii, rozvozu, na pokladně a
                 pomáhal v parku. Tyto pracovní pozice byly většinou krátkodobé, ale daly mi cenné zkušenosti v oblasti
-                zodpovědnosti a komunikace.</strong>
+                zodpovědnosti a komunikace.</span>
         </p>
         <hr>
         <h4>Jiné Dovednosti</h4>
