@@ -5,16 +5,26 @@ const projectDescriptions = document.querySelector('.description');
 const projectPhotos = document.querySelector('.photos');
 const dialogEl = document.querySelector('dialog');
 const closeDialogBtn = document.querySelector('.close');
+const asideElement = document.querySelector('aside');
 
 let projectsCount = 0;
 let currentProject = 1;
 let timeoutActive = false;
-
+const asideInitialOffset = -asideElement.offsetWidth + 20;
 dialogEl.style.height = "0px";
 
 dialogEl.querySelector('img').style.display = "none";
 dialogEl.querySelector('video').style.display = "none";
 
+asideElement.style.left = asideInitialOffset+"px"
+
+ asideElement.addEventListener('mouseover', e => {
+     asideElement.style.left = "0px"
+ })
+
+ asideElement.addEventListener('mouseleave', e=>{
+     asideElement.style.left = asideInitialOffset+"px"
+ })
 
 projectPhotos.querySelectorAll('.slide').forEach(slide => {
     const mainPhoto = slide.querySelector('.mainPhoto');

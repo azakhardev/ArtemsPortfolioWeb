@@ -4,6 +4,44 @@ projects {
     /*overflow: hidden;*/
 }
 
+aside{
+    position: absolute;
+    left: 0;
+    top: 25vh;
+    background-color: #B0C4DE;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    width: auto;
+    min-width: 250px;
+    max-width: 80vw;
+    min-height: 50vh;
+    padding: 20px;
+    transition: all 0.3s linear;
+    cursor: grab;
+    z-index: 1;
+}
+
+aside h3{
+    margin-block: 10px;
+    border-radius: 5px;
+    background-color: #4682B4;
+    font-weight: 500;
+    padding: 6px;
+    color: white;
+}
+
+aside p {
+    width: auto;
+    margin-block: 5px;
+    cursor: pointer;
+    color: black;
+    margin-left: 15px;
+}
+
+aside p:hover {
+    text-decoration: underline;
+}
+
 slider {
     display: flex;
     flex-direction: row;
@@ -186,7 +224,7 @@ ol li {
         gap: 5px;
     }
 
-    p {
+    .description p {
         padding-inline: 10%;
     }
 

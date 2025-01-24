@@ -2,7 +2,8 @@ body {
     font-family: Arial, SansSerif, serif;
     font-size: 16px;
     color: #3D52A0;
-    margin-top: 0;
+    margin: 0;
+    overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -11,11 +12,11 @@ body {
 }
 
 header {
-    height: 14vh;
+    /*height: 14vh;*/
     display: flex;
     flex-direction: column;
     gap: 5px;
-    z-index: 1  ;
+    z-index: 2;
 }
 
 headerButtons {
