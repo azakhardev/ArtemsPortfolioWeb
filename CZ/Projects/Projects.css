@@ -30,15 +30,19 @@ aside h3{
     color: white;
 }
 
-aside p {
+aside button {
+    border: 0;
+    background-color: inherit;
+    display: block;
     width: auto;
     margin-block: 5px;
     cursor: pointer;
     color: black;
+    font-size: inherit;
     margin-left: 15px;
 }
 
-aside p:hover {
+aside button:hover {
     text-decoration: underline;
 }
 
@@ -47,31 +51,31 @@ slider {
     flex-direction: row;
 }
 
-buttons {
-    display: flex;
-    flex-direction: row;
-    margin-inline: 5%;
-    height: 50px;
-    justify-content: space-between;
-    align-items: center;
-}
+/*buttons {*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*    margin-inline: 5%;*/
+/*    height: 50px;*/
+/*    justify-content: space-between;*/
+/*    align-items: center;*/
+/*}*/
 
-button {
-    padding: 5px;
-    width: 70px;
-    margin-inline: 2px;
-    background-color: #ADBBDA;
-    border: 0.2px solid black;
-    border-radius: 5px;
-    transition: width 0.2s, padding 0.2s, margin 0.2s;
-}
+/*button {*/
+/*    padding: 5px;*/
+/*    width: 70px;*/
+/*    margin-inline: 2px;*/
+/*    background-color: #ADBBDA;*/
+/*    border: 0.2px solid black;*/
+/*    border-radius: 5px;*/
+/*    transition: width 0.2s, padding 0.2s, margin 0.2s;*/
+/*}*/
 
-button:hover {
-    margin-inline: 0px;
-    width: 74px;
-    padding: 7px;
-    cursor: pointer;
-}
+/*button:hover {*/
+/*    margin-inline: 0px;*/
+/*    width: 74px;*/
+/*    padding: 7px;*/
+/*    cursor: pointer;*/
+/*}*/
 
 .projectTitles {
     display: flex;
@@ -92,7 +96,6 @@ content {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    margin-top: 20px;
     margin-inline: 20px;
 }
 
@@ -208,7 +211,6 @@ ol li {
         display: flex;
         flex-direction: row;
         gap: 5px;
-        margin-top: 40px;
     }
 
     .description p {
@@ -217,9 +219,5 @@ ol li {
 
     video {
         max-width: 1920px;
-        /*position: absolute; !* Position absolute for better control *!*/
-        /*top: 50%; !* Center vertically *!*/
-        /*left: 50%; !* Center horizontally *!*/
-        /*transform: translate(-50%, -50%); !* Adjust centering *!*/
     }
 }

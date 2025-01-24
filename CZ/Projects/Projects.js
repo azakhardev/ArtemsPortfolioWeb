@@ -5,7 +5,7 @@ const projectPhotos = document.querySelector('.photos');
 const dialogEl = document.querySelector('dialog');
 const closeDialogBtn = document.querySelector('.close');
 const asideElement = document.querySelector('aside');
-const projects = document.querySelector('aside').querySelectorAll('p');
+const projects = document.querySelector('aside').querySelectorAll('button');
 
 let currentProject = 1;
 const asideInitialOffset = -asideElement.offsetWidth + 20;
@@ -29,6 +29,7 @@ asideElement.style.left = asideInitialOffset+"px"
 projects.forEach((proj, key)=>{
     proj.addEventListener('click', e=>{
         if(currentProject !== key){
+            document.querySelector('h2').innerText = proj.innerText;
             currentProject = key;
             showCurrentInfo();
             showCurrentPhotos();
