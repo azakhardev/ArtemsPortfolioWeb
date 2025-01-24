@@ -1,15 +1,13 @@
-const arrowPrev = document.querySelector('#btnPrev')
-const arrowNext = document.querySelector('#btnNext')
-const projectTitles = document.querySelector('.projectTitles');
+// const arrowPrev = document.querySelector('#btnPrev')
+// const arrowNext = document.querySelector('#btnNext')
 const projectDescriptions = document.querySelector('.description');
 const projectPhotos = document.querySelector('.photos');
 const dialogEl = document.querySelector('dialog');
 const closeDialogBtn = document.querySelector('.close');
 const asideElement = document.querySelector('aside');
+const projects = document.querySelector('aside').querySelectorAll('p');
 
-let projectsCount = 0;
 let currentProject = 1;
-let timeoutActive = false;
 const asideInitialOffset = -asideElement.offsetWidth + 20;
 dialogEl.style.height = "0px";
 
@@ -20,11 +18,23 @@ asideElement.style.left = asideInitialOffset+"px"
 
  asideElement.addEventListener('mouseover', e => {
      asideElement.style.left = "0px"
+     asideElement.style.opacity = "1"
  })
 
  asideElement.addEventListener('mouseleave', e=>{
      asideElement.style.left = asideInitialOffset+"px"
+     asideElement.style.opacity = "0.5"
  })
+
+projects.forEach((proj, key)=>{
+    proj.addEventListener('click', e=>{
+        if(currentProject !== key){
+            currentProject = key;
+            showCurrentInfo();
+            showCurrentPhotos();
+        }
+    })
+})
 
 projectPhotos.querySelectorAll('.slide').forEach(slide => {
     const mainPhoto = slide.querySelector('.mainPhoto');
@@ -63,39 +73,6 @@ projectPhotos.querySelectorAll('.slide').forEach(slide => {
     }
 })
 
-projectTitles.querySelectorAll('div').forEach(d => {
-    projectsCount += 1;
-})
-
-arrowPrev.addEventListener('click', c => {
-    if (currentProject > 1 && !timeoutActive) {
-        timeoutActive = true;
-        const div = projectTitles.querySelector('div');
-        div.style.marginLeft = (div.offsetLeft + div.offsetWidth - projectTitles.offsetLeft) + "px";
-        currentProject--;
-        showCurrentInfo();
-        showCurrentPhotos();
-        setTimeout(() => {
-            timeoutActive = false
-        }, 1000)
-    }
-})
-
-arrowNext.addEventListener('click', c => {
-    if (projectsCount > currentProject && !timeoutActive) {
-        timeoutActive = true;
-        const div = projectTitles.querySelector('div');
-        // console.log("marginLeft: ", div.style.marginLeft, " offsetWidth:", div.offsetWidth, " div offsetLeft:", div.offsetLeft)
-        div.style.marginLeft = (div.offsetLeft - div.offsetWidth - projectTitles.offsetLeft) + "px";
-        currentProject++;
-        showCurrentInfo();
-        showCurrentPhotos();
-        setTimeout(() => {
-            timeoutActive = false
-        }, 1000)
-    }
-})
-
 closeDialogBtn.addEventListener('click', c => {
     closeDialog();
 })
@@ -117,9 +94,7 @@ function closeDialog(){
 }
 
 function showCurrentInfo() {
-    let counter = 1;
-
-    projectDescriptions.querySelectorAll('div').forEach(div => {
+    projectDescriptions.querySelectorAll('div').forEach((div, counter) => {
         if (counter === currentProject) {
             div.style.opacity = "0";
             setTimeout(() => {
@@ -140,8 +115,7 @@ function showCurrentInfo() {
 }
 
 function showCurrentPhotos() {
-    let counter = 1;
-    projectPhotos.querySelectorAll('.slide').forEach(slide => {
+    projectPhotos.querySelectorAll('.slide').forEach((slide, counter) => {
 
         if (counter === currentProject) {
             slide.style.opacity = "0";
