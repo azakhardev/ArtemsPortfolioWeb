@@ -92,26 +92,20 @@ projectsInfo.forEach((slide) => {
             dialogEl.showModal();
         });
     }
-
-
 })
 
 
 function showCurrentInfo() {
     projectsInfo.forEach((slide, counter) => {
-        if (counter === currentProject) {
-            slide.style.opacity = "0";
-            setTimeout(() => {
+        slide.style.opacity = "0";
+        setTimeout(() => {
+            slide.classList.add('noDisplay')
+            if (counter === currentProject) {
                 slide.classList.remove('noDisplay');
-                slide.style.opacity = "1";
-            }, 500)
-        } else {
-            if (!slide.classList.contains('noDisplay')) {
-                slide.style.opacity = "0";
                 setTimeout(() => {
-                    slide.classList.add('noDisplay')
-                }, 500)
+                    slide.style.opacity = "1.0";
+                }, 100)
             }
-        }
+        }, 500)
     })
 }
