@@ -18,78 +18,157 @@
         <a class="vcenter selectPage" href="../Jobs/Jobs.html">Pracovní Zkušenosti</a>
         <a class="vcenter selectPage" href="../Contact/Contact.html">Služby a Kontakt</a>
     </headerButtons>
-
 </header>
 <main>
-    <slides>
-        <div class="projectTitles">
-            <div class="vcenter">
-                Midnight Commander
-            </div>
-            <div class="vcenter">
-                Zálohovač
-            </div>
-            <div class="vcenter">
-                Forms Class Diagram
-            </div>
-            <div class="vcenter">
-                Realitní Server
-            </div>
-            <div class="vcenter">
-                Forms Správce Úkolů
-            </div>
-            <div class="vcenter">
-                Pizza Web
-            </div>
-            <div class="vcenter">
-                HTML Správce Úkolů
-            </div>
-            <div class="vcenter">
-                Explore City
-            </div>
-            <div class="vcenter">
-                Mobilní Quiz Hra
-            </div>
+    <aside>
+        <div>
+            <h3>.NET</h3>
+            <button>Midnight Commander</button>
+            <button>Zálohovač</button>
+            <button>Forms Class Diagram</button>
+            <button>Forms Správce Úkolů</button>
+            <button>Realitní Server</button>
         </div>
-        <buttons>
-            <button id="btnPrev">Předchozí</button>
-            <button id="btnNext">Další</button>
-        </buttons>
-    </slides>
+        <div>
+            <h3>HTML</h3>
+            <button>Pizza Web</button>
+            <button>HTML Správce Úkolů</button>
+            <button>Explore City</button>
+        </div>
+        <div>
+            <h3>Flutter</h3>
+            <button>Mobilní Quiz Hra</button>
+        </div>
+        <div>
+            <h3>React</h3>
+            <button>Filmová Databáze</button>
+        </div>
+    </aside>
+    <div style="display: flex; justify-content: center">
+        <h2>Midnight Commander</h2>
+    </div>
+    <div class="projects">
+        <div class="slide vcenter" style="opacity: 1">
+            <div class="photos">
+                <div class="mainPhoto">
+                    <img src="../../Images/MyProjectsPhotos/MC_Logic.png">
+                </div>
+                <div class="gallery">
+                    <div>
+                        <img src="../../Images/MyProjectsPhotos/MC_Logic.png"
+                             title="Midnight Commander Logic Snippet">
+                    </div>
 
-    <content>
-        <div class="description">
-            <div class="vcenter" style="opacity: 1">
+                    <div>
+                        <img src="../../Images/MyProjectsPhotos/MC_Main.png" title="Midnight Commander Main Window">
+                    </div>
+
+                    <div>
+                        <img src="../../Images/MyProjectsPhotos/MC_PopUp.png"
+                             title="Midnight Commander Pop Up Window">
+                    </div>
+
+                    <div>
+                        <img src="../../Images/MyProjectsPhotos/MC_File.png" title="Midnight Commander File Window">
+                    </div>
+                </div>
+            </div>
+            <div class="tags">
+                <div><strong>Technologie:</strong> C# - Console App</div>
+                <div><strong>Datum:</strong> Prosinec 2022</div>
+                <div><strong>Čas:</strong> Cca 100 hodin</div>
+                <div><strong>Typ:</strong> Školní projekt</div>
+                <div><strong>Obtížnost:</strong> 10/10</div>
+                <div><strong>Realizace:</strong> 4/10</div>
+            </div>
+            <div class="description">
                 <p>
-                    Toto byl náš první velký projekt. Jeho účelem bylo naučit se OOP. Za úkol jsme měli vytvořit známý
-                    souborový prohlížeč Midnight commander. Jeho interface vykresloval do příkazové řádky. Každá součást
+                    Toto byl náš první velký projekt. Jeho účelem bylo naučit se OOP. Za úkol jsme měli vytvořit
+                    známý
+                    souborový prohlížeč Midnight commander. Jeho interface vykresloval do příkazové řádky. Každá
+                    součást
                     byla reprezentována znakem. <br> <br>
                     Logika programu byla taková: byl objekt Application, který v sobě
-                    uchovával objekt dědící ze třídy Window, což reprezentovalo GUI. Objekt Window měl vlastní metody
-                    pro vykreslení a zaregistrování zmáčknutých kláves. Dále každý Windows mělo vlastní list tlačítek
-                    (neboli Hotkeys), pro manipulaci se soubory/daty. Na každém tlačítku byl event, který v závislosti
-                    na jeho funkci prováděl vlastní metodu. Všechna tlačítka dědila z interface společnou metodu, kterou
+                    uchovával objekt dědící ze třídy Window, což reprezentovalo GUI. Objekt Window měl vlastní
+                    metody
+                    pro vykreslení a zaregistrování zmáčknutých kláves. Dále každý Windows mělo vlastní list
+                    tlačítek
+                    (neboli Hotkeys), pro manipulaci se soubory/daty. Na každém tlačítku byl event, který v
+                    závislosti
+                    na jeho funkci prováděl vlastní metodu. Všechna tlačítka dědila z interface společnou metodu,
+                    kterou
                     následně přepisovaly. Ne všechna tlačítka byla funkční, ale jenom ty nejdůležitější. Například
                     fungovaly tlačítka pro přesun, kopírování, mazání a vytvoření souboru. <br> <br>
-                    Nejtěžší částí celého projektu bylo implementovat prostředí pro práci s textovými soubory. To také
-                    dědilo ze třídy Window a mělo vlastní metody pro práci v něm. Měly v něm být zahrnuty takové metody
+                    Nejtěžší částí celého projektu bylo implementovat prostředí pro práci s textovými soubory. To
+                    také
+                    dědilo ze třídy Window a mělo vlastní metody pro práci v něm. Měly v něm být zahrnuty takové
+                    metody
                     jako přesunutí textu,
                     zkopírování textu, označení textu, uložení souboru a zavření souboru. Všechny funkce se mi
                     implementovat nepodařilo a v programu vznikaly chyby, při nesprávném ovládání (např. Když kurzor
-                    vyjede mimo text – IndexOutOfRangeException). Myslím si, že dnes bych tyto chyby dokázal opravit,
+                    vyjede mimo text – IndexOutOfRangeException). Myslím si, že dnes bych tyto chyby dokázal
+                    opravit,
                     ale nevidím to jako potřebné, jelikož OOP jsem se do určité míry dost dobře naučil. <br> <br>
                     Na celý projekt jsme měli měsíc a půl. Každý týden jsme měli checkpointy (deadliny), kde nám pan
-                    profesor řekl, co po nás bude chtít implementovat na příští týden, a dal nám známku za práci během
+                    profesor řekl, co po nás bude chtít implementovat na příští týden, a dal nám známku za práci
+                    během
                     uplynulého týdne. Na
-                    tomto projektu jsem strávil kolem 150 hodin a spolupracoval jsem společně se spolužáky (např. Eventy
-                    jsme nikdy neviděli a museli jsme se radit s pár lidmi, kteří to pochopili z hodiny). Tento projekt
+                    tomto projektu jsem strávil kolem 150 hodin a spolupracoval jsem společně se spolužáky (např.
+                    Eventy
+                    jsme nikdy neviděli a museli jsme se radit s pár lidmi, kteří to pochopili z hodiny). Tento
+                    projekt
                     nám ale dal dobré zázemí pro pochopení, jak by měla správně vypadat struktura v programu a jak
                     naplno využít OOP.
                 </p>
             </div>
-            <div class="vcenter noDisplay">
+        </div>
+        <div class="slide vcenter noDisplay">
+            <div class="photos">
+                <div class="mainPhoto">
+                    <img src="../../Images/MyProjectsPhotos/Backuper_API.png">
+                </div>
+
+                <div class="gallery">
+                    <div>
+                        <img src="../../Images/MyProjectsPhotos/Backuper_API.png" title="Backuper End Points">
+                    </div>
+
+                    <div>
+                        <img src="../../Images/MyProjectsPhotos/Backuper_DaemonCore.png"
+                             title="Backuper Daemon Core Logic">
+                    </div>
+                    <div>
+                        <img src="../../Images/MyProjectsPhotos/Backuper_DaemonBackuper.png"
+                             title="Backuper Daemon Backup Logic">
+                    </div>
+
+                    <div>
+                        <img src="../../Images/MyProjectsPhotos/Backuper_Computers.png"
+                             title="Backuper Computers List">
+                    </div>
+
+                    <div>
+                        <img src="../../Images/MyProjectsPhotos/Backuper_Configs.png" title="Backuper Configs List">
+                    </div>
+
+                    <div>
+                        <img src="../../Images/MyProjectsPhotos/Backuper_ConfigSetup.png"
+                             title="Backuper Configs Setup">
+                    </div>
+                </div>
+            </div>
+            <div class="tags">
+                <div><strong>Technologie:</strong> C# - Console App/API + Angular</div>
+                <div><strong>Datum:</strong> Duben 2023</div>
+                <div><strong>Čas:</strong> Cca 120 hodin</div>
+                <div><strong>Typ:</strong> Školní projekt</div>
+                <div><strong>Obtížnost:</strong> 7/10</div>
+                <div><strong>Realizace:</strong> 5/10</div>
+            </div>
+            <div class="description">
                 <p>
-                    V tomto projektu jsme pracovali ve tříčlenných skupinách. Smyslem projektu bylo vytvořit program pro
+                    V tomto projektu jsme pracovali ve tříčlenných skupinách. Smyslem projektu bylo vytvořit program
+                    pro
                     zálohu dat dle určitého rozvrhu a nastavení. Každý člověk z týmu měl na starosti určitou část
                     aplikace a zároveň trochu pomáhal zbytku týmu s jejich prací. Já jsem se podílel na všech třech
                     částech
@@ -99,36 +178,61 @@
                     zprostředkovatel pro komunikaci mezi Daemonem, Administrátorem a databází. <br> <br>
                     Samotný Daemon běžel na počítačích a kontroloval, zda má zálohovat data. Jeho struktura vypadala
                     takto: obsahoval třídu
-                    Core, která kontrolovala, zda je počítač evidován, zda musí probíhat záloha a pokud ano, tak kdy musí
-                    proběhnout. Navíc obsahoval třídu Backuper, který se staral o samotnou zálohu. Ten na základě předem
+                    Core, která kontrolovala, zda je počítač evidován, zda musí probíhat záloha a pokud ano, tak kdy
+                    musí
+                    proběhnout. Navíc obsahoval třídu Backuper, který se staral o samotnou zálohu. Ten na základě
+                    předem
                     daného nastavení vybíral vhodný způsob zálohy. <br> <br>
-                    Administrátor bylo webové prostředí pro správu záloh, které bylo napsáno v Angularu. Administrátor
+                    Administrátor bylo webové prostředí pro správu záloh, které bylo napsáno v Angularu.
+                    Administrátor
                     obsahoval přehled všech počítačů, které měly provádět zálohu.
                     Také se mohly vytvářet skupiny počítačů a administrátorské účty. Kromě toho se mohly vytvářet
-                    configy, ve kterých byl určen čas zálohy, typ zálohy, místo zálohy, zda se soubory mají komprimovat
-                    a také pro jaké počítače tento config platí. <br> <br> Na tvorbě webového prostředí jsem se podílel
+                    configy, ve kterých byl určen čas zálohy, typ zálohy, místo zálohy, zda se soubory mají
+                    komprimovat
+                    a také pro jaké počítače tento config platí. <br> <br> Na tvorbě webového prostředí jsem se
+                    podílel
                     nejméně z
-                    týmu (i přes to vypadá tragicky), jelikož nás už tlačil čas a můj tým to nestíhal, tak jsem se tento
+                    týmu (i přes to vypadá tragicky), jelikož nás už tlačil čas a můj tým to nestíhal, tak jsem se
+                    tento
                     jazyk musel naučit během
                     týdne. Můžu ale říct, že Typescript doposud moc neumím. <br> <br>
-                    Všechny tyto části programu musely být pro běh aplikace spuštěny (vše běželo na localhostu – nebyl k
+                    Všechny tyto části programu musely být pro běh aplikace spuštěny (vše běželo na localhostu –
+                    nebyl k
                     tomu přístup z vně a nebylo to
                     dostupné 24/7). Účelem tohoto projektu bylo naučit se, jak mezi sebou doopravdy komunikují
-                    jednotlivé aplikace a naučit se používat např. CronTab, JSON, Enkrypci… celkem jsme na této práci
+                    jednotlivé aplikace a naučit se používat např. CronTab, JSON, Enkrypci… celkem jsme na této
+                    práci
                     strávili kolem dvou a půl měsíců.
                 </p>
-
             </div>
-            <div class="vcenter noDisplay" style="flex-direction: column">
+        </div>
+        <div class="slide vcenter noDisplay">
+            <div class="video">
+                <video poster="../../Images/MyProjectsPhotos/ClassDiagram_Thumbnail.png">
+                    <source src="../../Videos/ClassDiagram.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="tags">
+                <div><strong>Technologie:</strong> C# - Forms/GDI+</div>
+                <div><strong>Datum:</strong> Říjen 2023</div>
+                <div><strong>Čas:</strong> Cca 30 hodin</div>
+                <div><strong>Typ:</strong> Školní projekt</div>
+                <div><strong>Obtížnost:</strong> 7/10</div>
+                <div><strong>Realizace:</strong> 7/10</div>
+            </div>
+            <div class="description">
                 <p>
-                    Toto byl menší projekt, na který jsme měli dva týdny a dělali jsme ho ve WindowsForms. Mohli jsme si
+                    Toto byl menší projekt, na který jsme měli dva týdny a dělali jsme ho ve WindowsForms. Mohli
+                    jsme si
                     vybrat, zda data budeme ukládat do textového souboru nebo do databáze - já si zvolil
                     databázi.<br><br>
-                    V prvním týdnu jsme měli za úkol realizovat manipulaci se třídami (rámečky). V druhém týdnu práce
+                    V prvním týdnu jsme měli za úkol realizovat manipulaci se třídami (rámečky). V druhém týdnu
+                    práce
                     nad projektem jsme si mohli vybrat, jeslti realizujeme zoomování, pohybování se SS a ukládání
                     obrázků, nebo jestli vytvoříme šipky, které by ukazovaly na jiné třídy - reprezentovaly by
                     Objektovou strukturu. Z očividných důvodů jsem si vybral první variantu. <br><br>
-                    K vykreslení každé třídy se používá nástroj PictureBox - právě přes něj probíhá i manipulace se SS,
+                    K vykreslení každé třídy se používá nástroj PictureBox - právě přes něj probíhá i manipulace se
+                    SS,
                     polohou tříd a také jejich šířkou a výškou. Úprava samotných tříd se provádí přes nové okno s
                     nástrojem DataGridView a tlačítky - pro přidání nových atributů/metod se otevírá menší podokno s
                     TextBox a ListBox. Pokud jde o NOVÉ metody, tak jim nejdou přidat parametry, dokud nebudou
@@ -136,10 +240,26 @@
                     Podrobnější funkcionalitu můžete shlédnout ve videoukázce:
                 </p>
             </div>
-            <div class="vcenter noDisplay" style="flex-direction: column">
+        </div>
+        <div class="slide vcenter noDisplay" style="flex-direction: column">
+            <div class="video">
+                <video poster="../../Images/MyProjectsPhotos/FormsTaskManager_Main.png">
+                    <source src="../../Videos/TaskApp.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="tags">
+                <div><strong>Technologie:</strong> C# - Forms</div>
+                <div><strong>Datum:</strong> Únor 2024</div>
+                <div><strong>Čas:</strong> Cca 45 hodin</div>
+                <div><strong>Typ:</strong> Spare Time Projekt</div>
+                <div><strong>Obtížnost:</strong> 6/10</div>
+                <div><strong>Realizace:</strong> 7/10</div>
+            </div>
+            <div class="description">
                 <p>
                     Toto byl náš poslední školní projekt z programování a zabral nám kolem dvou měsíců. Za úkol jsme
-                    měli vytvořit realitní server. Smyslem bylo vytvořit co nejvíce realistickou napodobeninu skutečné
+                    měli vytvořit realitní server. Smyslem bylo vytvořit co nejvíce realistickou napodobeninu
+                    skutečné
                     realitní stránky a naučit se s technologií ASP.NET. Stránka obsahovala přehled nabídek,
                     administrátorské prostředí, makléřské prostředí a prostředí pro přihlášené uživatele.
                     Přesnější rozbor stránky:
@@ -147,237 +267,293 @@
                 <ol id="pul">
                     <li>Hlavní stránka, na které byl přehled nejnovějších nabídek a filtrace dle kategorií.</li>
                     <li>Stránka s nabídkami: zde jsme mohli prohlížet všechny nabídky a filtrovat je.</li>
-                    <li>Makléřské rozhraní: Stránka na kterou se makléř musel přihlásit aby mohl upravovat své nabídky a
+                    <li>Makléřské rozhraní: Stránka na kterou se makléř musel přihlásit aby mohl upravovat své
+                        nabídky a
                         také svůj účet. Kromě toho mohl prohlížet poptávky a zprávy od uživatelů.
                     </li>
                     <li>Administrátorské rozhraní:
                         V podstatě bylo stejné jako makléřské až na to, že administrátor mohl spravovat ostatní
                         administrátory a makléře.
                     </li>
-                    <li>Stránka pro uživatele: na této stránce si uživatelé mohli prohlížet své oblíbené nemovitosti a
+                    <li>Stránka pro uživatele: na této stránce si uživatelé mohli prohlížet své oblíbené nemovitosti
+                        a
                         psát si s makléři/administrátory.
                     </li>
                 </ol>
                 <p>
-                    Při tvorbě této aplikace jsem využíval různé nástroje, jako například komponenty, vlastní atributy
+                    Při tvorbě této aplikace jsem využíval různé nástroje, jako například komponenty, vlastní
+                    atributy
                     pro ověření správnosti dat, vlastní layout atd…<br> <br>
                     Podrobnější funkcionalitu můžete shlédnout ve videoukázce:
                 </p>
-
             </div>
-            <div class="vcenter noDisplay">
+        </div>
+        <div class="slide vcenter noDisplay">
+            <div class="video">
+                <video poster="../../Images/MyProjectsPhotos/RealEstate_Home.png">
+                    <source src="../../Videos/RealEstate.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="tags">
+                <div><strong>Technologie:</strong> C# - ASP.NET</div>
+                <div><strong>Datum:</strong> Leden 2024</div>
+                <div><strong>Čas:</strong> Cca 55 hodin</div>
+                <div><strong>Typ:</strong> Školní Projekt</div>
+                <div><strong>Obtížnost:</strong> 5/10</div>
+                <div><strong>Realizace:</strong> 8/10</div>
+            </div>
+            <div class="description">
                 <p>
-                    Tento projekt nám nezadávali ve škole, ale napadl mě samotného. Je to obyčejný úkolníček do kterého
+                    Tento projekt nám nezadávali ve škole, ale napadl mě samotného. Je to obyčejný úkolníček do
+                    kterého
                     si můžeme vytvářet úkoly na další dny. Naprogramoval jsem to přes Windows Forms. <br> <br>
-                    V levé části hlavního okna se nachází dny od roku 2004 do 2104 a v pravé části se zobrazují úkoly
-                    pro vybraný den. Také se nad výběrem datumu nachází streak counter, který počítá, kolik dní v kuse
+                    V levé části hlavního okna se nachází dny od roku 2004 do 2104 a v pravé části se zobrazují
+                    úkoly
+                    pro vybraný den. Také se nad výběrem datumu nachází streak counter, který počítá, kolik dní v
+                    kuse
                     jsme plnily všechny úkoly na den. <br> <br>
                     Při výběru dne ho můžeme také editovat. Zobrazí se nám nové okno, ve kterém je
                     vidět přehled všech úkolů na daný den. Pokud je den z minulosti nebo ze dneška, tak můžeme pouze
                     prohlížet úkoly a měnit na kolik procent jsou splněny. Pokud je den z budoucna, můžeme přidávat
                     mazat i editovat nové úkoly. <br> <br>
-                    Při tvorbě/editaci úkolu zadáváme jeho název, popisek, vyhrazený čas, zda je důležitý nebo volitelný
-                    a také na kolik čtvrtin je splněn. Poté při vytvoření úkolu se v pravém krajním sloupečku vytvoří
+                    Při tvorbě/editaci úkolu zadáváme jeho název, popisek, vyhrazený čas, zda je důležitý nebo
+                    volitelný
+                    a také na kolik čtvrtin je splněn. Poté při vytvoření úkolu se v pravém krajním sloupečku
+                    vytvoří
                     tlačítko start. Po stisknutí tohoto tlačítka se nám spustí časovač,
-                    abychom věděli, kolik času dané úloze ještě musíme věnovat. V uplynulých dnech toto tlačítko není,
+                    abychom věděli, kolik času dané úloze ještě musíme věnovat. V uplynulých dnech toto tlačítko
+                    není,
                     pouze se nám ukazuje, kolik minut jsme nad touto úlohou strávili.<br> <br>
-                    Všechny data a změny se ukládají do dvou souborů do složky AppData ve formátu JSON. Touto úlohou jsem si
+                    Všechny data a změny se ukládají do dvou souborů do složky AppData ve formátu JSON. Touto úlohou
+                    jsem si
                     chtěl procvičit práci ve Windows Forms a naučit se nové funkce s DataGridView.<br> <br>
                     Podrobnější funkcionalitu můžete shlédnout ve videoukázce:
                 </p>
-
             </div>
-            <div class="vcenter noDisplay">
+        </div>
+        <div class="slide vcenter noDisplay">
+            <div class="photos">
+                <div class="mainPhoto">
+                    <img src="../../Images/MyProjectsPhotos/PizzaWeb.png" title="Pizza Web">
+                </div>
+                <div class="gallery">
+                    <div class="mainPhoto">
+                        <img src="../../Images/MyProjectsPhotos/PizzaWeb.png" title="Pizza Web">
+                    </div>
+                </div>
+            </div>
+            <div class="tags">
+                <div><strong>Technologie:</strong> HTML, CSS</div>
+                <div><strong>Datum:</strong> Říjen 2023</div>
+                <div><strong>Čas:</strong> Cca 5 hodin</div>
+                <div><strong>Typ:</strong> Školní Projekt</div>
+                <div><strong>Obtížnost:</strong> 3/10</div>
+                <div><strong>Realizace:</strong> 9/10</div>
+            </div>
+            <div class="description">
                 <p>
-                    Tento projekt jsme tvořili v rámci předmětu programového vybavení (weby). Byl to náš mini projekt na
-                    procvičení formulářů a také stylování stránky. Data se z formuláře nikam neposílají, slouží to pouze
+                    Tento projekt jsme tvořili v rámci předmětu programového vybavení (weby). Byl to náš mini
+                    projekt na
+                    procvičení formulářů a také stylování stránky. Data se z formuláře nikam neposílají, slouží to
+                    pouze
                     pro vizualizaci (tehdy jsme neuměli s JavaScriptem).
                 </p>
-
             </div>
-            <div class="vcenter noDisplay">
+        </div>
+        <div class="slide vcenter noDisplay">
+            <div class="video">
+                <video poster="../../Images/MyProjectsPhotos/JSTaskManager_Overview.png">
+                    <source src="../../Videos/WebTaskManager.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="tags">
+                <div><strong>Technologie:</strong> HTML, CSS, JS</div>
+                <div><strong>Datum:</strong> Duben 2024</div>
+                <div><strong>Čas:</strong> Cca 15 hodin</div>
+                <div><strong>Typ:</strong> Školní Projekt</div>
+                <div><strong>Obtížnost:</strong> 6/10</div>
+                <div><strong>Realizace:</strong> 7/10</div>
+            </div>
+            <div class="description">
                 <p>
-                    Toto byl náš první velký projekt v rámci webů. V něm jsme museli vytvořit webový úkolníček.<br><br>
-                    Byla zde stránka s projekty a také s přehledem jednotlivých úkolů. Každý úkol se vždy vztahoval k
-                    určitému projektu. Po odpracování nějaké doby na úkolu se tento čas přičítal k celkovému času celého
+                    Toto byl náš první velký projekt v rámci webů. V něm jsme museli vytvořit webový
+                    úkolníček.<br><br>
+                    Byla zde stránka s projekty a také s přehledem jednotlivých úkolů. Každý úkol se vždy vztahoval
+                    k
+                    určitému projektu. Po odpracování nějaké doby na úkolu se tento čas přičítal k celkovému času
+                    celého
                     projektu – při smazání/úpravě úkolu se čas na projektu odečítal/měnil. <br> <br>
                     Evidovat odpracovaný čas na jednotlivém úkolu jde buďto spuštěním stopek v pravém horním rohu
-                    webu, nebo manuálním vytvořením úkolu. Tento projekt sloužil k procvičení Java Scriptu a abychom se
+                    webu, nebo manuálním vytvořením úkolu. Tento projekt sloužil k procvičení Java Scriptu a abychom
+                    se
                     naučili pracovat s časem.<br> <br>
                     Podrobnější funkcionalitu můžete shlédnout ve videoukázce:
                 </p>
             </div>
-            <div class="vcenter noDisplay">
+        </div>
+        <div class="slide vcenter noDisplay">
+            <div class="video">
+                <video poster="../../Images/MyProjectsPhotos/ExploreCity_Cities.png">
+                    <source src="../../Videos/ExploreCity.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="tags">
+                <div><strong>Technologie:</strong> HTML, CSS, JS, Node.JS</div>
+                <div><strong>Datum:</strong> Duben 2024</div>
+                <div><strong>Čas:</strong> Cca 25 hodin</div>
+                <div><strong>Typ:</strong> Školní Projekt</div>
+                <div><strong>Obtížnost:</strong> 7/10</div>
+                <div><strong>Realizace:</strong> 7/10</div>
+            </div>
+            <div class="description">
                 <p>
                     Tento projekt byl velkým shrnutím celého roku tvorby webů. Používali jsme v něm všechny naše
-                    dovednosti jak v HTML a CSS tak i v JS. Kromě toho nás profesor naučil používat NestJS. <br> <br>
+                    dovednosti jak v HTML a CSS tak i v JS. Kromě toho nás profesor naučil používat NestJS. <br>
+                    <br>
                     Tato webová aplikace měla fungovat jako prohlížeč populárních míst v českých městech. Měli jsme
-                    databázi, která obsahovala města, a každé město mělo zajímavá místa, restaurace či památky.<br> <br>
+                    databázi, která obsahovala města, a každé město mělo zajímavá místa, restaurace či památky.<br>
+                    <br>
                     Tato místa se mohla přidávat kýmkoli přes prostředí webu. Každé město i místo mělo svojí fotku a
-                    místa měla navíc popisek, hodnocení a komentáře. Hodnocení bylo nezávislé na komentářích a nedalo se
-                    nijak mazat. Komentáře mohl také zanechávat kdokoli – při publikaci komentáře se uložil čas, jméno a
+                    místa měla navíc popisek, hodnocení a komentáře. Hodnocení bylo nezávislé na komentářích a
+                    nedalo se
+                    nijak mazat. Komentáře mohl také zanechávat kdokoli – při publikaci komentáře se uložil čas,
+                    jméno a
                     obsah komentáře. <br> <br>
                     Všechny záznamy a informace o městech i místech se ukládaly do databáze prostřednictvím
                     repozitáře v NestJS. Úprava jednotlivých míst probíhala přes novou stránku, kde se vyplnil
                     formulář s klíčovými informacemi. Pokud město jíž existovalo, tak se poslal PUT požadavek, pokud
                     neexistovalo tak POST. <br> <br>
                     Z Podobné práce jsem dokonce maturoval (bylo to v rámci praktické maturitní zkoušky, která se
-                    skládala ze dvou částí – první den jsem si vylosoval NestJS, druhý den SQL – Mirroring a zálohování)<br> <br>
+                    skládala ze dvou částí – první den jsem si vylosoval NestJS, druhý den SQL – Mirroring a
+                    zálohování)<br>
+                    <br>
                     Podrobnější funkcionalitu můžete shlédnout ve videoukázce:
                 </p>
             </div>
-            <div class="vcenter noDisplay">
+        </div>
+        <div class="slide vcenter noDisplay">
+            <div class="photos">
+                <div class="mainPhoto">
+                    <img src="../../Images/MyProjectsPhotos/FlutterGame_Main.png">
+                </div>
+                <div class="gallery">
+                    <div>
+                        <img src="../../Images/MyProjectsPhotos/FlutterGame_Main.png" title="Quiz Hlavní Stránka">
+                    </div>
+
+                    <div>
+                        <img src="../../Images/MyProjectsPhotos/FlutterGame_Main_Setup.png"
+                             title="Quiz Nastavení Hry">
+                    </div>
+
+                    <div>
+                        <img src="../../Images/MyProjectsPhotos/FlutterGame_Gameplay.png" title="Quiz Otázky">
+                    </div>
+
+                    <div>
+                        <img src="../../Images/MyProjectsPhotos/FlutterGame_Gameplay_Correct.png"
+                             title="Quiz Správná Odpověď">
+                    </div>
+
+                    <div>
+                        <img src="../../Images/MyProjectsPhotos/FlutterGame_Gameplay_Incorrect.png"
+                             title="Quiz Špatná Odpověď">
+                    </div>
+
+                    <div>
+                        <img src="../../Images/MyProjectsPhotos/FlutterGame_Results.png" title="Quiz Výsledky">
+                    </div>
+                </div>
+            </div>
+            <div class="tags">
+                <div><strong>Technologie:</strong> Dart - Flutter Mobile App</div>
+                <div><strong>Datum:</strong> Červenec 2024</div>
+                <div><strong>Čas:</strong> Cca 20 hodin</div>
+                <div><strong>Typ:</strong> Spare Time Projekt</div>
+                <div><strong>Obtížnost:</strong> 5/10</div>
+                <div><strong>Realizace:</strong> 6/10</div>
+            </div>
+            <div class="description">
                 <p>
                     Toto je můj první větší projekt ve frameworku Flutter, který využívá programovací jazyk
                     Dart.<br><br>
-                    Pro generaci otázek a odpovědí na ně, jsem využil externí API, které je určeno pro vzdělávací účely.
+                    Pro generaci otázek a odpovědí na ně, jsem využil externí API, které je určeno pro vzdělávací
+                    účely.
                     Můžete ho najít na tomto odkazu: <a href="https://opentdb.com/api_config.php">Trivia API</a>.
                     Databáze otázek je veřejně dostupná a kdokoli tam může přidat své otázky (nutna registrace).<br><br>
-                    Na hlavní stránce aplikace je formulář, kterým nastavujeme otázky, které dostaneme. Jak to funguje?
+                    Na hlavní stránce aplikace je formulář, kterým nastavujeme otázky, které dostaneme. Jak to
+                    funguje?
                     Dle výběru uživatele se nastaví parametry, které se předají k URL cestě a následně se zavolá GET
                     požadavek na API. <br> <br>
-                    Po spuštění hry, se uživateli budou postupně zobrazovat otázky a odpovědi na ně (buďto Ano/Ne, nebo
-                    výběr z více možností v závislosti na tom, jak nastavil hru). Na každou odpověď má hráč 20 vteřin -
+                    Po spuštění hry, se uživateli budou postupně zobrazovat otázky a odpovědi na ně (buďto Ano/Ne,
+                    nebo
+                    výběr z více možností v závislosti na tom, jak nastavil hru). Na každou odpověď má hráč 20
+                    vteřin -
                     čas se zobrauje v horní části pod AppBarem jako modrý ProgressBar. Pokud do té doby nestihne
                     odpovědět, tak se zobrazí další otázka a odečte se 5 bodů. Při výběru špatné odopvědi se odpověď
-                    vybarví červeně a odečte se 5 bodů. Při správné odpovědi se vybarví zeleně a přičte se 10 bodů.<br><br>
+                    vybarví červeně a odečte se 5 bodů. Při správné odpovědi se vybarví zeleně a přičte se 10
+                    bodů.<br><br>
                     Po zodpovězení na všechny otázky se zobrazí obrazovka s výsledky. Z této obrazokvy se hráč může
                     pouze vrátit domů a začít novou hru.
                 </p>
             </div>
         </div>
-        <div class="photos">
-            <div class="slide">
+        <div class="slide vcenter noDisplay">
+            <div class="photos">
                 <div class="mainPhoto">
-                    <img src="../../Images/MyProjectsPhotos/MC_Logic.png">
+                    <img src="../../Images/MyProjectsPhotos/FilmsDb_Movies.png">
                 </div>
+                <div class="gallery">
+                    <div>
+                        <img src="../../Images/MyProjectsPhotos/FilmsDb_Movies.png" title="FilmsDb Přehled Filmů">
+                    </div>
 
-                <div>
-                    <img src="../../Images/MyProjectsPhotos/MC_Logic.png" title="Midnight Commander Logic Snippet">
-                </div>
+                    <div>
+                        <img src="../../Images/MyProjectsPhotos/FilmsDb_Series.png" title="FilmsDb Přehled Seriálů">
+                    </div>
 
-                <div>
-                    <img src="../../Images/MyProjectsPhotos/MC_Main.png" title="Midnight Commander Main Window">
-                </div>
-
-                <div>
-                    <img src="../../Images/MyProjectsPhotos/MC_PopUp.png" title="Midnight Commander Pop Up Window">
-                </div>
-
-                <div>
-                    <img src="../../Images/MyProjectsPhotos/MC_File.png" title="Midnight Commander File Window">
+                    <div>
+                        <img src="../../Images/MyProjectsPhotos/FilmsDb_Detail.png" title="FilmsDb Detail Filmu">
+                    </div>
                 </div>
             </div>
-
-            <div class="slide noDisplay">
-                <div class="mainPhoto">
-                    <img src="../../Images/MyProjectsPhotos/Backuper_API.png">
-                </div>
-
-                <div>
-                    <img src="../../Images/MyProjectsPhotos/Backuper_API.png" title="Backuper End Points">
-                </div>
-
-                <div>
-                    <img src="../../Images/MyProjectsPhotos/Backuper_DaemonCore.png" title="Backuper Daemon Core Logic">
-                </div>
-                <div>
-                    <img src="../../Images/MyProjectsPhotos/Backuper_DaemonBackuper.png"
-                         title="Backuper Daemon Backup Logic">
-                </div>
-
-                <div>
-                    <img src="../../Images/MyProjectsPhotos/Backuper_Computers.png" title="Backuper Computers List">
-                </div>
-
-                <div>
-                    <img src="../../Images/MyProjectsPhotos/Backuper_Configs.png" title="Backuper Configs List">
-                </div>
-
-                <div>
-                    <img src="../../Images/MyProjectsPhotos/Backuper_ConfigSetup.png" title="Backuper Configs Setup">
-                </div>
+            <div class="tags">
+                <div><strong>Technologie:</strong> Node.js - React</div>
+                <div><strong>Datum:</strong> Leden 2025</div>
+                <div><strong>Čas:</strong> Cca 35 hodin</div>
+                <div><strong>Typ:</strong> Spare Time Projekt</div>
+                <div><strong>Obtížnost:</strong> 5/10</div>
+                <div><strong>Realizace:</strong> 8/10</div>
             </div>
-
-            <div class="slide noDisplay">
-                <div class="video">
-                    <video poster="../../Images/MyProjectsPhotos/ClassDiagram_Thumbnail.png">
-                        <source src="../../Videos/ClassDiagram.mp4" type="video/mp4">
-                    </video>
-                </div>
-            </div>
-
-            <div class="slide noDisplay">
-                <div class="video">
-                    <video poster="../../Images/MyProjectsPhotos/RealEstate_Home.png">
-                        <source src="../../Videos/RealEstate.mp4" type="video/mp4">
-                    </video>
-                </div>
-            </div>
-
-            <div class="slide noDisplay">
-                <div class="video">
-                    <video poster="../../Images/MyProjectsPhotos/FormsTaskManager_Main.png">
-                        <source src="../../Videos/TaskApp.mp4" type="video/mp4">
-                    </video>
-                </div>
-            </div>
-
-            <div class="slide noDisplay">
-                <div class="mainPhoto soloMainPhoto">
-                    <img src="../../Images/MyProjectsPhotos/PizzaWeb.png" title="Pizza Web">
-                </div>
-            </div>
-
-            <div class="slide noDisplay">
-                <div class="video">
-                    <video poster="../../Images/MyProjectsPhotos/JSTaskManager_Overview.png">
-                        <source src="../../Videos/WebTaskManager.mp4" type="video/mp4">
-                    </video>
-                </div>
-            </div>
-
-            <div class="slide noDisplay">
-                <div class="video">
-                    <video poster="../../Images/MyProjectsPhotos/ExploreCity_Cities.png">
-                        <source src="../../Videos/ExploreCity.mp4" type="video/mp4">
-                    </video>
-                </div>
-            </div>
-
-            <div class="slide noDisplay">
-                <div class="mainPhoto">
-                    <img src="../../Images/MyProjectsPhotos/FlutterGame_Main.png">
-                </div>
-
-                <div>
-                    <img src="../../Images/MyProjectsPhotos/FlutterGame_Main.png" title="Quiz Hlavní Stránka">
-                </div>
-
-                <div>
-                    <img src="../../Images/MyProjectsPhotos/FlutterGame_Main_Setup.png" title="Quiz Nastavení Hry">
-                </div>
-
-                <div>
-                    <img src="../../Images/MyProjectsPhotos/FlutterGame_Gameplay.png" title="Quiz Otázky">
-                </div>
-
-                <div>
-                    <img src="../../Images/MyProjectsPhotos/FlutterGame_Gameplay_Correct.png"
-                         title="Quiz Správná Odpověď">
-                </div>
-
-                <div>
-                    <img src="../../Images/MyProjectsPhotos/FlutterGame_Gameplay_Incorrect.png"
-                         title="Quiz Špatná Odpověď">
-                </div>
-
-                <div>
-                    <img src="../../Images/MyProjectsPhotos/FlutterGame_Results.png" title="Quiz Výsledky">
-                </div>
+            <div class="description">
+                <p>
+                    Můj první větší samostatný projekt, který jsem vytvořil s využitím React. V rámci projektu jsem se
+                    snažil
+                    aplikovat co nejvíce znalostí, které jsem získal během absolvování <a
+                        href="https://www.udemy.com/course/react-the-complete-guide-incl-redux">kurzu</a>. Uvědomuji si,
+                    že některá
+                    řešení nejsou zcela ideální, například návrh komponent a jejich vzájemná integrace, avšak si myslím,
+                    že
+                    výsledek představuje solidní práci. <br><br>
+                    Jako zdroj dat jsem využil veřejné API - <a href="https://www.themoviedb.org/settings/api">TMDB</a>,
+                    což je rozsáhlá databáze filmů, do které mohou uživatelé přidávat obsah. API nabízí celou řadu
+                    filtrů, které jsem ve svém projektu hojně využil, především pro filtrování na straně
+                    klienta.<br><br>
+                    V rámci projektu jsem implementoval například knihovnu Framer Motion pro animace, Tanstack Query pro
+                    odesílání requestů a Context API pro efektivní správu uložených filtrů. <br><br>
+                    Aplikace umožňuje uživatelům vybírat různé kategorie filmů či seriálů. Uživatel si také může
+                    nastavit vlastní filtr a vyhledávat filmy na základě specifických kritérií. Myšlenka projektu byla
+                    vytvořit nástroj, který by uživatelům pomohl najít inspiraci, když nevědí, na co se podívat. Po
+                    nalezení zajímavého filmu si v detailu mohou přečíst stručný popisek (bohužel API poskytuje pouze
+                    omezené informace) a přehrát dostupné trailery. Pokud by je film zaujal, mohou si ho pustit na
+                    Netflix nebo jiné streamovací platformě. <br><br>
+                    Aplikaci si můžete vyzkoušet na následujícím odkazu (pokud stále ještě nebyl překročen datový limit
+                    hostingu😃): <a href="https://filmsdb.zakharchenkoartem.cz/">filmsdb.zakharchenkoartem.cz/</a>
+                </p>
             </div>
         </div>
-    </content>
+    </div>
+
 </main>
 
 <dialog>

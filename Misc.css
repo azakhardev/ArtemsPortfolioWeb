@@ -3,6 +3,8 @@ body {
     font-size: 16px;
     color: #3D52A0;
     margin-top: 0;
+    margin-inline: 1%;
+    overflow-x: hidden;
 }
 
 ::-webkit-scrollbar {
@@ -11,11 +13,11 @@ body {
 }
 
 header {
-    height: 14vh;
+    /*height: 14vh;*/
     display: flex;
     flex-direction: column;
     gap: 5px;
-    z-index: 1  ;
+    z-index: 2;
 }
 
 headerButtons {
@@ -54,7 +56,6 @@ button:hover {
     display: inline-block;
     color: white;
     background-color: rgb(128, 128, 128);
-    width: 10px;
     width: 10px;
     height: 10px;
     text-align: center;
@@ -120,6 +121,10 @@ button:hover {
 }
 
 dialog {
+    top:0;
+    left:0;
+    margin:0;
+    padding: 19px;
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -137,6 +142,9 @@ dialog[open] {
 }
 
 @media screen and (min-width: 768px) {
+    body{
+        margin-inline: 0;
+    }
     .tooltip {
         display: inline-block;
     }
