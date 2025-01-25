@@ -2,7 +2,8 @@ body {
     font-family: Arial, SansSerif, serif;
     font-size: 16px;
     color: #3D52A0;
-    margin: 0;
+    margin-top: 0;
+    margin-inline: 1%;
     overflow-x: hidden;
 }
 
@@ -121,6 +122,10 @@ button:hover {
 }
 
 dialog {
+    top:0;
+    left:0;
+    margin:0;
+    padding: 19px;
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -138,6 +143,9 @@ dialog[open] {
 }
 
 @media screen and (min-width: 768px) {
+    body{
+        margin-inline: 0;
+    }
     .tooltip {
         display: inline-block;
     }

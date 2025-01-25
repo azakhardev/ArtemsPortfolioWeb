@@ -1,10 +1,4 @@
-projects {
-    display: flex;
-    flex-direction: row;
-    /*overflow: hidden;*/
-}
-
-aside{
+aside {
     position: absolute;
     left: 0;
     top: 25vh;
@@ -21,7 +15,7 @@ aside{
     z-index: 1;
 }
 
-aside h3{
+aside h3 {
     margin-block: 10px;
     border-radius: 5px;
     background-color: #4682B4;
@@ -46,52 +40,11 @@ aside button:hover {
     text-decoration: underline;
 }
 
-slider {
-    display: flex;
-    flex-direction: row;
+.mainPhoto{
+    display: none;
 }
 
-/*buttons {*/
-/*    display: flex;*/
-/*    flex-direction: row;*/
-/*    margin-inline: 5%;*/
-/*    height: 50px;*/
-/*    justify-content: space-between;*/
-/*    align-items: center;*/
-/*}*/
-
-/*button {*/
-/*    padding: 5px;*/
-/*    width: 70px;*/
-/*    margin-inline: 2px;*/
-/*    background-color: #ADBBDA;*/
-/*    border: 0.2px solid black;*/
-/*    border-radius: 5px;*/
-/*    transition: width 0.2s, padding 0.2s, margin 0.2s;*/
-/*}*/
-
-/*button:hover {*/
-/*    margin-inline: 0px;*/
-/*    width: 74px;*/
-/*    padding: 7px;*/
-/*    cursor: pointer;*/
-/*}*/
-
-.projectTitles {
-    display: flex;
-    flex-direction: row;
-    height: 6vh;
-    width: 90%;
-    margin-inline: 5%;
-    overflow: hidden;
-}
-
-.projectTitles div {
-    min-width: 100%;
-    transition: margin ease 1s;
-}
-
-content {
+.projects {
     min-height: 70vh;
     display: flex;
     flex-direction: column;
@@ -99,35 +52,32 @@ content {
     margin-inline: 20px;
 }
 
-.description {
-    display: block;
-    border: 0.2px solid black;
-    flex: 1;
-    border-radius: 15px;
-    background-color: #EDE8F5;
-}
-
-.description div {
+.projects .slide {
+    flex-direction: column;
     opacity: 0;
     transition: opacity 0.5s;
     padding-inline: 4px;
     text-align: center;
 }
 
-.photos {
-    background-color: #EDE8F5;
-    flex: 1;
-    border: 0.2px solid black;
-    border-radius: 15px;
+.slide p{
+    text-align: justify;
 }
 
-.photos .slide {
-    padding: 2.5%;
+.photos {
     display: flex;
-    gap: 20px;
     flex-direction: column;
+}
+
+.gallery {
+    padding: 2.5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
     transition: opacity 0.5s;
 }
+
 
 div img {
     width: 100%;
@@ -147,13 +97,12 @@ video {
     height: auto;
     object-fit: cover;
     max-width: 1285px;
+    border: 1px solid black;
+    cursor: pointer;
 }
 
-.mainPhoto {
-    display: none;
-}
-.soloMainPhoto{
-    display: block!important;
+.soloMainPhoto {
+    display: block !important;
 }
 
 dialog div {
@@ -175,49 +124,48 @@ ol li {
     text-align: left !important;
 }
 
+@media screen and (min-width: 768px) {
+    .description{
+        background-color: #EDE8F5;
+        border-radius: 10px;
+        padding-block: 10px;
+        padding-inline: 25px;
+    }
+}
 
 @media screen and (min-width: 1285px) {
-    .mainPhoto, .video {
-        grid-column: 1/3;
-        cursor: pointer;
+
+    .description{
+        margin-inline: 5%;
     }
 
-    div img {
-        max-width: 1920px;
-    }
-
-    .photos .slide {
-        padding: 2.5%;
-        width: 95%;
-        height: 95%;
-        display: grid;
-        grid-template-columns: 16fr 16fr;
-        grid-template-rows: 18fr 9fr;
-        gap: 10px;
-        transition: opacity 0.5s;
+    .projects {
+        gap: 5px;
+        margin-inline: 15%;
     }
 
     .mainPhoto {
         display: block;
     }
 
-    .projectTitles {
-        height: 5vh;
-        font-weight: bold;
-        font-size: larger;
-    }
-
-    content {
-        display: flex;
-        flex-direction: row;
-        gap: 5px;
-    }
-
-    .description p {
-        padding-inline: 10%;
-    }
-
     video {
         max-width: 1920px;
     }
+
+    .gallery {
+        padding: 2.5%;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        transition: opacity 0.5s;
+    }
+
+    .gallery div {
+        max-width: 25%;
+    }
+
+    div img {
+        max-width: 1920px;
+    }
+
 }
