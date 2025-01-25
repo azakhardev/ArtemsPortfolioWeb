@@ -11,9 +11,15 @@ let currentProject = 0;
 dialogEl.querySelector('img').style.display = "none";
 dialogEl.querySelector('video').style.display = "none";
 
-asideElement.style.left = asideInitialOffset + "px"
+const asideTimerId = setTimeout(()=>{
+    asideElement.style.left = asideInitialOffset + "px"
+},2000)
+
 
 asideElement.addEventListener('mouseover', e => {
+    if(asideTimerId){
+        clearTimeout(asideTimerId)
+    }
     asideElement.style.left = "0px"
     asideElement.style.opacity = "1"
 })
