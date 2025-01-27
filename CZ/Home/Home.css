@@ -1,3 +1,15 @@
+:root {
+    --dropdown: hsl(261, 46%, 84%);
+    --dropdown-hover: hsl(261, 46%, 74%);
+    --dropdown-text: hsl(231, 48%, 48%);
+}
+
+.dark-mode{
+    --dropdown: hsl(261, 46%, 35%);
+    --dropdown-hover: hsl(261, 46%, 40%);
+    --dropdown-text: hsl(231, 48%, 85%);
+}
+
 main {
     display: flex;
     flex-direction: column-reverse;
@@ -13,21 +25,21 @@ h4 {
 main div {
     flex: 1;
     border-radius: 15px;
-    background-color: #EDE8F5;
+    background-color: var(--card-bg);
     padding: 15px;
 }
 
 #news {
     position: fixed;
-    width: 91%;
-    left: 2.5%;
+    width: 80vw;
+    left: 8vw;
+    padding: 2vw;
     top: -200px;
     border: 1px solid black;
     border-radius: 15px;
-    background-color: #EDE8F5;
-    padding: 2%;
+    background-color: var(--card-bg);
     z-index: 3;
-    transition: all ease-in-out 1.5s, opacity linear 0.5s;
+    transition: top ease-in-out 1.5s, opacity linear 0.5s;
     opacity: 0.5;
 }
 
@@ -58,26 +70,27 @@ ul {
 li {
     font-weight: normal;
 }
-#skills div{
+
+#skills div {
     padding: 0;
     margin-top: 5px;
 }
 
 .listHeader {
-    background-color: #D1C4E9;
+    background-color: var(--dropdown);
     display: flex;
     justify-content: space-between;
     align-items: center;
     border: 1px solid black;
     font-weight: bold;
-    color: #3F51B5;
+    color: var(--dropdown-text);
     padding-block: 5px !important;
     padding-inline: 10px !important;
     border-radius: 3px;
 }
 
-.listHeader:hover{
-    background-color: #B39DDB;
+.listHeader:hover {
+    background-color: var(--dropdown-hover);
     cursor: pointer;
 }
 
@@ -88,13 +101,13 @@ li {
     overflow-y: hidden;
 }
 
-.triangleButton{
+.triangleButton {
     transition: all 0.3s ease-out;
 }
 
-.active + ul{
+.active + ul {
     padding-block: 8px;
-    border-bottom: 1px dashed gray;
+    border-bottom: 1px dashed var(--contrast-dark);
     margin-bottom: 10px;
     max-height: 180px;
 }
@@ -146,7 +159,7 @@ progress {
 }
 
 #downloadButton {
-    background-color: #7091E6;
+    background-color: var(--light-blue);
     width: 40px;
     height: 40px;
     padding: 10px;
@@ -155,14 +168,14 @@ progress {
 }
 
 #downloadButton:hover {
-    background-color: #6286E3;
+    background-color: hsl(223, 70%, 52%);
 }
 
 .buttonShake {
     animation: buttonShake 2s;
 }
 
-dialog{
+dialog {
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -173,12 +186,13 @@ dialog{
 dialog .wrapper {
     display: flex;
     flex-direction: column;
+    top: -50%;
     position: fixed;
     height: 40%;
     width: 90vw;
     border: 1px solid black;
     border-radius: 20px;
-    background-color: #7091E6;
+    background-color: var(--light-blue);
     transition: ease-in-out, 1s;
 }
 
@@ -203,13 +217,13 @@ dialog h2 {
     flex-direction: column;
     border-radius: 10px;
     padding: 5px;
-    background-color: #EDE8F5;
+    background-color: var(--button);
     width: 120px;
     height: 120px;
 }
 
 .icon:hover {
-    background-color: #dbd5e3;
+    background-color: var(--button-hover);
 }
 
 @keyframes buttonShake {
@@ -227,12 +241,11 @@ dialog h2 {
 @media screen and (min-width: 768px) {
 
     #news {
-        width: 71%;
-        left: 12.5%;
-        padding: 2%;
+        width: 70vw;
+        left: 13vw;
     }
 
-    dialog .wrapper{
+    dialog .wrapper {
         width: 50%;
     }
 
@@ -290,12 +303,12 @@ dialog h2 {
     }
 
     #news {
-        width: 48%;
-        left: 25%;
-        padding: 1%;
+        width: 48vw;
+        left: 25vw;
+        padding: 1vw;
     }
 
-    dialog .wrapper{
+    dialog .wrapper {
         width: 35%;
     }
 

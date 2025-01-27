@@ -1,15 +1,40 @@
 :root {
-    --body-bg: hsl(0, 100%, 100%);
-    --header-button:hsl(221, 38%, 77%);
+    --contrast-dark: hsl(0, 0%, 20%);
+    --contrast-light: hsl(0, 0%, 100%);
+    --button:hsl(221, 38%, 77%);
+    --button-hover: hsl(222, 33%, 73%);
     --light-blue: hsl(223, 70%, 67%);
     --text-color: hsl(227, 45%, 43%);
-    --card-bg: hsl(263, 39%, 94%);
+    --card-bg: hsl(263, 39%, 90%);
+    --link: hsl(211, 100%, 46%);
+    --visited-link: hsl(271, 100%, 43%);
+}
+
+.dark-mode{
+    --contrast-dark: hsl(0, 0%, 80%);
+    --contrast-light: hsl(0, 0%, 20%);
+    --button: hsl(221, 38%, 55%);
+    --button-hover: hsl(222, 38%, 60%);
+    --light-blue: hsl(223, 60%, 40%);
+    --text-color: hsl(0, 0%, 85%);
+    --card-bg: hsl(263, 39%, 40%);
+    --link: hsl(211, 100%, 70%);
+    --visited-link: hsl(271, 100%, 73%);
+}
+
+a{
+    color: var(--link);
+}
+
+a:visited{
+    color: var(--visited-link);
 }
 
 body {
+    background-color: var(--contrast-light);
     font-family: Arial, SansSerif, serif;
     font-size: 16px;
-    color: #3D52A0;
+    color: var(--text-color);
     margin-top: 0;
     margin-inline: 1%;
     overflow-x: hidden;
@@ -21,7 +46,6 @@ body {
 }
 
 header {
-    /*height: 14vh;*/
     display: flex;
     flex-direction: column;
     gap: 5px;
@@ -36,15 +60,15 @@ headerButtons {
 
 a.selectPage {
     text-decoration: none;
-    color: white;
-    background-color: #ADBBDA;
+    color: var(--text-color);
+    background-color: var(--button);
     flex: 1;
     border: .2px solid black;
     border-radius: 2px;
 }
 
 a.selectPage:hover {
-    background-color: #a3b1d1;
+    background-color: var(--button-hover);
 }
 
 button:hover {
@@ -53,17 +77,13 @@ button:hover {
 
 .infoTags {
     font-size: xx-small;
-    color: lightgray;
-}
-
-.currentPage {
-    background-color: #93a1c2;
+    color: var(--contrast-dark);
 }
 
 .explanationTag {
     display: inline-block;
-    color: white;
-    background-color: rgb(128, 128, 128);
+    color: var(--contrast-light);
+    background-color: var(--contrast-dark);
     width: 10px;
     height: 10px;
     text-align: center;
@@ -79,8 +99,8 @@ button:hover {
 
 .tooltip .tooltipText {
     visibility: hidden;
-    background-color: rgba(128, 128, 128, 0.7);
-    color: rgba(255, 255, 255, 0.7);
+    background-color: var(--contrast-dark);
+    color: var(--contrast-light);
     text-align: center;
     border-radius: 6px;
     padding: 5px;
@@ -119,13 +139,13 @@ button:hover {
     top: 2vh;
     left: 90vw;
     padding: 8px 12px;
-    color: white;
+    color:hsl(0, 0%, 100%) ;
     font-weight: bold;
     font-size: 32px;
 }
 
 .close:hover {
-    background: #bbb;
+    background: hsl(0, 0%, 20%);
 }
 
 dialog {
@@ -176,7 +196,7 @@ dialog[open] {
         height: 8vh;
         position: sticky;
         top: 0;
-        background-color: #7091E6;
+        background-color: var(--light-blue);
         padding-block: 15px;
     }
 
