@@ -1,8 +1,16 @@
+:root{
+  --job-text-col: hsl(0,0%,5%);
+}
+
+.dark-mode{
+  --job-text-col: hsl(0,0%,95%);
+}
+
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: black;
+  color: var(--job-text-col);
 }
 
 .mainDescription {
@@ -35,8 +43,8 @@ h4 {
 }
 
 .card {
-  border: 1px solid #3d52a0;
-  background-color: #ede8f5;
+  border: 1px solid gray;
+  background-color: var(--card-bg);
   border-radius: 15px;
   padding: 5%;
   width: 90%;
@@ -78,11 +86,6 @@ dialog img{
 
 @media screen and (min-width: 768px) {
 
-  /*dialog img{*/
-  /*  width: auto;*/
-  /*  object-fit: initial;*/
-  /*  height: auto;*/
-  /*}*/
   .mainDescription {
     margin-top: 40px;
     font-size: 1.3rem;
