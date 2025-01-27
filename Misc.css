@@ -1,7 +1,7 @@
 :root {
     --contrast-dark: hsl(0, 0%, 20%);
     --contrast-light: hsl(0, 0%, 100%);
-    --button:hsl(221, 38%, 77%);
+    --button: hsl(221, 38%, 77%);
     --button-hover: hsl(222, 33%, 73%);
     --light-blue: hsl(223, 70%, 67%);
     --text-color: hsl(227, 45%, 43%);
@@ -10,7 +10,7 @@
     --visited-link: hsl(271, 100%, 43%);
 }
 
-.dark-mode{
+.dark-mode {
     --contrast-dark: hsl(0, 0%, 80%);
     --contrast-light: hsl(0, 0%, 20%);
     --button: hsl(221, 38%, 55%);
@@ -22,13 +22,6 @@
     --visited-link: hsl(271, 100%, 73%);
 }
 
-a{
-    color: var(--link);
-}
-
-a:visited{
-    color: var(--visited-link);
-}
 
 body {
     background-color: var(--contrast-light);
@@ -45,6 +38,14 @@ body {
     background: transparent;
 }
 
+a {
+    color: var(--link);
+}
+
+a:visited {
+    color: var(--visited-link);
+}
+
 header {
     display: flex;
     flex-direction: column;
@@ -56,6 +57,37 @@ headerButtons {
     display: flex;
     flex-direction: column;
     gap: 1px;
+}
+
+.themeButton {
+    position: initial;
+    right: 20px;
+    top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.switch {
+    display: flex;
+    justify-content: start;
+    width: 45px;
+    border-radius: 15px;
+    height: 15px;
+    background-color: var(--contrast-dark);
+    padding: 2px;
+    transition: 0.3s ease-out;
+}
+
+.switchToggle {
+    height: 100%;
+    width: 15px;
+    border-radius: 50%;
+    background-color: var(--button);
 }
 
 a.selectPage {
@@ -139,7 +171,7 @@ button:hover {
     top: 2vh;
     left: 90vw;
     padding: 8px 12px;
-    color:hsl(0, 0%, 100%) ;
+    color: hsl(0, 0%, 100%);
     font-weight: bold;
     font-size: 32px;
 }
@@ -188,10 +220,6 @@ dialog[open] {
         background-position: center;
     }
 
-    a.selectPage {
-        padding-block: 5px;
-    }
-
     header {
         height: 8vh;
         position: sticky;
@@ -204,6 +232,24 @@ dialog[open] {
         flex-direction: row;
         margin-inline: 10vw;
         height: 4vh;
+    }
+
+    a.selectPage {
+        padding-block: 5px;
+    }
+
+    .themeButton {
+        position: absolute;
+    }
+
+    .switch {
+        width: 75px;
+        height: 25px;
+        border-radius: 25px;
+    }
+
+    .switchToggle {
+        width: 25px;
     }
 
     main {

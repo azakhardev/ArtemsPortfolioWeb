@@ -12,12 +12,27 @@
 
 <header>
     <logo></logo>
+
     <headerButtons>
         <a class="vcenter selectPage " href="../Home/Home.html">O Mně</a>
         <a class="vcenter selectPage" href="../Projects/Projects.html">Projekty</a>
         <a class="vcenter selectPage" href="../Jobs/Jobs.html">Pracovní Zkušenosti</a>
         <a class="vcenter selectPage" href="Contact.html">Služby a Kontakt</a>
     </headerButtons>
+
+    <div class="themeButton">
+        <div>
+            <box-icon color="var(--contrast-dark)" name='sun'></box-icon>
+        </div>
+        <div class="switch">
+            <div class="switchToggle">
+            </div>
+        </div>
+        <div>
+            <box-icon color="var(--contrast-dark)" name='moon'></box-icon>
+        </div>
+    </div>
+
 </header>
 <script src="../../theme.js"></script>
 <main>
@@ -33,18 +48,13 @@
         </ol>
     </div>
 
-
     <h2 style="text-align: center">Pokud máte zájem o spolupráci nebo nějaké datazy, tak vyplňte tento jednoduchý formulář, a já Vás kontaktuji zpět.</h2>
 
     <form>
         <input placeholder="Jméno" id="name" required>
-
         <input placeholder="Příjmení" id="surname" required>
-
         <input type="email" placeholder="Email" id="email" required>
-
         <textarea placeholder="Zpráva" id="message"></textarea>
-
         <button>Send</button>
     </form>
 
@@ -52,6 +62,7 @@
 
 <script src="Contact.js"></script>
 <script src="../../Authenticator.js"></script>
+<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 
 </body>
 </html>

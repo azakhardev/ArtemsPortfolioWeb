@@ -18,6 +18,18 @@
         <a class="vcenter selectPage" href="../Jobs/Jobs.html">Pracovní Zkušenosti</a>
         <a class="vcenter selectPage" href="../Contact/Contact.html">Služby a Kontakt</a>
     </headerButtons>
+    <div class="themeButton">
+        <div>
+            <box-icon color="var(--contrast-dark)" name='sun'></box-icon>
+        </div>
+        <div class="switch">
+            <div class="switchToggle">
+            </div>
+        </div>
+        <div>
+            <box-icon color="var(--contrast-dark)" name='moon'></box-icon>
+        </div>
+    </div>
 
 </header>
 <script src="../../theme.js"></script>
@@ -29,7 +41,10 @@
                     <img src="../../Images/Icons/Servis.jpg">
                 </div>
                 <div class="description">
-                    <h3>Fibretel</h3>
+                    <div style="display: flex; justify-content: space-between">
+                        <h3>Fibretel</h3>
+                        <p>Červen 2024</p>
+                    </div>
                     <p class="phoneOnly">Web Server udělaný za pomoci frameworku ASP.NET pro firmu Fibratel.</p>
                     <p class="pcOnly">Tento web byl mou první pracovní zkušeností ve sféře IT. Web jsem dělal pro firmu
                         Fibretel - dostal jsem se k ní přes kamaráda. Po dokončení webu se ale s partnery dohodli, že
@@ -47,7 +62,10 @@
                     <img src="../../Images/Icons/Loop.jpg">
                 </div>
                 <div class="description">
-                    <h3>Loop</h3>
+                    <div style="display: flex; justify-content: space-between">
+                        <h3>Loop</h3>
+                        <p>Listopad 2024</p>
+                    </div>
                     <p class="phoneOnly">DevOps aplikace pro Českou Spořitelnu na Hackathonu 2024 vyvíjená v React.</p>
                     <p class="pcOnly">DevOps webová aplikace, která byla vytvořena pro Českou Spořitelnu v rámci
                         Hackathonu, který se konal v listopadu 2024. Cílem bylo navrhnout elegantní a inovovativní
@@ -63,6 +81,6 @@
 
 <script src="Jobs.js"></script>
 <script src="../../Authenticator.js"></script>
-
+<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </body>
 </html>

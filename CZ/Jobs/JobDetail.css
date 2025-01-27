@@ -1,118 +1,155 @@
-:root{
-  --job-text-col: hsl(0,0%,5%);
+:root {
+    --job-text-col: hsl(0, 0%, 5%);
 }
 
-.dark-mode{
-  --job-text-col: hsl(0,0%,95%);
+.dark-mode {
+    --job-text-col: hsl(0, 0%, 95%);
+}
+
+.themeButton{
+    position: initial;
+}
+
+
+.heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    width: 100vw;
+}
+
+.buttons {
+    margin-top: 10px;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-inline: 5%;
+}
+
+.buttons a {
+    display: block;
+    border-radius: 10px;
+    padding-block: 10px;
+    padding-inline: 20px;
+    background-color: var(--button);
+}
+
+.buttons a:hover {
+    background-color: var(--button-hover);
 }
 
 main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: var(--job-text-col);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--job-text-col);
 }
 
 .mainDescription {
-  margin-top: 10px;
-  text-align: justify;
-  font-size: 1.1rem;
-  font-weight: bold;
-  font-family: "Arial Rounded MT Bold", serif;
-}
-
-@media screen and (max-width: 720px){
-  .mainDescription {
-   margin-inline: 15px;
-  }
+    margin-top: 10px;
+    text-align: justify;
+    font-size: 1.1rem;
+    font-weight: bold;
+    font-family: "Arial Rounded MT Bold", serif;
 }
 
 .descriptionPart {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
 }
 
 h3 {
-  margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 h4 {
-  margin-top: 0;
+    margin-top: 0;
 }
 
 .card {
-  border: 1px solid gray;
-  background-color: var(--card-bg);
-  border-radius: 15px;
-  padding: 5%;
-  width: 90%;
+    border: 1px solid gray;
+    background-color: var(--card-bg);
+    border-radius: 15px;
+    padding: 5%;
+    width: 90%;
 }
+
 .card h5 {
-  margin-block: 2px;
+    margin-block: 2px;
 }
 
 .video {
-  width: 100%;
+    width: 100%;
 }
 
 video {
-  width: 100%;
-  height: auto;
+    width: 100%;
+    height: auto;
 }
 
 img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  cursor: pointer;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
 }
 
 dialog div {
-  width: 90%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-dialog img{
-  width: 100%;
-  object-fit: contain;
-  height: auto;
+dialog img {
+    width: 100%;
+    object-fit: contain;
+    height: auto;
 }
+
 
 @media screen and (min-width: 768px) {
+    .buttons {
+        margin-top: 25px;
+    }
 
-  .mainDescription {
-    margin-top: 40px;
-    font-size: 1.3rem;
-  }
+    .mainDescription {
+        margin-top: 40px;
+        font-size: 1.3rem;
+    }
 
-  .descriptionPart {
-    gap: 30px;
-  }
-  .card {
-    width: 96%;
-    padding: 2%;
-  }
+    .descriptionPart {
+        gap: 30px;
+    }
+
+    .card {
+        width: 96%;
+        padding: 2%;
+    }
 }
 
 @media screen and (min-width: 1920px) {
-  .mainDescription {
-    margin-top: 60px;
-    font-size: 1.5rem;
-  }
-  .descriptionPart {
-    gap: 40px;
-  }
-  main {
-    padding-inline: 10%;
-  }
-  .card {
-    width: 92%;
-    padding: 4%;
-  }
+    .mainDescription {
+        margin-top: 60px;
+        font-size: 1.5rem;
+    }
+
+    .descriptionPart {
+        gap: 40px;
+    }
+
+    main {
+        padding-inline: 10%;
+    }
+
+    .card {
+        width: 92%;
+        padding: 4%;
+    }
 }
