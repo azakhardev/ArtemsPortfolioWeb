@@ -103,15 +103,6 @@ li {
     transform: rotate(180deg);
 }
 
-/*@keyframes rotateArrow {*/
-/*    0%{*/
-/*        transform: rotate(0deg);*/
-/*    }*/
-/*    100%{*/
-/*        transform: rotate(180deg);*/
-/*    }*/
-/*}*/
-
 #skills {
 
 }
@@ -171,11 +162,18 @@ progress {
     animation: buttonShake 2s;
 }
 
-dialog {
+dialog{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+dialog .wrapper {
     display: flex;
     flex-direction: column;
     position: fixed;
-    top: -170%;
     height: 40%;
     width: 90vw;
     border: 1px solid black;
@@ -234,11 +232,11 @@ dialog h2 {
         padding: 2%;
     }
 
-    dialog {
+    dialog .wrapper{
         width: 50%;
     }
 
-    dialog h2 {
+    dialog .wrapper h2 {
         margin-bottom: 80px;
     }
 
@@ -297,11 +295,11 @@ dialog h2 {
         padding: 1%;
     }
 
-    dialog {
+    dialog .wrapper{
         width: 35%;
     }
 
-    dialog h2 {
+    dialog .wrapper h2 {
         margin-bottom: 110px;
     }
 

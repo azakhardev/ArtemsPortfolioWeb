@@ -1,3 +1,11 @@
+:root {
+    --body-bg: hsl(0, 100%, 100%);
+    --header-button:hsl(221, 38%, 77%);
+    --light-blue: hsl(223, 70%, 67%);
+    --text-color: hsl(227, 45%, 43%);
+    --card-bg: hsl(263, 39%, 94%);
+}
+
 body {
     font-family: Arial, SansSerif, serif;
     font-size: 16px;
@@ -121,9 +129,9 @@ button:hover {
 }
 
 dialog {
-    top:0;
-    left:0;
-    margin:0;
+    top: 0;
+    left: 0;
+    margin: 0;
     padding: 19px;
     width: 100vw;
     height: 100vh;
@@ -142,9 +150,10 @@ dialog[open] {
 }
 
 @media screen and (min-width: 768px) {
-    body{
+    body {
         margin-inline: 0;
     }
+
     .tooltip {
         display: inline-block;
     }
@@ -159,7 +168,7 @@ dialog[open] {
         background-position: center;
     }
 
-    a.selectPage{
+    a.selectPage {
         padding-block: 5px;
     }
 
@@ -190,7 +199,7 @@ dialog[open] {
     }
 }
 
-@media screen and (min-width: 1285px){
+@media screen and (min-width: 1285px) {
     .close {
         display: inline;
         top: 5vh;
