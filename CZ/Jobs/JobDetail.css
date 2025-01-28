@@ -1,8 +1,10 @@
 :root {
+    --back-btn: hsl(0, 0%, 45%);
     --job-text-col: hsl(0, 0%, 5%);
 }
 
 .dark-mode {
+    --back-btn: hsl(0, 0%, 75%);
     --job-text-col: hsl(0, 0%, 95%);
 }
 
@@ -33,11 +35,12 @@
     border-radius: 10px;
     padding-block: 10px;
     padding-inline: 20px;
-    background-color: var(--button);
+    background-color: var(--back-btn);
+    transition: all 0.1s linear;
 }
 
-.buttons a:hover {
-    background-color: var(--button-hover);
+.buttons a:hover{
+    scale: 1.1;
 }
 
 main {

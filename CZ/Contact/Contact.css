@@ -2,12 +2,12 @@
 
 :root{
     --services-text: hsl(223, 70%, 67%);
-    --form-bg: hsl(263, 39%, 90%);
+    --form-bg: hsl(0, 0%, 90%);
 }
 
 .dark-mode{
     --services-text: hsl(223, 70%, 57%);
-    --form-bg: hsl(263, 39%, 75%);
+    --form-bg: hsl(0, 0%, 75%);
 }
 
 form {
