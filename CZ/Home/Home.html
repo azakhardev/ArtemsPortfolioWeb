@@ -7,10 +7,8 @@
     <link rel="stylesheet" href="Home.css">
     <link rel="icon" type="image/x-icon" href="../../Images/Favicon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>-->
 </head>
 <body>
-
 <header>
     <logo></logo>
     <headerButtons>
@@ -19,12 +17,25 @@
         <a class="vcenter selectPage" href="../Jobs/Jobs.html">Pracovní Zkušenosti</a>
         <a class="vcenter selectPage" href="../Contact/Contact.html">Služby a Kontakt</a>
     </headerButtons>
-
+    <div class="themeButton">
+        <div>
+            <box-icon color="var(--contrast-dark)" name='sun'></box-icon>
+        </div>
+        <div class="switch">
+            <div class="switchToggle">
+            </div>
+        </div>
+        <div>
+            <box-icon color="var(--contrast-dark)" name='moon'></box-icon>
+        </div>
+    </div>
 </header>
+
+<script src="../../theme.js"></script>
 
 <div id="news">
     <div id="newsClose">
-        <box-icon color="red" name='x-circle'></box-icon>
+        <box-icon color="var(--contrast-dark)" name='x-circle'></box-icon>
     </div>
     <h3>Novinka - Loop</h3>
     <p>Koukněte se na můj poslední velký projekt - Hackathon ČS 2024
@@ -59,7 +70,8 @@
         <h3>IT Dovednosti</h3>
         <div>
             <div class="listHeader">
-                <span>C#</span> <span class="triangleButton"><box-icon name='up-arrow'></box-icon></span>
+                <span>C#</span> <span class="triangleButton"><box-icon name='up-arrow'
+                                                                       color="var(--dropdown-text)"></box-icon></span>
             </div>
             <ul>
                 <li>OOP - Polymorphism, Generics, Inheritance, GoF</li>
@@ -70,7 +82,8 @@
         </div>
         <div>
             <div class="listHeader">
-                <span>SQL (MSSMS)</span> <span class="triangleButton"><box-icon name='up-arrow'></box-icon></span>
+                <span>SQL (MSSMS)</span> <span class="triangleButton"><box-icon name='up-arrow'
+                                                                                color="var(--dropdown-text)"></box-icon></span>
             </div>
 
             <ul>
@@ -81,7 +94,8 @@
         </div>
         <div>
             <div class="listHeader">
-                <span>Weby</span> <span class="triangleButton"><box-icon name='up-arrow'></box-icon></span>
+                <span>Weby</span> <span class="triangleButton"><box-icon name='up-arrow'
+                                                                         color="var(--dropdown-text)"></box-icon></span>
             </div>
             <ul>
                 <li>HTML - Forms, Tables, Lists, Images, Dialogs...</li>
@@ -91,19 +105,21 @@
         </div>
         <div>
             <div class="listHeader">
-                <span>React</span> <span class="triangleButton"><box-icon name='up-arrow'></box-icon></span>
+                <span>React</span> <span class="triangleButton"><box-icon name='up-arrow'
+                                                                          color="var(--dropdown-text)"></box-icon></span>
             </div>
             <ul>
                 <li>Function & Class Components, Props, Context</li>
                 <li>Hooks - State, Ref, Effect, Callback...</li>
                 <li>Conditional Rendering, Dynamic Elements, State Deriving</li>
                 <li>Routing, Forms, Testing, Deployment</li>
-                <li>Tanstack Query,  Redux, TypeScript, Tailwind, Framer Motion</li>
+                <li>Tanstack Query, Redux, TypeScript, Tailwind, Framer Motion</li>
             </ul>
         </div>
         <div>
             <div class="listHeader">
-                <span>Flutter</span> <span class="triangleButton"><box-icon name='up-arrow'></box-icon></span>
+                <span>Flutter</span> <span class="triangleButton"><box-icon name='up-arrow'
+                                                                            color="var(--dropdown-text)"></box-icon></span>
             </div>
             <ul>
                 <li>Stateful & Stateless Widgets - Layout Widgets, Themes</li>
@@ -114,7 +130,8 @@
         </div>
         <div>
             <div class="listHeader">
-                <span>Sítě (W. Server, Linux)</span> <span class="triangleButton"><box-icon name='up-arrow'></box-icon></span>
+                <span>Sítě (W. Server, Linux)</span> <span class="triangleButton"><box-icon name='up-arrow'
+                                                                                            color="var(--dropdown-text)"></box-icon></span>
             </div>
             <ul>
                 <li>DHCP, DNS</li>
@@ -124,7 +141,8 @@
         </div>
         <div>
             <div class="listHeader">
-                <span>Autodesk Programy</span> <span class="triangleButton"><box-icon name='up-arrow'></box-icon></span>
+                <span>Autodesk Programy</span> <span class="triangleButton"><box-icon name='up-arrow'
+                                                                                      color="var(--dropdown-text)"></box-icon></span>
             </div>
             <ul>
                 <li>AutoCAD 2D/3D</li>
@@ -134,7 +152,8 @@
 
         <div>
             <div class="listHeader">
-                <span>Ostatní</span> <span class="triangleButton"><box-icon name='up-arrow'></box-icon></span>
+                <span>Ostatní</span> <span class="triangleButton"><box-icon name='up-arrow'
+                                                                            color="var(--dropdown-text)"></box-icon></span>
             </div>
             <ul>
                 <li>Word, Excel, (Access)</li>
@@ -185,7 +204,8 @@
             volně, bez stanovení pevné ceny, termínu odevzdání a smluvního základu. <br>
             </span>
             <strong>
-                &emsp;Nyní pracuji v České Spořitelně jako vývojář a tester frontendové aplikace s využitím knihovny React.
+                &emsp;Nyní pracuji v České Spořitelně jako vývojář a tester frontendové aplikace s využitím knihovny
+                React.
                 Rád bych se však posunul dál, a proto bych se v blízké budoucnosti chtěl věnovat backendovému nebo
                 fullstackovému vývoji.
             </strong><br>
@@ -265,28 +285,30 @@
         <img src="../../Images/DownloadCV.png">
     </div>
     <div id="downloadButton" class="vcenter" title="Stáhnout CV ve formátu .docx">
-        <box-icon type='solid' name='download'></box-icon>
+        <box-icon type='solid' name='download' color="var(--contrast-dark)"></box-icon>
     </div>
 </div>
 
 <dialog>
-    <h2>V jakém formátu chcete CV stáhnout?</h2>
-    <div id="dialogWrapper" class="vcenter">
-        <a class="icon vcenter" href="../../Public/CV.docx" download>
-            <box-icon size="60px" name='file-doc' type='solid'></box-icon>
-            <p>Word</p>
-        </a>
+    <div class="wrapper">
+        <h2>V jakém formátu chcete CV stáhnout?</h2>
+        <div id="dialogWrapper" class="vcenter">
+            <a class="icon vcenter" href="../../Public/CV.docx" download>
+                <box-icon size="60px" name='file-doc' type='solid'></box-icon>
+                <p>Word</p>
+            </a>
 
-        <a class="icon vcenter" href="../../Public/CV.pdf" download>
-            <box-icon size="60px" name='file-pdf' type='solid'></box-icon>
-            <p>PDF (moderní)</p>
-        </a>
+            <a class="icon vcenter" href="../../Public/CV.pdf" download>
+                <box-icon size="60px" name='file-pdf' type='solid'></box-icon>
+                <p>PDF (moderní)</p>
+            </a>
+        </div>
     </div>
 </dialog>
 
 <script src="Home.js"></script>
 <script src="../../Authenticator.js"></script>
-<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 
+<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </body>
 </html>

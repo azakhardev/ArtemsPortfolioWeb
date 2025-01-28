@@ -1,8 +1,21 @@
+:root{
+    --heaven-blue:hsl(214, 41%, 78%);
+    --aside-header:	hsl(207, 44%, 49%);
+    --aside-text: black;
+    --tags: hsl()
+}
+
+.dark-mode{
+    --heaven-blue:hsl(214, 41%, 40%);
+    --aside-header:	hsl(207, 44%, 68%);
+    --aside-text: white;
+}
+
 aside {
     position: absolute;
     left: 0;
     top: 25vh;
-    background-color: #B0C4DE;
+    background-color: var(--heaven-blue);
     border-bottom-right-radius: 15px;
     border-top-right-radius: 15px;
     width: auto;
@@ -10,7 +23,7 @@ aside {
     max-width: 80vw;
     min-height: 50vh;
     padding: 20px;
-    transition: all 0.3s linear;
+    transition: left 0.3s linear,opacity 0.3s linear;
     cursor: grab;
     z-index: 1;
 }
@@ -18,10 +31,10 @@ aside {
 aside h3 {
     margin-block: 10px;
     border-radius: 5px;
-    background-color: #4682B4;
+    background-color: var(--aside-header);
     font-weight: 500;
     padding: 6px;
-    color: white;
+    color: var(--contrast-light);
 }
 
 aside button {
@@ -31,7 +44,7 @@ aside button {
     width: auto;
     margin-block: 5px;
     cursor: pointer;
-    color: black;
+    color: var(--aside-text);
     font-size: inherit;
     margin-left: 15px;
 }
@@ -76,12 +89,12 @@ aside button:hover {
     padding-inline: 10px;
     padding-block: 5px;
     border-radius: 10px;
-    background-color: #7091E6;
-    color: lightgray;
+    background-color: var(--light-blue);
+    color: var(--contrast-dark);
 }
 
 .tags div strong {
-    color: #3D52A0;
+    color: var(--text-color);
 }
 
 .photos {
@@ -103,21 +116,22 @@ div img {
     width: 100%;
     height: auto;
     object-fit: cover;
-    border: 2px inset black;
+    border: 2px inset var(--contrast-dark);
     max-width: 1285px;
 }
 
 div img:hover:not(dialog div img) {
     cursor: pointer;
-    border: 2px inset blue;
+    border: 2px inset lightblue;
 }
 
 video {
     width: 100%;
     height: auto;
+    margin-bottom: 15px;
     object-fit: cover;
     max-width: 1285px;
-    border: 1px solid black;
+    border: 1px solid var(--contrast-dark);
     cursor: pointer;
 }
 
@@ -157,7 +171,7 @@ ol li {
     }
 
     .description {
-        background-color: #EDE8F5;
+        background-color: var(--card-bg);
         border-radius: 10px;
         padding-block: 10px;
         padding-inline: 25px;

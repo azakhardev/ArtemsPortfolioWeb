@@ -1,14 +1,20 @@
-/*#empty{*/
-/*    margin:25%;*/
-/*    text-align: center;*/
-/*}*/
+:root {
 
-main{
+    --job-bg: hsl(0, 0%, 73%);
+    --job-hover-bg: hsl(0, 0%, 77%);
+}
+
+.dark-mode{
+    --job-bg: hsl(0, 0%, 33%);
+    --job-hover-bg: hsl(0, 0%, 37%);
+}
+
+main {
     display: flex;
     flex-direction: row;
 }
 
-content{
+content {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -16,37 +22,37 @@ content{
     gap: 10px;
 }
 
-h3{
+h3 {
     margin: 8px 0;
 }
 
-a{
-    color: black;
+a {
+    color: var(--contrast-dark)!important;
     text-decoration: none;
 }
 
-.job{
+.job {
     display: flex;
     flex-direction: row;
     gap: 10px;
-    background-color: #bbbbbb;
+    background-color: var(--job-bg);
     border-radius: 15px;
     height: 100px;
     padding: 10px;
 }
 
-.job:hover{
-    background-color: #c4c4c4;
+.job:hover {
+    background-color: var(--job-hover-bg);
     border: 0.1px solid gray;
 }
 
-.icon{
-    flex:1;
+.icon {
+    flex: 1;
     max-width: 100px;
     height: 100%;
 }
 
-img{
+img {
     max-width: 100%;
     max-height: 100%;
     object-fit: cover;
@@ -54,7 +60,7 @@ img{
     border-radius: 10px;
 }
 
-.description{
+.description {
     flex: 2;
     display: flex;
     flex-direction: column;
@@ -66,43 +72,46 @@ img{
 }
 
 @media screen and (min-width: 768px) {
-    h2{
+    h2 {
         font-size: 38px;
     }
-    main{
+
+    main {
         margin-inline: 20%;
     }
 
-    content{
+    content {
         margin-top: 35px;
         gap: 15px;
     }
 
-    .job{
+    .job {
         height: 125px;
         padding: 15px;
         gap: 20px;
     }
-    .icon{
+
+    .icon {
         max-width: 125px;
     }
 }
 
 @media screen and (min-width: 1920px) {
-    main{
+    main {
         margin-inline: 30%;
     }
-    content{
+
+    content {
         margin-top: 50px;
-        gap: 40px;
         gap: 20px;
     }
 
-    .job{
+    .job {
         height: 150px;
         padding: 20px;
     }
-    .icon{
+
+    .icon {
         max-width: 150px;
     }
 }

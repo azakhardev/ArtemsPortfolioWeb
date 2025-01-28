@@ -19,6 +19,12 @@ const tooltipInterval = setInterval(() => {
     tooltipOpacityMax = !tooltipOpacityMax;
 }, 1500)
 
+
+setTimeout(() => {
+    news.style.top = "25px";
+}, 1000)
+
+
 button.addEventListener('mouseover', (e) => {
     if (!buttonShakeSet)
         setShake();
@@ -32,7 +38,7 @@ button.addEventListener('click', (e) => {
         clearInterval(buttonInterval);
     }
     dialog.showModal();
-    dialog.style.top = "0%";
+    dialog.querySelector('.wrapper').style.top = "25%";
 })
 
 closeNews.addEventListener('click', c => {
@@ -73,14 +79,10 @@ function setShake() {
 }
 
 function closeDialog() {
-    dialog.style.top = "-170%";
+    dialog.querySelector('.wrapper').style.top = "-50%";
 
     const dialogTimeout = setTimeout(() => {
         dialog.close();
         clearTimeout(dialogTimeout);
     }, 1000)
 }
-
-setTimeout(() => {
-    news.style.top = "25px";
-}, 1000)

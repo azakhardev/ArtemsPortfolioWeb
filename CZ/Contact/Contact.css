@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+:root{
+    --services-text: hsl(223, 70%, 67%);
+    --form-bg: hsl(0, 0%, 90%);
+}
+
+.dark-mode{
+    --services-text: hsl(223, 70%, 57%);
+    --form-bg: hsl(0, 0%, 75%);
+}
+
 form {
     margin-top: 25px;
     display: grid;
@@ -10,18 +20,19 @@ form {
 }
 
 input {
+    background-color: var(--form-bg);
+    color: hsl(0, 0%, 20%);
     min-height: 20px;
     padding: 5px;
-    min-width: 0px;
 }
 
 button{
     justify-self: right;
     padding-block: 4px;
-    background-color: lightseagreen;
-    color: white;
+    background-color: var(--light-blue);
+    color: var(--text-color);
     border-radius: 5px;
-    border: 0.2px solid black;
+    border: 0.2px solid gray;
     font-size: large;
     padding-inline: 7px;
     width: 20%;
@@ -31,15 +42,22 @@ button{
 
 ol li{
     margin-block: 15px;
-    color: #7091E6;
+    color: var(--services-text);
     font-size: 26px;
     font-weight: bold;
     font-family: "Monsterrat", "SansSerif", serif;
 }
 
 textarea {
+    background-color: var(--form-bg);
+    color: hsl(0, 0%, 20%);
     resize: none;
     padding: 5px;
+}
+
+
+input::placeholder,textarea::placeholder{
+    color: hsl(0, 0%, 20%);
 }
 
 #email {
@@ -50,8 +68,6 @@ textarea {
     grid-row: 3/4;
     grid-column: 1/3;
 }
-
-
 
 @media screen and (min-width: 768px) {
     main {
