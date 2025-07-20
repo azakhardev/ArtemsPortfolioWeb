@@ -126,6 +126,7 @@ div img:hover:not(dialog div img) {
 }
 
 video {
+    position: relative;
     width: 100%;
     height: auto;
     margin-bottom: 15px;

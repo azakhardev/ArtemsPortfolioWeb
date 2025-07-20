@@ -11,13 +11,13 @@ let currentProject = 0;
 dialogEl.querySelector('img').style.display = "none";
 dialogEl.querySelector('video').style.display = "none";
 
-const asideTimerId = setTimeout(()=>{
+const asideTimerId = setTimeout(() => {
     asideElement.style.left = asideInitialOffset + "px"
-},2000)
+}, 2000)
 
 
 asideElement.addEventListener('mouseover', e => {
-    if(asideTimerId){
+    if (asideTimerId) {
         clearTimeout(asideTimerId)
     }
     asideElement.style.left = "0px"
@@ -85,9 +85,6 @@ projectsInfo.forEach((slide) => {
                 dialogEl.style.height = "100vh";
                 dialogEl.showModal();
             });
-            // } else {
-            //
-            // }
         })
     } else {
         video.querySelector('video').addEventListener('click', c => {
