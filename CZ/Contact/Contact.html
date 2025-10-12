@@ -1,68 +1,80 @@
 <!DOCTYPE html>
 <html lang="cs">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Kontakt</title>
-    <link rel="stylesheet" href="../../Misc.css">
-    <link rel="stylesheet" href="Contact.css">
-    <link rel="icon" type="image/x-icon" href="../../Images/Favicon.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-<body>
+    <link rel="stylesheet" href="../../Misc.css" />
+    <link rel="stylesheet" href="Contact.css" />
+    <link rel="icon" type="image/x-icon" href="../../Images/Favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <header>
+      <logo></logo>
 
-<header>
-    <logo></logo>
-
-    <headerButtons>
-        <a class="vcenter selectPage " href="../Home/Home.html">O Mně</a>
-        <a class="vcenter selectPage" href="../Projects/Projects.html">Projekty</a>
-        <a class="vcenter selectPage" href="../Jobs/Jobs.html">Pracovní Zkušenosti</a>
+      <headerButtons>
+        <a class="vcenter selectPage" href="../Home/Home.html">O Mně</a>
+        <a class="vcenter selectPage" href="../Projects/Projects.html"
+          >Projekty</a
+        >
+        <a class="vcenter selectPage" href="../Jobs/Jobs.html"
+          >Pracovní Zkušenosti</a
+        >
         <a class="vcenter selectPage" href="Contact.html">Služby a Kontakt</a>
-    </headerButtons>
+      </headerButtons>
 
-    <div class="themeButton">
+      <div class="themeButton">
         <div>
-            <box-icon color="var(--contrast-dark)" name='sun'></box-icon>
+          <box-icon color="var(--contrast-dark)" name="sun"></box-icon>
         </div>
         <div class="switch">
-            <div class="switchToggle">
-            </div>
+          <div class="switchToggle"></div>
         </div>
         <div>
-            <box-icon color="var(--contrast-dark)" name='moon'></box-icon>
+          <box-icon color="var(--contrast-dark)" name="moon"></box-icon>
         </div>
-    </div>
+      </div>
+    </header>
+    <script src="../../theme.js"></script>
+    <main>
+      <h2 style="text-align: center">Co Vám mohu poskytnout?</h2>
 
-</header>
-<script src="../../theme.js"></script>
-<main>
-
-    <h2 style="text-align: center">Co Vám mohu poskytnout?</h2>
-
-    <div>
+      <div>
         <ol>
-            <li>Vývoj konzolových, desktopových a webových aplikací či API pro vlastní potřeby. <hr> </li>
-            <li>Návrh a správu databází, tvorbu dotazů, optimalizaci výkonu a práci s daty pro webové i desktopové aplikace. <hr> </li>
-            <li>Základní správu Vaší domény a počítačových serverů. <hr> </li>
-            <li>Nastavení hostingu pro Váš web a jeho následující správu. </li>
+          <li>
+            Vývoj konzolových, desktopových a webových aplikací či API pro
+            vlastní potřeby.
+            <hr />
+          </li>
+          <li>
+            Návrh a správu databází, tvorbu dotazů, optimalizaci výkonu a práci
+            s daty pro webové i desktopové aplikace.
+            <hr />
+          </li>
+          <li>
+            Základní správu Vaší domény a počítačových serverů.
+            <hr />
+          </li>
+          <li>Nastavení hostingu pro Váš web a jeho následující správu.</li>
         </ol>
-    </div>
+      </div>
 
-    <h2 style="text-align: center">Pokud máte zájem o spolupráci nebo nějaké datazy, tak vyplňte tento jednoduchý formulář, a já Vás kontaktuji zpět.</h2>
+      <h2 style="text-align: center">
+        Pokud máte zájem o spolupráci nebo nějaké datazy, tak vyplňte tento
+        jednoduchý formulář, a já Vás kontaktuji zpět.
+      </h2>
 
-    <form>
-        <input placeholder="Jméno" id="name" required>
-        <input placeholder="Příjmení" id="surname" required>
-        <input type="email" placeholder="Email" id="email" required>
+      <form>
+        <input placeholder="Jméno" id="name" required />
+        <input placeholder="Příjmení" id="surname" required />
+        <input type="email" placeholder="Email" id="email" required />
         <textarea placeholder="Zpráva" id="message"></textarea>
         <button>Send</button>
-    </form>
+      </form>
+    </main>
 
-</main>
-
-<script src="Contact.js"></script>
-<script src="../../Authenticator.js"></script>
-<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-
-</body>
+    <script src="Contact.js"></script>
+    <!-- <script src="../../Authenticator.js"></script> -->
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  </body>
 </html>
